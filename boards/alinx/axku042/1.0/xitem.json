@@ -1,0 +1,33 @@
+{
+  "config": {
+    "items": [
+      {
+        "infra": {
+          "name": "axku042", 
+          "display": "Kintex-UltraScale AXKU042 Evaluation Platform", 
+          "revision": "1.6", 
+          "description": "Kintex-UltraScale AXKU042 Evaluation Platform", 
+          "company": "alinx.com", 
+          "company_display": "alinx", 
+          "author": "Engin C.", 
+          "contributors": [
+            {
+              "group": "alinx", 
+              "url": "www.alinx.com"
+            }
+          ], 
+          "category": "Single Part", 
+          "website": "www.en.alinx.com/Product/FPGA-Development-Boards/Kintex-UltraScale/AXKU042.html", 
+          "search-keywords": [
+            "axku042", 
+            "alinx.com", 
+            "board", 
+            "Single Part"
+          ]
+        }
+      }
+    ]
+  }, 
+  "_major": 1, 
+  "_minor": 0
+}
