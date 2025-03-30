@@ -220,86 +220,86 @@
         <pin index="205" name="FLASH1_D3" iostandard="LVCMOS33" loc="R22" />
         <pin index="206" name="FLASH1_FCS" iostandard="LVCMOS33" loc="G26" />
         <!-- ############## FMC LPC0 ############## -->
-        <pin index="207" name="fmc_lpc_la09_p" iostandard="LVCMOS18" loc="T22" />
-        <pin index="208" name="fmc_lpc_la09_n" iostandard="LVCMOS18" loc="T23" />
-        <pin index="209" name="fmc_lpc_la06_p" iostandard="LVCMOS18" loc="Y26" />
-        <pin index="210" name="fmc_lpc_la06_n" iostandard="LVCMOS18" loc="Y27" />
-        <pin index="211" name="fmc_lpc_la04_p" iostandard="LVCMOS18" loc="AB25" />
-        <pin index="212" name="fmc_lpc_la04_n" iostandard="LVCMOS18" loc="AB26" />
-        <pin index="213" name="fmc_lpc_la03_p" iostandard="LVCMOS18" loc="V22" />
-        <pin index="214" name="fmc_lpc_la03_n" iostandard="LVCMOS18" loc="V23" />
-        <pin index="215" name="fmc_lpc_la08_p" iostandard="LVCMOS18" loc="V26" />
-        <pin index="216" name="fmc_lpc_la08_n" iostandard="LVCMOS18" loc="W26" />
-        <pin index="217" name="fmc_lpc_la05_p" iostandard="LVCMOS18" loc="V29" />
-        <pin index="218" name="fmc_lpc_la05_n" iostandard="LVCMOS18" loc="W29" />
-        <pin index="219" name="fmc_lpc_la11_p" iostandard="LVCMOS18" loc="AB24" />
-        <pin index="220" name="fmc_lpc_la11_n" iostandard="LVCMOS18" loc="AC24" />
-        <pin index="221" name="fmc_lpc_la10_p" iostandard="LVCMOS18" loc="U24" />
-        <pin index="222" name="fmc_lpc_la10_n" iostandard="LVCMOS18" loc="U25" />
-        <pin index="223" name="fmc_lpc_la07_p" iostandard="LVCMOS18" loc="U21" />
-        <pin index="224" name="fmc_lpc_la07_n" iostandard="LVCMOS18" loc="U22" />
-        <pin index="225" name="fmc_lpc_la14_p" iostandard="LVCMOS18" loc="V27" />
-        <pin index="226" name="fmc_lpc_la14_n" iostandard="LVCMOS18" loc="V28" />
-        <pin index="227" name="fmc_lpc_la01_p" iostandard="LVCMOS18" loc="AA24" />
-        <pin index="228" name="fmc_lpc_la01_n" iostandard="LVCMOS18" loc="AA25" />
-        <pin index="229" name="fmc_lpc_la00_p" iostandard="LVCMOS18" loc="W23" />
-        <pin index="230" name="fmc_lpc_la00_n" iostandard="LVCMOS18" loc="W24" />
-        <pin index="231" name="fmc_lpc_clk0_m2c_p" iostandard="LVCMOS18" loc="Y23" />
-        <pin index="232" name="fmc_lpc_clk0_m2c_n" iostandard="LVCMOS18" loc="AA23" />
-        <pin index="233" name="fmc_lpc_la16_p" iostandard="LVCMOS18" loc="AA22" />
-        <pin index="234" name="fmc_lpc_la16_n" iostandard="LVCMOS18" loc="AB22" />
-        <pin index="235" name="fmc_lpc_la13_p" iostandard="LVCMOS18" loc="W28" />
-        <pin index="236" name="fmc_lpc_la13_n" iostandard="LVCMOS18" loc="Y28" />
-        <pin index="237" name="fmc_lpc_la12_p" iostandard="LVCMOS18" loc="U26" />
-        <pin index="238" name="fmc_lpc_la12_n" iostandard="LVCMOS18" loc="U27" />
-        <pin index="239" name="fmc_lpc_la02_p" iostandard="LVCMOS18" loc="V21" />
-        <pin index="240" name="fmc_lpc_la02_n" iostandard="LVCMOS18" loc="W21" />
-        <pin index="241" name="fmc_lpc_la15_p" iostandard="LVCMOS18" loc="W25" />
-        <pin index="242" name="fmc_lpc_la15_n" iostandard="LVCMOS18" loc="Y25" />
-        <pin index="243" name="fmc_lpc_la28_p" iostandard="LVCMOS18" loc="AE27" />
-        <pin index="244" name="fmc_lpc_la28_n" iostandard="LVCMOS18" loc="AF27" />
-        <pin index="245" name="fmc_lpc_la29_p" iostandard="LVCMOS18" loc="AE28" />
-        <pin index="246" name="fmc_lpc_la29_n" iostandard="LVCMOS18" loc="AF28" />
-        <pin index="247" name="fmc_lpc_la30_p" iostandard="LVCMOS18" loc="AC28" />
-        <pin index="248" name="fmc_lpc_la30_n" iostandard="LVCMOS18" loc="AD28" />
-        <pin index="249" name="fmc_lpc_la31_p" iostandard="LVCMOS18" loc="W33" />
-        <pin index="250" name="fmc_lpc_la31_n" iostandard="LVCMOS18" loc="Y33" />
-        <pin index="251" name="fmc_lpc_la32_p" iostandard="LVCMOS18" loc="Y31" />
-        <pin index="252" name="fmc_lpc_la32_n" iostandard="LVCMOS18" loc="Y32" />
-        <pin index="253" name="fmc_lpc_la33_p" iostandard="LVCMOS18" loc="W30" />
-        <pin index="254" name="fmc_lpc_la33_n" iostandard="LVCMOS18" loc="Y30" />
-        <pin index="255" name="fmc_lpc_la21_p" iostandard="LVCMOS18" loc="AF30" />
-        <pin index="256" name="fmc_lpc_la21_n" iostandard="LVCMOS18" loc="AG30" />
-        <pin index="257" name="fmc_lpc_la20_p" iostandard="LVCMOS18" loc="V31" />
-        <pin index="258" name="fmc_lpc_la20_n" iostandard="LVCMOS18" loc="W31" />
-        <pin index="259" name="fmc_lpc_la19_p" iostandard="LVCMOS18" loc="AA29" />
-        <pin index="260" name="fmc_lpc_la19_n" iostandard="LVCMOS18" loc="AB29" />
-        <pin index="261" name="fmc_lpc_la22_p" iostandard="LVCMOS18" loc="AD29" />
-        <pin index="262" name="fmc_lpc_la22_n" iostandard="LVCMOS18" loc="AE30" />
-        <pin index="263" name="fmc_lpc_la18_p" iostandard="LVCMOS18" loc="AD30" />
-        <pin index="264" name="fmc_lpc_la18_n" iostandard="LVCMOS18" loc="AD31" />
-        <pin index="265" name="fmc_lpc_la17_p" iostandard="LVCMOS18" loc="AA32" />
-        <pin index="266" name="fmc_lpc_la17_n" iostandard="LVCMOS18" loc="AB32" />
-        <pin index="267" name="fmc_lpc_clk1_m2c_p" iostandard="LVCMOS18" loc="AB30" />
-        <pin index="268" name="fmc_lpc_clk1_m2c_n" iostandard="LVCMOS18" loc="AB31" />
-        <pin index="269" name="fmc_lpc_la23_p" iostandard="LVCMOS18" loc="AF33" />
-        <pin index="270" name="fmc_lpc_la23_n" iostandard="LVCMOS18" loc="AG34" />
-        <pin index="271" name="fmc_lpc_la25_p" iostandard="LVCMOS18" loc="AE32" />
-        <pin index="272" name="fmc_lpc_la25_n" iostandard="LVCMOS18" loc="AF32" />
-        <pin index="273" name="fmc_lpc_la24_p" iostandard="LVCMOS18" loc="AF29" />
-        <pin index="274" name="fmc_lpc_la24_n" iostandard="LVCMOS18" loc="AG29" />
-        <pin index="275" name="fmc_lpc_la26_p" iostandard="LVCMOS18" loc="AG31" />
-        <pin index="276" name="fmc_lpc_la26_n" iostandard="LVCMOS18" loc="AG32" />
-        <pin index="277" name="fmc_lpc_la27_p" iostandard="LVCMOS18" loc="AE33" />
-        <pin index="278" name="fmc_lpc_la27_n" iostandard="LVCMOS18" loc="AF34" />
-        <pin index="279" name="fmc_lpc_gbtclk0_m2c_p" loc="V6" />
-        <pin index="280" name="fmc_lpc_gbtclk0_m2c_n" loc="V5" />
-        <pin index="281" name="fmc_lpc_dp0_c2m_p" loc="R4" />
-        <pin index="282" name="fmc_lpc_dp0_m2c_p" loc="P2" />
-        <pin index="283" name="fmc_lpc_dp0_m2c_n" loc="P1" />
-        <pin index="284" name="fmc_lpc_dp0_c2m_n" loc="R3" />
-		<pin index="443" name="fmc_lpc_scl" loc="AC21" /> <!-- EK -->
-        <pin index="444" name="fmc_lpc_sda" loc="AB21" /> <!-- EK -->
+        <pin index="207" name="fmc_lpc0_la09_p" iostandard="LVCMOS18" loc="T22" />
+        <pin index="208" name="fmc_lpc0_la09_n" iostandard="LVCMOS18" loc="T23" />
+        <pin index="209" name="fmc_lpc0_la06_p" iostandard="LVCMOS18" loc="Y26" />
+        <pin index="210" name="fmc_lpc0_la06_n" iostandard="LVCMOS18" loc="Y27" />
+        <pin index="211" name="fmc_lpc0_la04_p" iostandard="LVCMOS18" loc="AB25" />
+        <pin index="212" name="fmc_lpc0_la04_n" iostandard="LVCMOS18" loc="AB26" />
+        <pin index="213" name="fmc_lpc0_la03_p" iostandard="LVCMOS18" loc="V22" />
+        <pin index="214" name="fmc_lpc0_la03_n" iostandard="LVCMOS18" loc="V23" />
+        <pin index="215" name="fmc_lpc0_la08_p" iostandard="LVCMOS18" loc="V26" />
+        <pin index="216" name="fmc_lpc0_la08_n" iostandard="LVCMOS18" loc="W26" />
+        <pin index="217" name="fmc_lpc0_la05_p" iostandard="LVCMOS18" loc="V29" />
+        <pin index="218" name="fmc_lpc0_la05_n" iostandard="LVCMOS18" loc="W29" />
+        <pin index="219" name="fmc_lpc0_la11_p" iostandard="LVCMOS18" loc="AB24" />
+        <pin index="220" name="fmc_lpc0_la11_n" iostandard="LVCMOS18" loc="AC24" />
+        <pin index="221" name="fmc_lpc0_la10_p" iostandard="LVCMOS18" loc="U24" />
+        <pin index="222" name="fmc_lpc0_la10_n" iostandard="LVCMOS18" loc="U25" />
+        <pin index="223" name="fmc_lpc0_la07_p" iostandard="LVCMOS18" loc="U21" />
+        <pin index="224" name="fmc_lpc0_la07_n" iostandard="LVCMOS18" loc="U22" />
+        <pin index="225" name="fmc_lpc0_la14_p" iostandard="LVCMOS18" loc="V27" />
+        <pin index="226" name="fmc_lpc0_la14_n" iostandard="LVCMOS18" loc="V28" />
+        <pin index="227" name="fmc_lpc0_la01_p" iostandard="LVCMOS18" loc="AA24" />
+        <pin index="228" name="fmc_lpc0_la01_n" iostandard="LVCMOS18" loc="AA25" />
+        <pin index="229" name="fmc_lpc0_la00_p" iostandard="LVCMOS18" loc="W23" />
+        <pin index="230" name="fmc_lpc0_la00_n" iostandard="LVCMOS18" loc="W24" />
+        <pin index="231" name="fmc_lpc0_clk0_m2c_p" iostandard="LVCMOS18" loc="Y23" />
+        <pin index="232" name="fmc_lpc0_clk0_m2c_n" iostandard="LVCMOS18" loc="AA23" />
+        <pin index="233" name="fmc_lpc0_la16_p" iostandard="LVCMOS18" loc="AA22" />
+        <pin index="234" name="fmc_lpc0_la16_n" iostandard="LVCMOS18" loc="AB22" />
+        <pin index="235" name="fmc_lpc0_la13_p" iostandard="LVCMOS18" loc="W28" />
+        <pin index="236" name="fmc_lpc0_la13_n" iostandard="LVCMOS18" loc="Y28" />
+        <pin index="237" name="fmc_lpc0_la12_p" iostandard="LVCMOS18" loc="U26" />
+        <pin index="238" name="fmc_lpc0_la12_n" iostandard="LVCMOS18" loc="U27" />
+        <pin index="239" name="fmc_lpc0_la02_p" iostandard="LVCMOS18" loc="V21" />
+        <pin index="240" name="fmc_lpc0_la02_n" iostandard="LVCMOS18" loc="W21" />
+        <pin index="241" name="fmc_lpc0_la15_p" iostandard="LVCMOS18" loc="W25" />
+        <pin index="242" name="fmc_lpc0_la15_n" iostandard="LVCMOS18" loc="Y25" />
+        <pin index="243" name="fmc_lpc0_la28_p" iostandard="LVCMOS18" loc="AE27" />
+        <pin index="244" name="fmc_lpc0_la28_n" iostandard="LVCMOS18" loc="AF27" />
+        <pin index="245" name="fmc_lpc0_la29_p" iostandard="LVCMOS18" loc="AE28" />
+        <pin index="246" name="fmc_lpc0_la29_n" iostandard="LVCMOS18" loc="AF28" />
+        <pin index="247" name="fmc_lpc0_la30_p" iostandard="LVCMOS18" loc="AC28" />
+        <pin index="248" name="fmc_lpc0_la30_n" iostandard="LVCMOS18" loc="AD28" />
+        <pin index="249" name="fmc_lpc0_la31_p" iostandard="LVCMOS18" loc="W33" />
+        <pin index="250" name="fmc_lpc0_la31_n" iostandard="LVCMOS18" loc="Y33" />
+        <pin index="251" name="fmc_lpc0_la32_p" iostandard="LVCMOS18" loc="Y31" />
+        <pin index="252" name="fmc_lpc0_la32_n" iostandard="LVCMOS18" loc="Y32" />
+        <pin index="253" name="fmc_lpc0_la33_p" iostandard="LVCMOS18" loc="W30" />
+        <pin index="254" name="fmc_lpc0_la33_n" iostandard="LVCMOS18" loc="Y30" />
+        <pin index="255" name="fmc_lpc0_la21_p" iostandard="LVCMOS18" loc="AF30" />
+        <pin index="256" name="fmc_lpc0_la21_n" iostandard="LVCMOS18" loc="AG30" />
+        <pin index="257" name="fmc_lpc0_la20_p" iostandard="LVCMOS18" loc="V31" />
+        <pin index="258" name="fmc_lpc0_la20_n" iostandard="LVCMOS18" loc="W31" />
+        <pin index="259" name="fmc_lpc0_la19_p" iostandard="LVCMOS18" loc="AA29" />
+        <pin index="260" name="fmc_lpc0_la19_n" iostandard="LVCMOS18" loc="AB29" />
+        <pin index="261" name="fmc_lpc0_la22_p" iostandard="LVCMOS18" loc="AD29" />
+        <pin index="262" name="fmc_lpc0_la22_n" iostandard="LVCMOS18" loc="AE30" />
+        <pin index="263" name="fmc_lpc0_la18_p" iostandard="LVCMOS18" loc="AD30" />
+        <pin index="264" name="fmc_lpc0_la18_n" iostandard="LVCMOS18" loc="AD31" />
+        <pin index="265" name="fmc_lpc0_la17_p" iostandard="LVCMOS18" loc="AA32" />
+        <pin index="266" name="fmc_lpc0_la17_n" iostandard="LVCMOS18" loc="AB32" />
+        <pin index="267" name="fmc_lpc0_clk1_m2c_p" iostandard="LVCMOS18" loc="AB30" />
+        <pin index="268" name="fmc_lpc0_clk1_m2c_n" iostandard="LVCMOS18" loc="AB31" />
+        <pin index="269" name="fmc_lpc0_la23_p" iostandard="LVCMOS18" loc="AF33" />
+        <pin index="270" name="fmc_lpc0_la23_n" iostandard="LVCMOS18" loc="AG34" />
+        <pin index="271" name="fmc_lpc0_la25_p" iostandard="LVCMOS18" loc="AE32" />
+        <pin index="272" name="fmc_lpc0_la25_n" iostandard="LVCMOS18" loc="AF32" />
+        <pin index="273" name="fmc_lpc0_la24_p" iostandard="LVCMOS18" loc="AF29" />
+        <pin index="274" name="fmc_lpc0_la24_n" iostandard="LVCMOS18" loc="AG29" />
+        <pin index="275" name="fmc_lpc0_la26_p" iostandard="LVCMOS18" loc="AG31" />
+        <pin index="276" name="fmc_lpc0_la26_n" iostandard="LVCMOS18" loc="AG32" />
+        <pin index="277" name="fmc_lpc0_la27_p" iostandard="LVCMOS18" loc="AE33" />
+        <pin index="278" name="fmc_lpc0_la27_n" iostandard="LVCMOS18" loc="AF34" />
+        <pin index="279" name="fmc_lpc0_gbtclk0_m2c_p" loc="V6" />
+        <pin index="280" name="fmc_lpc0_gbtclk0_m2c_n" loc="V5" />
+        <pin index="281" name="fmc_lpc0_dp0_c2m_p" loc="R4" />
+        <pin index="282" name="fmc_lpc0_dp0_m2c_p" loc="P2" />
+        <pin index="283" name="fmc_lpc0_dp0_m2c_n" loc="P1" />
+        <pin index="284" name="fmc_lpc0_dp0_c2m_n" loc="R3" />
+		<pin index="443" name="fmc_lpc0_scl" loc="AC21" /> <!-- EK -->
+        <pin index="444" name="fmc_lpc0_sda" loc="AB21" /> <!-- EK -->
 
 		<!-- ############## FMC HPC ############## -->
         <pin index="285" name="fmc_hpc_la06_p" iostandard="LVCMOS18" loc="B29" />
@@ -460,6 +460,82 @@
         <pin index="440" name="fmc_hpc_dp0_c2m_n" loc="N3" />
         <pin index="441" name="fmc_hpc_scl" loc="K12" /> <!-- EK -->
         <pin index="442" name="fmc_hpc_sda" loc="L12" /> <!-- EK -->
+
+		<!-- ############## FMC LPC1 ############## -->
+		<pin index="245" name="fmc_lpc1_clk0_m2c_n" iostandard="LVCMOS18" loc="N26" />
+		<pin index="246" name="fmc_lpc1_clk0_m2c_p" iostandard="LVCMOS18" loc="P26" />
+		<pin index="247" name="fmc_lpc1_clk1_m2c_n" iostandard="LVCMOS18" loc="AH12" />
+		<pin index="248" name="fmc_lpc1_clk1_m2c_p" iostandard="LVCMOS18" loc="AG12" />
+		<pin index="249" name="fmc_lpc1_la00_n" iostandard="LVCMOS18" loc="P25" />
+		<pin index="250" name="fmc_lpc1_la00_p" iostandard="LVCMOS18" loc="P24" />
+		<pin index="251" name="fmc_lpc1_la01_n" iostandard="LVCMOS18" loc="M26" />
+		<pin index="252" name="fmc_lpc1_la01_p" iostandard="LVCMOS18" loc="M25" />
+		<pin index="253" name="fmc_lpc1_la02_n" iostandard="LVCMOS18" loc="R26" />
+		<pin index="254" name="fmc_lpc1_la02_p" iostandard="LVCMOS18" loc="R25" />
+		<pin index="255" name="fmc_lpc1_la03_n" iostandard="LVCMOS18" loc="L27" />
+		<pin index="256" name="fmc_lpc1_la03_p" iostandard="LVCMOS18" loc="M27" />
+		<pin index="257" name="fmc_lpc1_la04_n" iostandard="LVCMOS18" loc="R27" />
+		<pin index="258" name="fmc_lpc1_la04_p" iostandard="LVCMOS18" loc="T27" />
+		<pin index="259" name="fmc_lpc1_la05_n" iostandard="LVCMOS18" loc="J25" />
+		<pin index="260" name="fmc_lpc1_la05_p" iostandard="LVCMOS18" loc="J24" />
+		<pin index="261" name="fmc_lpc1_la06_n" iostandard="LVCMOS18" loc="K27" />
+		<pin index="262" name="fmc_lpc1_la06_p" iostandard="LVCMOS18" loc="K26" />
+		<pin index="263" name="fmc_lpc1_la07_n" iostandard="LVCMOS18" loc="H26" />
+		<pin index="264" name="fmc_lpc1_la07_p" iostandard="LVCMOS18" loc="J26" />
+		<pin index="265" name="fmc_lpc1_la08_n" iostandard="LVCMOS18" loc="P23" />
+		<pin index="266" name="fmc_lpc1_la08_p" iostandard="LVCMOS18" loc="R23" />
+		<pin index="267" name="fmc_lpc1_la09_n" iostandard="LVCMOS18" loc="G27" />
+		<pin index="268" name="fmc_lpc1_la09_p" iostandard="LVCMOS18" loc="H27" />
+		<pin index="269" name="fmc_lpc1_la10_n" iostandard="LVCMOS18" loc="P21" />
+		<pin index="270" name="fmc_lpc1_la10_p" iostandard="LVCMOS18" loc="P20" />
+		<pin index="271" name="fmc_lpc1_la11_n" iostandard="LVCMOS18" loc="K25" />
+		<pin index="272" name="fmc_lpc1_la11_p" iostandard="LVCMOS18" loc="L25" />
+		<pin index="273" name="fmc_lpc1_la12_n" iostandard="LVCMOS18" loc="M24" />
+		<pin index="274" name="fmc_lpc1_la12_p" iostandard="LVCMOS18" loc="N24" />
+		<pin index="275" name="fmc_lpc1_la13_n" iostandard="LVCMOS18" loc="M22" />
+		<pin index="276" name="fmc_lpc1_la13_p" iostandard="LVCMOS18" loc="N22" />
+		<pin index="277" name="fmc_lpc1_la14_n" iostandard="LVCMOS18" loc="M21" />
+		<pin index="278" name="fmc_lpc1_la14_p" iostandard="LVCMOS18" loc="N21" />
+		<pin index="279" name="fmc_lpc1_la15_n" iostandard="LVCMOS18" loc="K23" />
+		<pin index="280" name="fmc_lpc1_la15_p" iostandard="LVCMOS18" loc="L22" />
+		<pin index="281" name="fmc_lpc1_la16_n" iostandard="LVCMOS18" loc="H24" />
+		<pin index="282" name="fmc_lpc1_la16_p" iostandard="LVCMOS18" loc="J23" />
+		<pin index="283" name="fmc_lpc1_la17_n" iostandard="LVCMOS18" loc="AG10" />
+		<pin index="284" name="fmc_lpc1_la17_p" iostandard="LVCMOS18" loc="AF10" />
+		<pin index="285" name="fmc_lpc1_la18_n" iostandard="LVCMOS18" loc="AH11" />
+		<pin index="286" name="fmc_lpc1_la18_p" iostandard="LVCMOS18" loc="AG11" />
+		<pin index="287" name="fmc_lpc1_la19_n" iostandard="LVCMOS18" loc="AD8" />
+		<pin index="288" name="fmc_lpc1_la19_p" iostandard="LVCMOS18" loc="AD9" />
+		<pin index="289" name="fmc_lpc1_la20_n" iostandard="LVCMOS18" loc="AJ8" />
+		<pin index="290" name="fmc_lpc1_la20_p" iostandard="LVCMOS18" loc="AJ9" />
+		<pin index="291" name="fmc_lpc1_la21_n" iostandard="LVCMOS18" loc="AG9" />
+		<pin index="292" name="fmc_lpc1_la21_p" iostandard="LVCMOS18" loc="AF9" />
+		<pin index="293" name="fmc_lpc1_la22_n" iostandard="LVCMOS18" loc="AF8" />
+		<pin index="294" name="fmc_lpc1_la22_p" iostandard="LVCMOS18" loc="AE8" />
+		<pin index="295" name="fmc_lpc1_la23_n" iostandard="LVCMOS18" loc="AE10" />
+		<pin index="296" name="fmc_lpc1_la23_p" iostandard="LVCMOS18" loc="AD10" />
+		<pin index="297" name="fmc_lpc1_la24_n" iostandard="LVCMOS18" loc="AP10" />
+		<pin index="298" name="fmc_lpc1_la24_p" iostandard="LVCMOS18" loc="AP11" />
+		<pin index="299" name="fmc_lpc1_la25_n" iostandard="LVCMOS18" loc="AN12" />
+		<pin index="300" name="fmc_lpc1_la25_p" iostandard="LVCMOS18" loc="AM12" />
+		<pin index="301" name="fmc_lpc1_la26_n" iostandard="LVCMOS18" loc="AL9" />
+		<pin index="302" name="fmc_lpc1_la26_p" iostandard="LVCMOS18" loc="AK10" />
+		<pin index="303" name="fmc_lpc1_la27_n" iostandard="LVCMOS18" loc="AL8" />
+		<pin index="304" name="fmc_lpc1_la27_p" iostandard="LVCMOS18" loc="AK8" />
+		<pin index="305" name="fmc_lpc1_la28_n" iostandard="LVCMOS18" loc="AH8" />
+		<pin index="306" name="fmc_lpc1_la28_p" iostandard="LVCMOS18" loc="AH9" />
+		<pin index="307" name="fmc_lpc1_la29_n" iostandard="LVCMOS18" loc="AL13" />
+		<pin index="308" name="fmc_lpc1_la29_p" iostandard="LVCMOS18" loc="AK13" />
+		<pin index="309" name="fmc_lpc1_la30_n" iostandard="LVCMOS18" loc="AJ13" />
+		<pin index="310" name="fmc_lpc1_la30_p" iostandard="LVCMOS18" loc="AH13" />
+		<pin index="311" name="fmc_lpc1_la31_n" iostandard="LVCMOS18" loc="AE11" />
+		<pin index="312" name="fmc_lpc1_la31_p" iostandard="LVCMOS18" loc="AD11" />
+		<pin index="313" name="fmc_lpc1_la32_n" iostandard="LVCMOS18" loc="AF13" />
+		<pin index="314" name="fmc_lpc1_la32_p" iostandard="LVCMOS18" loc="AE13" />
+		<pin index="315" name="fmc_lpc1_la33_n" iostandard="LVCMOS18" loc="AF12" />
+		<pin index="316" name="fmc_lpc1_la33_p" iostandard="LVCMOS18" loc="AE12" />
+		<pin index="317" name="fmc_lpc1_scl" iostandard="LVCMOS18" loc="K21" />
+		<pin index="318" name="fmc_lpc1_sda" iostandard="LVCMOS18" loc="K20" />
 
     </pins>
 </part_info>
