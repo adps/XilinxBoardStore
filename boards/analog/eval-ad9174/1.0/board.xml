@@ -1,26 +1,14 @@
-<board schema_version="2.2" vendor="xilinx" name="eval-ad917x" display_name="FMC EVAL-AD917x" url="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad9172.html">
-    <file_version>1.0</file_version>
-    <description>FMC EVAL-AD9174</description>
+<board schema_version="2.0" vendor="analog" name="eval-ad917x" display_name="FMC EVAL-AD917x" url="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad9172.html">
+<!--DOCTYPE board SYSTEM "board.dtd"-->
+	<images>
+		<image name="ad9172fmc.png" display_name="EVAL-AD9174 BOARD" sub_type="board">
+			<description>FMC EVAL-AD9174 Board Image</description>
+		</image>
+	</images>
+	<file_version>1.0</file_version>	
+    <description>FMC EVAL-AD9174</description>	
     <components>
-        <component name="J2" type="connector" sub_type="fixed_io"/>
-        <component name="J3" type="connector" sub_type="fixed_io"/>
-        <component name="J23" type="connector" sub_type="fixed_io"/>
-        <component name="J5_FMC_JTAG" type="connector" sub_type="fixed_io"/>
-        <component name="SMA" type="connector" sub_type="sma"/>
-        <!-- <component name="LVDS_CLOCK" major_group="Clock Sources" display_name="FMC programmable clock" type="chip" sub_type="system_clock"/> -->
-        <component name="EEPROM" major_group="External Memory" display_name="Kb EEPROM" type="chip" sub_type="memory"/>
-        <component name="J1" type="connector" sub_type="fixed_io"/>
-        <component name="J20" type="connector" sub_type="fixed_io"/>
-        <component name="J16" type="connector" sub_type="fixed_io"/>
-        <component name="J15" type="connector" sub_type="fixed_io"/>
-        <component name="USER_LEDS" major_group="General Purpose Input or Output" display_name="FMC LEDs" type="chip" sub_type="led"/>
-        <component name="MICTOR_P1" type="connector" sub_type="fixed_io"/>
-        <component name="JTAG" type="chip" sub_type="fixed_io"/>
-        <component name="POWER_GOOD_LEDS" major_group="General Purpose Input or Output" display_name="FMC Power Good LEDs" type="chip" sub_type="led"/>
-        <component name="hpc_connector" type="connector" sub_type="fmc_hpc" display_name="FMC EVAL-AD917x">
-            <parameters>
-                <parameter name="mode" value="hpc" value_type="list" range="hpc,lpc"/>
-            </parameters>
+        <component name="hpc_connector" display_name="FMC EVAL-AD917x" type="connector" sub_type="fmc_hpc" >
             <pins>
 				<pin index="1" name="" ></pin> <!-- A1 : gnd -->
 				<pin index="2" name="" ></pin> <!-- A2 : dp1_m2c_p -->
@@ -311,8 +299,8 @@
 				<pin index="287" name="" ></pin> <!-- H7 : la02_p -->
 				<pin index="288" name="" ></pin> <!-- H8 : la02_n -->
 				<pin index="289" name="" ></pin> <!-- H9 : gnd -->
-				<pin index="290" name="" ></pin> <!-- H10 : la04_p -->
-				<pin index="291" name="" ></pin> <!-- H11 : la04_n -->
+				<pin index="290" name="fmc_miso" ></pin> <!-- H10 : la04_p -->
+				<pin index="291" name="fmc_cs1" ></pin> <!-- H11 : la04_n -->
 				<pin index="292" name="" ></pin> <!-- H12 : gnd -->
 				<pin index="293" name="" ></pin> <!-- H13 : la07_p -->
 				<pin index="294" name="" ></pin> <!-- H14 : la07_n -->
@@ -424,70 +412,141 @@
 				<pin index="400" name="" ></pin> <!-- K40 : vio_b_m2c -->
             </pins>
             <interfaces>
-                <!-- <interface mode="slave" name="lvds_clock" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="LVDS_CLOCK"><port_maps><port_map logical_port="CLK_P" physical_port="lvds_clkp" dir="in"><pin_maps><pin_map port_index="0" component_pin="clk0_m2c_p"/></pin_maps></port_map><port_map logical_port="CLK_N" physical_port="lvds_clkn" dir="in"><pin_maps><pin_map port_index="0" component_pin="clk0_m2c_n"/></pin_maps></port_map></port_maps><parameters><parameter name="frequency" value="156250000" /></parameters></interface> -->
-                <interface mode="master" name="eeprom_iic" type="xilinx.com:interface:iic:1.0" of_component="EEPROM">
-                    <port_maps>
-                        <port_map logical_port="SDA_I" physical_port="iic_main_sda" dir="inout">
-                            <pin_maps>
-                                <pin_map port_index="0" component_pin="iic_sda_main"/>
-                            </pin_maps>
-                        </port_map>
-                        <port_map logical_port="SDA_O" physical_port="iic_main_sda" dir="inout">
-                            <pin_maps>
-                                <pin_map port_index="0" component_pin="iic_sda_main"/>
-                            </pin_maps>
-                        </port_map>
-                        <port_map logical_port="SDA_T" physical_port="iic_main_sda" dir="inout">
-                            <pin_maps>
-                                <pin_map port_index="0" component_pin="iic_sda_main"/>
-                            </pin_maps>
-                        </port_map>
-                        <port_map logical_port="SCL_I" physical_port="iic_main_scl" dir="inout">
-                            <pin_maps>
-                                <pin_map port_index="0" component_pin="iic_scl_main"/>
-                            </pin_maps>
-                        </port_map>
-                        <port_map logical_port="SCL_O" physical_port="iic_main_scl" dir="inout">
-                            <pin_maps>
-                                <pin_map port_index="0" component_pin="iic_scl_main"/>
-                            </pin_maps>
-                        </port_map>
-                        <port_map logical_port="SCL_T" physical_port="iic_main_scl" dir="inout">
-                            <pin_maps>
-                                <pin_map port_index="0" component_pin="iic_scl_main"/>
-                            </pin_maps>
-                        </port_map>
-                    </port_maps>
-                </interface>
-                <!-- power good not user driven
-				<interface mode="slave" name="led" type="xilinx.com:interface:gpio_rtl:1.0" of_component="POWER_GOOD_LEDS"><port_maps><port_map logical_port="TRI_O" physical_port="leds" dir="out" left="2" right="0"><pin_maps><pin_map port_index="0" component_pin="pg_c2m"/></pin_maps></port_map></port_maps></interface>
--->
-                <interface mode="master" name="led_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="USER_LEDS">
-                    <port_maps>
-                        <port_map logical_port="TRI_O" physical_port="leds_4bits" dir="out" left="3" right="0">
-                            <pin_maps>
-                                <pin_map port_index="0" component_pin="fmc_la32_p"/>
-                                <pin_map port_index="1" component_pin="fmc_la32_n"/>
-                                <pin_map port_index="2" component_pin="fmc_la33_p"/>
-                                <pin_map port_index="3" component_pin="fmc_la33_n"/>
-                            </pin_maps>
-                        </port_map>
-                    </port_maps>
-                </interface>
+				<interface mode="master" name="jesd204_gt_8x" type="xilinx.com:interface:gt_rtl:1.0" of_component="AD9174" >
+				<description>8-lane GTX interface over JESD204</description>
+				<port_maps>
+					<port_map logical_port="GTX_N" physical_port="jesd204_txn8" dir="out" left="7" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="serdin0_n"/>
+							<pin_map port_index="1" component_pin="serdin1_n"/>
+							<pin_map port_index="2" component_pin="serdin2_n"/>
+							<pin_map port_index="3" component_pin="serdin3_n"/>
+							<pin_map port_index="4" component_pin="serdin4_n"/>
+							<pin_map port_index="5" component_pin="serdin5_n"/>
+							<pin_map port_index="6" component_pin="serdin6_n"/>
+							<pin_map port_index="7" component_pin="serdin7_n"/>					  
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="GTX_P" physical_port="jesd204_txp8" dir="out" left="7" right="0">
+					  <pin_maps>
+							<pin_map port_index="0" component_pin="serdin0_p"/>
+							<pin_map port_index="1" component_pin="serdin1_p"/>
+							<pin_map port_index="2" component_pin="serdin2_p"/>
+							<pin_map port_index="3" component_pin="serdin3_p"/>
+							<pin_map port_index="4" component_pin="serdin4_p"/>
+							<pin_map port_index="5" component_pin="serdin5_p"/>
+							<pin_map port_index="6" component_pin="serdin6_p"/>
+							<pin_map port_index="7" component_pin="serdin7_p"/>	
+					  </pin_maps>
+					</port_map>
+				</port_maps>
+				<parameters>
+					<!-- parameter name="MODELPARAM_VALUE.C_LANES" value="8" /-->
+					<!--parameter name="gt_loc" value="X0Y0" /-->
+				 </parameters>
+				</interface>
+				<interface mode="master" name="spi1" type="xilinx.com:interface:spi_rtl:1.0" of_component="AD9174" >
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="IO0_I" physical_port="spi_miso_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_miso"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="IO0_O" physical_port="spi_miso_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_miso"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="IO0_T" physical_port="spi_miso_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_miso"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="IO1_I" physical_port="spi_mosi_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_mosi"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="IO1_O" physical_port="spi_mosi_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_mosi"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="IO1_T" physical_port="spi_mosi_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_mosi"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCK_I" physical_port="spi_sclk_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_sck"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCK_O" physical_port="spi_sclk_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_sck"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCK_T" physical_port="spi_sclk_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_sck"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SS_I" physical_port="spi_ss_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_cs1"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SS_O" physical_port="spi_ss_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_cs1"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SS_T" physical_port="spi_ss_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_cs1"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>								
             </interfaces>
         </component>
+        <component name="J34" display_name="AD9174 Clock IN - Differential (NOT USED)" type="connector" sub_type="fixed_io"/>
+		<component name="J42" display_name="AD9174 Clock IN - Single Ended (NOT USED)" type="connector" sub_type="fixed_io"/>
+		<component name="J41" display_name="HMC7044 Reference Clock - Single Ended" type="connector" sub_type="fixed_io"/>
+		<component name="J1"  display_name="AD9174 DAC1 Out - Single Ended" type="connector" sub_type="fixed_io"/>
+		<component name="J2"  display_name="AD9174 DAC0 Out - Single Ended" type="connector" sub_type="fixed_io"/>
+		<component name="J3"  display_name="AD9174 DAC Clock Out - Single Ended" type="connector" sub_type="fixed_io"/>
+		<component name="P3"  display_name="SPI Connector" type="connector" sub_type="fixed_io"/>
+		<component name="P4"  display_name="USB Connector" type="connector" sub_type="fixed_io"/>
+		<component name="AD9174" display_name="AD9174" type="chip" sub_type="chip"  major_group="DAC" part_name="AD9174" vendor="Analog Devices" spec_url="www.analog.com">
+			<description>AD9174 JESD204B</description>
+			<component_modes>
+				<component_mode name="JESD204B" display_name="JESD204B">
+					<interfaces>
+						<interface name="jesd204_gt_8x" order="0" />
+						<interface name="spi1" order="1" />
+					</interfaces>
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="jesd204_phy" order="0" />
+					</preferred_ips>
+				</component_mode>
+			</component_modes>		
+		</component>
     </components>
     <connections>
-        <!-- <connection name="HPC_connector_LVDS_CLOCK" component1="hpc_connector" component2="LVDS_CLOCK"><connection_map name="HPC_connector_LVDS_CLOCK_1" typical_delay="5" c1_st_index="284" c1_end_index="285" c2_st_index="0" c2_end_index="1"/></connection> -->
-        <connection name="HPC_connector_EEPROM" component1="hpc_connector" component2="EEPROM">
-            <connection_map name="HPC_connector_EEPROM_1" typical_delay="5" c1_st_index="110" c1_end_index="111" c2_st_index="0" c2_end_index="1"/>
-        </connection>
-        <connection name="HPC_connector_USER_LEDS" component1="hpc_connector" component2="USER_LEDS">
-            <connection_map name="HPC_connector_USER_LEDS_1" typical_delay="5" c1_st_index="317" c1_end_index="318" c2_st_index="0" c2_end_index="1"/>
-            <connection_map name="HPC_connector_USER_LEDS_1" typical_delay="5" c1_st_index="276" c1_end_index="277" c2_st_index="2" c2_end_index="3"/>
-        </connection>
-        <!--
-		<connection name="HPC_connector_POWER_GOOD_LEDS" component1="hpc_connector" component2="POWER_GOOD_LEDS"><connection_map name="HPC_connector_POWER_GOOD_LEDS_1" typical_delay="5" c1_st_index="9" c1_end_index="9" c2_st_index="0" c2_end_index="7"/></connection>
--->
+		<connection name="GTX8_AD9174" component1="hpc_connector" component2="AD9174">
+			<connection_map name="HPC_connector_gtx1_1" typical_delay="5" c1_st_index="38" c1_end_index="39" c2_st_index="1" c2_end_index="0"/>
+			<connection_map name="HPC_connector_gtx2_1" typical_delay="5" c1_st_index="76" c1_end_index="77" c2_st_index="3" c2_end_index="2"/>
+			<connection_map name="HPC_connector_gtx3_1" typical_delay="5" c1_st_index="34" c1_end_index="35" c2_st_index="5" c2_end_index="4"/>
+			<connection_map name="HPC_connector_gtx4_1" typical_delay="5" c1_st_index="52" c1_end_index="53" c2_st_index="7" c2_end_index="6"/>
+			<connection_map name="HPC_connector_gtx5_1" typical_delay="5" c1_st_index="30" c1_end_index="31" c2_st_index="8" c2_end_index="9"/>
+			<connection_map name="HPC_connector_gtx6_1" typical_delay="5" c1_st_index="26" c1_end_index="27" c2_st_index="10" c2_end_index="11"/>
+			<connection_map name="HPC_connector_gtx7_1" typical_delay="5" c1_st_index="22" c1_end_index="23" c2_st_index="12" c2_end_index="13"/>
+			<connection_map name="HPC_connector_gtx8_1" typical_delay="5" c1_st_index="82" c1_end_index="83" c2_st_index="14" c2_end_index="15"/>
+		</connection>
     </connections>
 </board>
