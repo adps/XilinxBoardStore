@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?> 
+<ip_presets schema="1.0">
+  <ip_preset preset_proc_name="jesd204_gt_8x_preset">
+    <ip vendor="xilinx.com" library="ip" name="jesd204_phy" ip_interface="gt7_tx">
+      <user_parameters>
+		<parameter name="CONFIG.C_LANES" value="8" />
+		<parameter name="CONFIG.GT_Location" value="X0Y0" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+</ip_presets>
