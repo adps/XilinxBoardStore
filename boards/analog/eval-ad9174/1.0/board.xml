@@ -1,4 +1,5 @@
-<board schema_version="2.0" vendor="analog" name="eval-ad917x" display_name="FMC EVAL-AD917x" url="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad9172.html" preset_file="preset.xml">
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<board schema_version="2.2" vendor="analog" name="eval-ad917x" display_name="FMC EVAL-AD917x" url="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad9172.html" preset_file="preset.xml">
 <!--DOCTYPE board SYSTEM "board.dtd"-->
 	<images>
 		<image name="ad9172fmc.png" display_name="EVAL-AD9174 BOARD" sub_type="board">
@@ -419,13 +420,13 @@
 				<pin index="400" name="" ></pin> <!-- K40 : vio_b_m2c -->
             </pins>
             <interfaces>
-				<interface mode="master" name="jesd204_gt_8x" type="xilinx.com:interface:gt_rtl:1.0" of_component="ad9174_jesd" preset_proc="jesd204_gt_8x_preset" >
-				<description>8-lane GTX interface over JESD204</description>
+				<interface mode="master" name="jesd204_gt_8x" type="xilinx.com:ip:jesd204:7.2" of_component="ad9174_jesd" preset_proc="jesd204_preset" >
+				<description>JESD204 Core</description>
 				<preferred_ips>
-					<preferred_ip vendor="xilinx.com" library="ip" name="jesd204_phy" order="0"/>
+					<preferred_ip vendor="xilinx.com" library="ip" name="jesd204" order="0"/>
 				</preferred_ips>
 				<port_maps>
-					<port_map logical_port="GTX_N" physical_port="jesd204_txn8" dir="out" left="7" right="0">
+					<port_map logical_port="txn" physical_port="txn8" dir="out" left="7" right="0">
 						<pin_maps>
 							<pin_map port_index="0" component_pin="serdin0_n"/>
 							<pin_map port_index="1" component_pin="serdin1_n"/>
@@ -437,7 +438,7 @@
 							<pin_map port_index="7" component_pin="serdin7_n"/>					  
 						</pin_maps>
 					</port_map>
-					<port_map logical_port="GTX_P" physical_port="jesd204_txp8" dir="out" left="7" right="0">
+					<port_map logical_port="txp" physical_port="txp8" dir="out" left="7" right="0">
 					  <pin_maps>
 							<pin_map port_index="0" component_pin="serdin0_p"/>
 							<pin_map port_index="1" component_pin="serdin1_p"/>
@@ -451,8 +452,26 @@
 					</port_map>
 				</port_maps>
 				<parameters>
+					<parameter name="CONFIG.AXICLK_FREQ" value="100"/>
+					<parameter name="CONFIG.C_DEFAULT_F" value="1" />
+					<parameter name="CONFIG.C_DEFAULT_K" value="2" />
+					<parameter name="CONFIG.C_DEFAULT_SCR" value="0" />
+					<parameter name="CONFIG.C_DEFAULT_SYSREF_ALWAYS" value="0" />
+					<parameter name="CONFIG.C_DEFAULT_SYSREF_REQUIRED" value="1" />
 					<parameter name="CONFIG.C_LANES" value="8" />
-					<parameter name="CONFIG.GT_Location" value="X0Y0" />
+					<parameter name="CONFIG.C_LMFC_BUFFER_SIZE" value="1024" />
+					<parameter name="CONFIG.C_NODE_IS_TRANSMIT" value="1" />
+					<parameter name="CONFIG.C_PLL_SELECTION" value="1" />
+					<parameter name="CONFIG.C_SYSREF_SAMPLING_EDGE" value="0" />
+					<parameter name="CONFIG.DRPCLK_FREQ" value="100" />
+					<parameter name="CONFIG.GT_Line_Rate" value="15" />
+					<parameter name="CONFIG.GT_REFCLK_FREQ" value="187.5" />
+					<parameter name="CONFIG.Global_clk_sel" value="true" />
+					<parameter name="CONFIG.SupportLevel" value="1" />
+					<parameter name="CONFIG.Transceiver" value="GTHE3" />
+					<parameter name="CONFIG.TransceiverControl" value="false" />
+					<parameter name="CONFIG.USE_JSPAT" value="false" />
+					<parameter name="CONFIG.USE_RPAT" value="false" />
 				 </parameters>
 				</interface>
 				<interface mode="master" name="spi1" type="xilinx.com:interface:spi_rtl:1.0" of_component="ad9174_spi" >
@@ -537,24 +556,24 @@
 			<description>USB connector for ACE</description>
 		</component>
 		<component name="ad9174_jesd" display_name="AD9174 JESD" type="chip" sub_type="chip"  major_group="FMC HPC" part_name="AD9174" vendor="Analog Devices" spec_url="www.analog.com">
-			<description>FMC EVAL-AD9174 JESD204 TX</description>
+			<description>FMC EVAL-AD9174 AD9174 JESD204</description>
 			<component_modes>
-				<component_mode name="jesd204_tx_1" display_name="JESD204B TX">
+				<component_mode name="jesd204_tx_1" display_name="AD9174 JESD204">
 					<interfaces>
 						<interface name="jesd204_gt_8x" order="0" />
 					</interfaces>
 					<preferred_ips>
-						<preferred_ip vendor="xilinx.com" library="ip" name="jesd204_phy" order="0" />
+						<preferred_ip vendor="xilinx.com" library="ip" name="jesd204" order="0" />
 					</preferred_ips>
 				</component_mode>
 			</component_modes>		
 		</component>
 		<component name="ad9174_spi" display_name="AD9174 SPI" type="chip" sub_type="chip"  major_group="FMC HPC" part_name="AD9174" vendor="Analog Devices" spec_url="www.analog.com">
-			<description>FMC EVAL-AD9174 JESD204 SPI</description>
+			<description>FMC EVAL-AD9174 AD9174 SPI</description>
 			<component_modes>
-				<component_mode name="jesd204_spi_1" display_name="JESD204B SPI">
+				<component_mode name="jesd204_spi_1" display_name="AD9174 SPI">
 					<interfaces>
-						<interface name="spi1" order="1" />
+						<interface name="spi1" order="0" />
 					</interfaces>
 					<preferred_ips>
 						<preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0" />
@@ -564,15 +583,39 @@
 		</component>		
     </components>
     <connections>
-		<connection name="hpc_ad9174" component1="hpc_connector" component2="ad9174_jesd">
-			<connection_map name="hpc_connector_gtx1_1" typical_delay="5" c1_st_index="38" c1_end_index="39" c2_st_index="1" c2_end_index="0"/>
-			<connection_map name="hpc_connector_gtx2_1" typical_delay="5" c1_st_index="76" c1_end_index="77" c2_st_index="3" c2_end_index="2"/>
-			<connection_map name="hpc_connector_gtx3_1" typical_delay="5" c1_st_index="34" c1_end_index="35" c2_st_index="5" c2_end_index="4"/>
-			<connection_map name="hpc_connector_gtx4_1" typical_delay="5" c1_st_index="52" c1_end_index="53" c2_st_index="7" c2_end_index="6"/>
+		<connection name="hpc_ad9174_jesd" component1="hpc_connector" component2="ad9174_jesd">
+			<connection_map name="hpc_connector_gtx1_1" typical_delay="5" c1_st_index="38" c1_end_index="38" c2_st_index="1" c2_end_index="1"/>
+			<connection_map name="hpc_connector_gtx1_1" typical_delay="5" c1_st_index="39" c1_end_index="39" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="hpc_connector_gtx2_1" typical_delay="5" c1_st_index="76" c1_end_index="76" c2_st_index="3" c2_end_index="3"/>
+			<connection_map name="hpc_connector_gtx2_1" typical_delay="5" c1_st_index="77" c1_end_index="77" c2_st_index="2" c2_end_index="2"/>
+			<connection_map name="hpc_connector_gtx3_1" typical_delay="5" c1_st_index="34" c1_end_index="34" c2_st_index="5" c2_end_index="5"/>
+			<connection_map name="hpc_connector_gtx3_1" typical_delay="5" c1_st_index="35" c1_end_index="35" c2_st_index="4" c2_end_index="4"/>
+			<connection_map name="hpc_connector_gtx4_1" typical_delay="5" c1_st_index="52" c1_end_index="52" c2_st_index="7" c2_end_index="7"/>
+			<connection_map name="hpc_connector_gtx4_1" typical_delay="5" c1_st_index="53" c1_end_index="53" c2_st_index="6" c2_end_index="6"/>
 			<connection_map name="hpc_connector_gtx5_1" typical_delay="5" c1_st_index="30" c1_end_index="31" c2_st_index="8" c2_end_index="9"/>
 			<connection_map name="hpc_connector_gtx6_1" typical_delay="5" c1_st_index="26" c1_end_index="27" c2_st_index="10" c2_end_index="11"/>
 			<connection_map name="hpc_connector_gtx7_1" typical_delay="5" c1_st_index="22" c1_end_index="23" c2_st_index="12" c2_end_index="13"/>
 			<connection_map name="hpc_connector_gtx8_1" typical_delay="5" c1_st_index="82" c1_end_index="83" c2_st_index="14" c2_end_index="15"/>
 		</connection>
+		<connection name="hpc_ad9174_spi" component1="hpc_connector" component2="ad9174_spi">
+			<connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="290" c1_end_index="290" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="250" c1_end_index="250" c2_st_index="1" c2_end_index="1"/>	
+			<connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="249" c1_end_index="249" c2_st_index="2" c2_end_index="2"/>	
+			<connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="291" c1_end_index="291" c2_st_index="3" c2_end_index="3"/>	
+		</connection>
     </connections>
+	<ip_associated_rules>
+		<!--ip_associated_rule name="default">
+			<ip vendor="xilinx.com" library="ip" name="jesd204" version="*" ip_interface="">
+				<associated_board_interfaces>
+					<associated_board_interface name="" order="0" />
+				</associated_board_interfaces>
+			</ip>
+		</ip_associated_rule-->
+		<ip vendor="xilinx.com" library="ip" name="axi_quad_spi" version="*" ip_interface="SPI_0">
+			<associated_board_interfaces>
+				<associated_board_interface name="spi1" order="0" />
+			</associated_board_interfaces>
+		</ip>
+	</ip_associated_rules>	
 </board>
