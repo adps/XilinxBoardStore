@@ -835,27 +835,27 @@
 								<pin_map port_index="0" component_pin="sfp0_tx_n" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="TXP" physical_port="sfp_txp" dir="out" name="sfp_txp">
+						<port_map logical_port="TXP" physical_port="sfp0_txp" dir="out" name="sfp_txp">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="sfp0_tx_p" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="RXN" physical_port="sfp_rxn" dir="in" name="sfp_rxn">
+						<port_map logical_port="RXN" physical_port="sfp0_rxn" dir="in" name="sfp_rxn">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="sfp0_rx_n" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="RXP" physical_port="sfp_rxp" dir="in" name="sfp_rxp">
+						<port_map logical_port="RXP" physical_port="sfp0_rxp" dir="in" name="sfp_rxp">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="sfp0_rx_p" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="RX_LOS" physical_port="sfp_rxlos" dir="in" name="sfp_rxlos">
+						<port_map logical_port="RX_LOS" physical_port="sfp0_rxlos" dir="in" name="sfp_rxlos">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="SFP0_LOS_LS" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="TX_DISABLE" physical_port="sfp_txdisable" dir="in" name="sfp_txdisable">
+						<port_map logical_port="TX_DISABLE" physical_port="sfp0_txdisable" dir="in" name="sfp_txdisable">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="SFP0_TX_DISABLE" />
 							</pin_maps>
@@ -870,32 +870,32 @@
 						<preferred_ip vendor="xilinx.com" library="ip" name="axi_ethernet" order="0" />
 					</preferred_ips>
 					<port_maps>
-						<port_map logical_port="TXN" physical_port="sfp_txn" dir="out" name="sfp_txn">
+						<port_map logical_port="TXN" physical_port="sfp1_txn" dir="out" name="sfp_txn">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="sfp1_tx_n" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="TXP" physical_port="sfp_txp" dir="out" name="sfp_txp">
+						<port_map logical_port="TXP" physical_port="sfp1_txp" dir="out" name="sfp_txp">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="sfp1_tx_p" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="RXN" physical_port="sfp_rxn" dir="in" name="sfp_rxn">
+						<port_map logical_port="RXN" physical_port="sfp1_rxn" dir="in" name="sfp_rxn">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="sfp1_rx_n" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="RXP" physical_port="sfp_rxp" dir="in" name="sfp_rxp">
+						<port_map logical_port="RXP" physical_port="sfp1_rxp" dir="in" name="sfp_rxp">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="sfp1_rx_p" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="RX_LOS" physical_port="sfp_rxlos" dir="in" name="sfp_rxlos">
+						<port_map logical_port="RX_LOS" physical_port="sfp1_rxlos" dir="in" name="sfp_rxlos">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="SFP1_LOS_LS" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="TX_DISABLE" physical_port="sfp_txdisable" dir="in" name="sfp_txdisable">
+						<port_map logical_port="TX_DISABLE" physical_port="sfp1_txdisable" dir="in" name="sfp_txdisable">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="SFP1_TX_DISABLE" />
 							</pin_maps>
@@ -910,22 +910,22 @@
 						<preferred_ip vendor="xilinx.com" library="ip" name="axi_ethernet" order="0" />
 					</preferred_ips>
 					<port_maps>
-						<port_map logical_port="TXN" physical_port="sfp_sgmii_txn" dir="out">
+						<port_map logical_port="TXN" physical_port="sfp0_sgmii_txn" dir="out">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="sfp0_tx_n" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="TXP" physical_port="sfp_sgmii_txp" dir="out">
+						<port_map logical_port="TXP" physical_port="sfp0_sgmii_txp" dir="out">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="sfp0_tx_p" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="RXN" physical_port="sfp_sgmii_rxn" dir="in">
+						<port_map logical_port="RXN" physical_port="sfp0_sgmii_rxn" dir="in">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="sfp0_rx_n" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="RXP" physical_port="sfp_sgmii_rxp" dir="in">
+						<port_map logical_port="RXP" physical_port="sfp0_sgmii_rxp" dir="in">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="sfp0_rx_p" />
 							</pin_maps>
@@ -940,22 +940,22 @@
 						<preferred_ip vendor="xilinx.com" library="ip" name="axi_ethernet" order="0" />
 					</preferred_ips>
 					<port_maps>
-						<port_map logical_port="TXN" physical_port="sfp_sgmii_txn" dir="out">
+						<port_map logical_port="TXN" physical_port="sfp1_sgmii_txn" dir="out">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="sfp1_tx_n" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="TXP" physical_port="sfp_sgmii_txp" dir="out">
+						<port_map logical_port="TXP" physical_port="sfp1_sgmii_txp" dir="out">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="sfp1_tx_p" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="RXN" physical_port="sfp_sgmii_rxn" dir="in">
+						<port_map logical_port="RXN" physical_port="sfp1_sgmii_rxn" dir="in">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="sfp1_rx_n" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="RXP" physical_port="sfp_sgmii_rxp" dir="in">
+						<port_map logical_port="RXP" physical_port="sfp1_sgmii_rxp" dir="in">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="sfp1_rx_p" />
 							</pin_maps>
@@ -1101,7 +1101,7 @@
 					</port_maps>
 				</interface>
 				<interface mode="master" name="mdio_mdc" type="xilinx.com:interface:mdio_rtl:1.0" of_component="phy_onboard">
-					<description>interface to communicate with ethernet phy</description>
+					<description>Primary interface to communicate with ethernet phy in RGMII</description>
 					<preferred_ips>
 						<preferred_ip vendor="xilinx.com" library="ip" name="axi_ethernet" order="0" />
 					</preferred_ips>
@@ -1145,77 +1145,77 @@
 						<preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0" />
 					</preferred_ips>
 					<port_maps>
-						<port_map logical_port="IO0_I" physical_port="spi_io0_i" dir="inout">
+						<port_map logical_port="IO0_I" physical_port="spi0_io0_i" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH0_D0" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO0_O" physical_port="spi_io0_o" dir="inout">
+						<port_map logical_port="IO0_O" physical_port="spi0_io0_o" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH0_D0" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO0_T" physical_port="spi_io0_t" dir="inout">
+						<port_map logical_port="IO0_T" physical_port="spi0_io0_t" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH0_D0" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO1_I" physical_port="spi_io1_i" dir="inout">
+						<port_map logical_port="IO1_I" physical_port="spi0_io1_i" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH0_D1" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO1_O" physical_port="spi_io1_o" dir="inout">
+						<port_map logical_port="IO1_O" physical_port="spi0_io1_o" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH0_D1" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO1_T" physical_port="spi_io1_t" dir="inout">
+						<port_map logical_port="IO1_T" physical_port="spi0_io1_t" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH0_D1" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO2_I" physical_port="spi_io2_i" dir="inout">
+						<port_map logical_port="IO2_I" physical_port="spi0_io2_i" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH0_D2" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO2_O" physical_port="spi_io2_o" dir="inout">
+						<port_map logical_port="IO2_O" physical_port="spi0_io2_o" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH0_D2" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO2_T" physical_port="spi_io2_t" dir="inout">
+						<port_map logical_port="IO2_T" physical_port="spi0_io2_t" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH0_D2" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO3_I" physical_port="spi_io3_i" dir="inout">
+						<port_map logical_port="IO3_I" physical_port="spi0_io3_i" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH0_D3" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO3_O" physical_port="spi_io3_o" dir="inout">
+						<port_map logical_port="IO3_O" physical_port="spi0_io3_o" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH0_D3" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO3_T" physical_port="spi_io3_t" dir="inout">
+						<port_map logical_port="IO3_T" physical_port="spi0_io3_t" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH0_D3" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="SS_I" physical_port="spi_ss_i" dir="inout">
+						<port_map logical_port="SS_I" physical_port="spi0_ss_i" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FPGA0_FCS" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="SS_O" physical_port="spi_ss_o" dir="inout">
+						<port_map logical_port="SS_O" physical_port="spi0_ss_o" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FPGA0_FCS" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="SS_T" physical_port="spi_ss_t" dir="inout">
+						<port_map logical_port="SS_T" physical_port="spi0_ss_t" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FPGA0_FCS" />
 							</pin_maps>
@@ -1227,77 +1227,77 @@
 						<preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0" />
 					</preferred_ips>
 					<port_maps>
-						<port_map logical_port="IO0_I" physical_port="spi_io0_i" dir="inout">
+						<port_map logical_port="IO0_I" physical_port="spi1_io0_i" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH1_D0" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO0_O" physical_port="spi_io0_o" dir="inout">
+						<port_map logical_port="IO0_O" physical_port="spi1_io0_o" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH1_D0" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO0_T" physical_port="spi_io0_t" dir="inout">
+						<port_map logical_port="IO0_T" physical_port="spi1_io0_t" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH1_D0" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO1_I" physical_port="spi_io1_i" dir="inout">
+						<port_map logical_port="IO1_I" physical_port="spi1_io1_i" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH1_D1" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO1_O" physical_port="spi_io1_o" dir="inout">
+						<port_map logical_port="IO1_O" physical_port="spi1_io1_o" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH1_D1" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO1_T" physical_port="spi_io1_t" dir="inout">
+						<port_map logical_port="IO1_T" physical_port="spi1_io1_t" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH1_D1" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO2_I" physical_port="spi_io2_i" dir="inout">
+						<port_map logical_port="IO2_I" physical_port="spi1_io2_i" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH1_D2" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO2_O" physical_port="spi_io2_o" dir="inout">
+						<port_map logical_port="IO2_O" physical_port="spi1_io2_o" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH1_D2" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO2_T" physical_port="spi_io2_t" dir="inout">
+						<port_map logical_port="IO2_T" physical_port="spi1_io2_t" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH1_D2" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO3_I" physical_port="spi_io3_i" dir="inout">
+						<port_map logical_port="IO3_I" physical_port="spi1_io3_i" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH1_D3" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO3_O" physical_port="spi_io3_o" dir="inout">
+						<port_map logical_port="IO3_O" physical_port="spi1_io3_o" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH1_D3" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO3_T" physical_port="spi_io3_t" dir="inout">
+						<port_map logical_port="IO3_T" physical_port="spi1_io3_t" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH1_D3" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="SS_I" physical_port="spi_ss_i" dir="inout">
+						<port_map logical_port="SS_I" physical_port="spi1_ss_i" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH1_FCS" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="SS_O" physical_port="spi_ss_o" dir="inout">
+						<port_map logical_port="SS_O" physical_port="spi1_ss_o" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH1_FCS" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="SS_T" physical_port="spi_ss_t" dir="inout">
+						<port_map logical_port="SS_T" physical_port="spi1_ss_t" dir="inout">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="FLASH1_FCS" />
 							</pin_maps>
@@ -1911,10 +1911,10 @@
 					<associated_board_interface name="pcie_refclk" order="0" />
 				</associated_board_interfaces>
 			</ip>
-			<ip vendor="xilinx.com" library="ip" name="axi_quad_spi" version="*" ip_interface="SPI_1">
+			<ip vendor="xilinx.com" library="ip" name="axi_quad_spi" version="*" ip_interface="SPI_0">
 				<associated_board_interfaces>
 					<associated_board_interface name="spi_flash0" order="0" />
-					<associated_board_interface name="spi_flash1" order="0" />
+					<associated_board_interface name="spi_flash1" order="1" />
 				</associated_board_interfaces>
 			</ip>
 		</ip_associated_rule>

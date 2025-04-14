@@ -205,10 +205,10 @@
         <pin index="190" name="PHY_RXD2" iostandard="LVCMOS18" loc="AA34" />
         <pin index="191" name="PHY_RXD3" iostandard="LVCMOS18" loc="AB34" />
         <pin index="192" name="PHY_RXCTL_RXDV" iostandard="LVCMOS18" loc="AC32" />
-        <pin index="193" name="PHY_RXCLK" iostandard="LVCMOS25" loc="AC31" />
-        <pin index="194" name="PHY_MDIO" iostandard="LVCMOS25" loc="AE31" />
-        <pin index="195" name="PHY_MDC" iostandard="LVCMOS25" loc="AA33" />
-        <pin index="196" name="PHY_RESET" iostandard="LVCMOS25" loc="V32" />
+        <pin index="193" name="PHY_RXCLK" iostandard="LVCMOS18" loc="AC31" />
+        <pin index="194" name="PHY_MDIO" iostandard="LVCMOS18" loc="AE31" />
+        <pin index="195" name="PHY_MDC" iostandard="LVCMOS18" loc="AA33" />
+        <pin index="196" name="PHY_RESET" iostandard="LVCMOS18" loc="V32" />
         <!-- ############## QSPI FLASH ICs ############## -->
         <pin index="197" name="FLASH0_D0" iostandard="LVCMOS33" loc="AC7" />
         <pin index="198" name="FLASH0_D1" iostandard="LVCMOS33" loc="AB7" />
