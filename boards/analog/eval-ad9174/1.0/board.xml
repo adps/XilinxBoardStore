@@ -1,621 +1,623 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<board schema_version="2.2" vendor="analog" name="eval-ad917x" display_name="FMC EVAL-AD917x" url="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad9172.html" preset_file="preset.xml">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--DOCTYPE board SYSTEM "board.dtd"-->
-	<images>
-		<image name="ad9172fmc.png" display_name="EVAL-AD9174 BOARD" sub_type="board">
-			<description>FMC EVAL-AD9174 Board Image</description>
-		</image>
-	</images>
-	<compatible_board_revisions>
-		<revision id="0">1.0</revision>
-	</compatible_board_revisions>
-	<file_version>1.0</file_version>	
-    <description>FMC EVAL-AD9174</description>	
-    <components>
-        <component name="hpc_connector" display_name="FMC EVAL-AD917x" type="connector" sub_type="fmc_hpc" major_group="FMC HPC" >
-			<description>FMC HPC connector</description>
-			<parameters>
-				<parameter name="mode" value="hpc" value_type="list" range="hpc"/>
-			</parameters>
-            <pins>
-				<pin index="1" name="" ></pin> <!-- A1 : gnd -->
-				<pin index="2" name="" ></pin> <!-- A2 : dp1_m2c_p -->
-				<pin index="3" name="" ></pin> <!-- A3 : dp1_m2c_n -->
-				<pin index="4" name="" ></pin> <!-- A4 : gnd -->
-				<pin index="5" name="" ></pin> <!-- A5 : gnd -->
-				<pin index="6" name="" ></pin> <!-- A6 : dp2_m2c_p -->
-				<pin index="7" name="" ></pin> <!-- A7 : dp2_m2c_n -->
-				<pin index="8" name="" ></pin> <!-- A8 : gnd -->
-				<pin index="9" name="" ></pin> <!-- A9 : gnd -->
-				<pin index="10" name="" ></pin> <!-- A10 : dp3_m2c_p -->
-				<pin index="11" name="" ></pin> <!-- A11 : dp3_m2c_n -->
-				<pin index="12" name="" ></pin> <!-- A12 : gnd -->
-				<pin index="13" name="" ></pin> <!-- A13 : gnd -->
-				<pin index="14" name="" ></pin> <!-- A14 : dp4_m2c_p -->
-				<pin index="15" name="" ></pin> <!-- A15 : dp4_m2c_n -->
-				<pin index="16" name="" ></pin> <!-- A16 : gnd -->
-				<pin index="17" name="" ></pin> <!-- A17 : gnd -->
-				<pin index="18" name="" ></pin> <!-- A18 : dp5_m2c_p -->
-				<pin index="19" name="" ></pin> <!-- A19 : dp5_m2c_n -->
-				<pin index="20" name="" ></pin> <!-- A20 : gnd -->
-				<pin index="21" name="" ></pin> <!-- A21 : gnd -->
-				<pin index="22" name="serdin6_p" ></pin> <!-- A22 : dp1_c2m_p -->
-				<pin index="23" name="serdin6_n" ></pin> <!-- A23 : dp1_c2m_n -->
-				<pin index="24" name="" ></pin> <!-- A24 : gnd -->
-				<pin index="25" name="" ></pin> <!-- A25 : gnd -->
-				<pin index="26" name="serdin5_p" ></pin> <!-- A26 : dp2_c2m_p -->
-				<pin index="27" name="serdin5_n" ></pin> <!-- A27 : dp2_c2m_n -->
-				<pin index="28" name="" ></pin> <!-- A28 : gnd -->
-				<pin index="29" name="" ></pin> <!-- A29 : gnd -->
-				<pin index="30" name="serdin4_p" ></pin> <!-- A30 : dp3_c2m_p -->
-				<pin index="31" name="serdin4_n" ></pin> <!-- A31 : dp3_c2m_n -->
-				<pin index="32" name="" ></pin> <!-- A32 : gnd -->
-				<pin index="33" name="" ></pin> <!-- A33 : gnd -->
-				<pin index="34" name="serdin2_n" ></pin> <!-- A34 : dp4_c2m_p -->
-				<pin index="35" name="serdin2_p" ></pin> <!-- A35 : dp4_c2m_n -->
-				<pin index="36" name="" ></pin> <!-- A36 : gnd -->
-				<pin index="37" name="" ></pin> <!-- A37 : gnd -->
-				<pin index="38" name="serdin0_n" ></pin> <!-- A38 : dp5_c2m_p -->
-				<pin index="39" name="serdin0_p" ></pin> <!-- A39 : dp5_c2m_n -->
-				<pin index="40" name="" ></pin> <!-- A40 : gnd -->
-				<pin index="41" name="" ></pin> <!-- B1 : clk_dir -->
-				<pin index="42" name="" ></pin> <!-- B2 : gnd -->
-				<pin index="43" name="" ></pin> <!-- B3 : gnd -->
-				<pin index="44" name="" ></pin> <!-- B4 : dp9_m2c_p -->
-				<pin index="45" name="" ></pin> <!-- B5 : dp9_m2c_n -->
-				<pin index="46" name="" ></pin> <!-- B6 : gnd -->
-				<pin index="47" name="" ></pin> <!-- B7 : gnd -->
-				<pin index="48" name="" ></pin> <!-- B8 : dp8_m2c_p -->
-				<pin index="49" name="" ></pin> <!-- B9 : dp8_m2c_n -->
-				<pin index="50" name="" ></pin> <!-- B10 : gnd -->
-				<pin index="51" name="" ></pin> <!-- B11 : gnd -->
-				<pin index="52" name="serdin3_n" ></pin> <!-- B12 : dp7_m2c_p -->
-				<pin index="53" name="serdin3_p" ></pin> <!-- B13 : dp7_m2c_n -->
-				<pin index="54" name="" ></pin> <!-- B14 : gnd -->
-				<pin index="55" name="" ></pin> <!-- B15 : gnd -->
-				<pin index="56" name="" ></pin> <!-- B16 : dp6_m2c_p -->
-				<pin index="57" name="" ></pin> <!-- B17 : dp6_m2c_n -->
-				<pin index="58" name="" ></pin> <!-- B18 : gnd -->
-				<pin index="59" name="" ></pin> <!-- B19 : gnd -->
-				<pin index="60" name="br40_ext_p" ></pin> <!-- B20 : gbtclk1_m2c_p -->
-				<pin index="61" name="br40_ext_n" ></pin> <!-- B21 : gbtclk1_m2c_n -->
-				<pin index="62" name="" ></pin> <!-- B22 : gnd -->
-				<pin index="63" name="" ></pin> <!-- B23 : gnd -->
-				<pin index="64" name="" ></pin> <!-- B24 : dp9_c2m_p -->
-				<pin index="65" name="" ></pin> <!-- B25 : dp9_c2m_n -->
-				<pin index="66" name="" ></pin> <!-- B26 : gnd -->
-				<pin index="67" name="" ></pin> <!-- B27 : gnd -->
-				<pin index="68" name="" ></pin> <!-- B28 : dp8_c2m_p -->
-				<pin index="69" name="" ></pin> <!-- B29 : dp8_c2m_n -->
-				<pin index="70" name="" ></pin> <!-- B30 : gnd -->
-				<pin index="71" name="" ></pin> <!-- B31 : gnd -->
-				<pin index="72" name="" ></pin> <!-- B32 : dp7_c2m_p -->
-				<pin index="73" name="" ></pin> <!-- B33 : dp7_c2m_n -->
-				<pin index="74" name="" ></pin> <!-- B34 : gnd -->
-				<pin index="75" name="" ></pin> <!-- B35 : gnd -->
-				<pin index="76" name="serdin1_n" ></pin> <!-- B36 : dp6_c2m_p -->
-				<pin index="77" name="serdin1_p" ></pin> <!-- B37 : dp6_c2m_n -->
-				<pin index="78" name="" ></pin> <!-- B38 : gnd -->
-				<pin index="79" name="" ></pin> <!-- B39 : gnd -->
-				<pin index="80" name="" ></pin> <!-- B40 : res0 -->
-				<pin index="81" name="" ></pin> <!-- C1 : gnd -->
-				<pin index="82" name="serdin7_p" ></pin> <!-- C2 : dp0_c2m_p -->
-				<pin index="83" name="serdin7_n" ></pin> <!-- C3 : dp0_c2m_n -->
-				<pin index="84" name="" ></pin> <!-- C4 : gnd -->
-				<pin index="85" name="" ></pin> <!-- C5 : gnd -->
-				<pin index="86" name="" ></pin> <!-- C6 : dp0_m2c_p -->
-				<pin index="87" name="" ></pin> <!-- C7 : dp0_m2c_n -->
-				<pin index="88" name="" ></pin> <!-- C8 : gnd -->
-				<pin index="89" name="" ></pin> <!-- C9 : gnd -->
-				<pin index="90" name="fmc_txen_0" ></pin> <!-- C10 : la06_p -->
-				<pin index="91" name="fmc_txen_1" ></pin> <!-- C11 : la06_n -->
-				<pin index="92" name="" ></pin> <!-- C12 : gnd -->
-				<pin index="93" name="" ></pin> <!-- C13 : gnd -->
-				<pin index="94" name="" ></pin> <!-- C14 : la10_p -->
-				<pin index="95" name="" ></pin> <!-- C15 : la10_n -->
-				<pin index="96" name="" ></pin> <!-- C16 : gnd -->
-				<pin index="97" name="" ></pin> <!-- C17 : gnd -->
-				<pin index="98" name="" ></pin> <!-- C18 : la14_p -->
-				<pin index="99" name="" ></pin> <!-- C19 : la14_n -->
-				<pin index="100" name="" ></pin> <!-- C20 : gnd -->
-				<pin index="101" name="" ></pin> <!-- C21 : gnd -->
-				<pin index="102" name="" ></pin> <!-- C22 : la18_p_cc -->
-				<pin index="103" name="" ></pin> <!-- C23 : la18_n_cc -->
-				<pin index="104" name="" ></pin> <!-- C24 : gnd -->
-				<pin index="105" name="" ></pin> <!-- C25 : gnd -->
-				<pin index="106" name="" ></pin> <!-- C26 : la27_p -->
-				<pin index="107" name="" ></pin> <!-- C27 : la27_n -->
-				<pin index="108" name="" ></pin> <!-- C28 : gnd -->
-				<pin index="109" name="" ></pin> <!-- C29 : gnd -->
-				<pin index="110" name="fmc_scl" ></pin> <!-- C30 : scl -->
-				<pin index="111" name="fmc_sda" ></pin> <!-- C31 : sda -->
-				<pin index="112" name="" ></pin> <!-- C32 : gnd -->
-				<pin index="113" name="" ></pin> <!-- C33 : gnd -->
-				<pin index="114" name="" ></pin> <!-- C34 : ga0 -->
-				<pin index="115" name="" ></pin> <!-- C35 : 12p0v -->
-				<pin index="116" name="" ></pin> <!-- C36 : gnd -->
-				<pin index="117" name="" ></pin> <!-- C37 : 12p0v -->
-				<pin index="118" name="" ></pin> <!-- C38 : gnd -->
-				<pin index="119" name="" ></pin> <!-- C39 : 3p3v -->
-				<pin index="120" name="" ></pin> <!-- C40 : gnd -->
-				<pin index="121" name="" ></pin> <!-- D1 : pg_c2m -->
-				<pin index="122" name="" ></pin> <!-- D2 : gnd -->
-				<pin index="123" name="" ></pin> <!-- D3 : gnd -->
-				<pin index="124" name="br40_p" ></pin> <!-- D4 : gbtclk0_m2c_p -->
-				<pin index="125" name="br40_n" ></pin> <!-- D5 : gbtclk0_m2c_n -->
-				<pin index="126" name="" ></pin> <!-- D6 : gnd -->
-				<pin index="127" name="" ></pin> <!-- D7 : gnd -->
-				<pin index="128" name="sync0_p" ></pin> <!-- D8 : la01_p_cc -->
-				<pin index="129" name="sync0_n" ></pin> <!-- D9 : la01_n_cc -->
-				<pin index="130" name="" ></pin> <!-- D10 : gnd -->
-				<pin index="131" name="fmc_cs2" ></pin> <!-- D11 : la05_p -->
-				<pin index="132" name="fmc_spi_en" ></pin> <!-- D12 : la05_n -->
-				<pin index="133" name="" ></pin> <!-- D13 : gnd -->
-				<pin index="134" name="" ></pin> <!-- D14 : la09_p -->
-				<pin index="135" name="" ></pin> <!-- D15 : la09_n -->
-				<pin index="136" name="" ></pin> <!-- D16 : gnd -->
-				<pin index="137" name="" ></pin> <!-- D17 : la13_p -->
-				<pin index="138" name="" ></pin> <!-- D18 : la13_n -->
-				<pin index="139" name="" ></pin> <!-- D19 : gnd -->
-				<pin index="140" name="" ></pin> <!-- D20 : la17_p_cc -->
-				<pin index="141" name="" ></pin> <!-- D21 : la17_n_cc -->
-				<pin index="142" name="" ></pin> <!-- D22 : gnd -->
-				<pin index="143" name="" ></pin> <!-- D23 : la23_p -->
-				<pin index="144" name="" ></pin> <!-- D24 : la23_n -->
-				<pin index="145" name="" ></pin> <!-- D25 : gnd -->
-				<pin index="146" name="" ></pin> <!-- D26 : la26_p -->
-				<pin index="147" name="" ></pin> <!-- D27 : la26_n -->
-				<pin index="148" name="" ></pin> <!-- D28 : gnd -->
-				<pin index="149" name="" ></pin> <!-- D29 : tck -->
-				<pin index="150" name="" ></pin> <!-- D30 : tdi -->
-				<pin index="151" name="" ></pin> <!-- D31 : tdo -->
-				<pin index="152" name="" ></pin> <!-- D32 : 3p3vaux -->
-				<pin index="153" name="" ></pin> <!-- D33 : tms -->
-				<pin index="154" name="" ></pin> <!-- D34 : trst_l -->
-				<pin index="155" name="" ></pin> <!-- D35 : ga1 -->
-				<pin index="156" name="" ></pin> <!-- D36 : 3p3v -->
-				<pin index="157" name="" ></pin> <!-- D37 : gnd -->
-				<pin index="158" name="" ></pin> <!-- D38 : 3p3v -->
-				<pin index="159" name="" ></pin> <!-- D39 : gnd -->
-				<pin index="160" name="" ></pin> <!-- D40 : 3p3v -->
-				<pin index="161" name="" ></pin> <!-- E1 : gnd -->
-				<pin index="162" name="" ></pin> <!-- E2 : ha01_p_cc -->
-				<pin index="163" name="" ></pin> <!-- E3 : ha01_n_cc -->
-				<pin index="164" name="" ></pin> <!-- E4 : gnd -->
-				<pin index="165" name="" ></pin> <!-- E5 : gnd -->
-				<pin index="166" name="" ></pin> <!-- E6 : ha05_p -->
-				<pin index="167" name="" ></pin> <!-- E7 : ha05_n -->
-				<pin index="168" name="" ></pin> <!-- E8 : gnd -->
-				<pin index="169" name="" ></pin> <!-- E9 : ha09_p -->
-				<pin index="170" name="" ></pin> <!-- E10 : ha09_n -->
-				<pin index="171" name="" ></pin> <!-- E11 : gnd -->
-				<pin index="172" name="" ></pin> <!-- E12 : ha13_p -->
-				<pin index="173" name="" ></pin> <!-- E13 : ha13_n -->
-				<pin index="174" name="" ></pin> <!-- E14 : gnd -->
-				<pin index="175" name="" ></pin> <!-- E15 : ha16_p -->
-				<pin index="176" name="" ></pin> <!-- E16 : ha16_n -->
-				<pin index="177" name="" ></pin> <!-- E17 : gnd -->
-				<pin index="178" name="" ></pin> <!-- E18 : ha20_p -->
-				<pin index="179" name="" ></pin> <!-- E19 : ha20_n -->
-				<pin index="180" name="" ></pin> <!-- E20 : gnd -->
-				<pin index="181" name="" ></pin> <!-- E21 : hb03_p -->
-				<pin index="182" name="" ></pin> <!-- E22 : hb03_n -->
-				<pin index="183" name="" ></pin> <!-- E23 : gnd -->
-				<pin index="184" name="" ></pin> <!-- E24 : hb05_p -->
-				<pin index="185" name="" ></pin> <!-- E25 : hb05_n -->
-				<pin index="186" name="" ></pin> <!-- E26 : gnd -->
-				<pin index="187" name="" ></pin> <!-- E27 : hb09_p -->
-				<pin index="188" name="" ></pin> <!-- E28 : hb09_n -->
-				<pin index="189" name="" ></pin> <!-- E29 : gnd -->
-				<pin index="190" name="" ></pin> <!-- E30 : hb13_p -->
-				<pin index="191" name="" ></pin> <!-- E31 : hb13_n -->
-				<pin index="192" name="" ></pin> <!-- E32 : gnd -->
-				<pin index="193" name="" ></pin> <!-- E33 : hb19_p -->
-				<pin index="194" name="" ></pin> <!-- E34 : hb19_n -->
-				<pin index="195" name="" ></pin> <!-- E35 : gnd -->
-				<pin index="196" name="" ></pin> <!-- E36 : hb21_p -->
-				<pin index="197" name="" ></pin> <!-- E37 : hb21_n -->
-				<pin index="198" name="" ></pin> <!-- E38 : gnd -->
-				<pin index="199" name="" ></pin> <!-- E39 : vadj -->
-				<pin index="200" name="" ></pin> <!-- E40 : gnd -->
-				<pin index="201" name="" ></pin> <!-- F1 : pg_m2c -->
-				<pin index="202" name="" ></pin> <!-- F2 : gnd -->
-				<pin index="203" name="" ></pin> <!-- F3 : gnd -->
-				<pin index="204" name="" ></pin> <!-- F4 : ha00_p_cc -->
-				<pin index="205" name="" ></pin> <!-- F5 : ha00_n_cc -->
-				<pin index="206" name="" ></pin> <!-- F6 : gnd -->
-				<pin index="207" name="" ></pin> <!-- F7 : ha04_p -->
-				<pin index="208" name="" ></pin> <!-- F8 : ha04_n -->
-				<pin index="209" name="" ></pin> <!-- F9 : gnd -->
-				<pin index="210" name="" ></pin> <!-- F10 : ha08_p -->
-				<pin index="211" name="" ></pin> <!-- F11 : ha08_n -->
-				<pin index="212" name="" ></pin> <!-- F12 : gnd -->
-				<pin index="213" name="" ></pin> <!-- F13 : ha12_p -->
-				<pin index="214" name="" ></pin> <!-- F14 : ha12_n -->
-				<pin index="215" name="" ></pin> <!-- F15 : gnd -->
-				<pin index="216" name="" ></pin> <!-- F16 : ha15_p -->
-				<pin index="217" name="" ></pin> <!-- F17 : ha15_n -->
-				<pin index="218" name="" ></pin> <!-- F18 : gnd -->
-				<pin index="219" name="" ></pin> <!-- F19 : ha19_p -->
-				<pin index="220" name="" ></pin> <!-- F20 : ha19_n -->
-				<pin index="221" name="" ></pin> <!-- F21 : gnd -->
-				<pin index="222" name="" ></pin> <!-- F22 : hb02_p -->
-				<pin index="223" name="" ></pin> <!-- F23 : hb02_n -->
-				<pin index="224" name="" ></pin> <!-- F24 : gnd -->
-				<pin index="225" name="" ></pin> <!-- F25 : hb04_p -->
-				<pin index="226" name="" ></pin> <!-- F26 : hb04_n -->
-				<pin index="227" name="" ></pin> <!-- F27 : gnd -->
-				<pin index="228" name="" ></pin> <!-- F28 : hb08_p -->
-				<pin index="229" name="" ></pin> <!-- F29 : hb08_n -->
-				<pin index="230" name="" ></pin> <!-- F30 : gnd -->
-				<pin index="231" name="" ></pin> <!-- F31 : hb12_p -->
-				<pin index="232" name="" ></pin> <!-- F32 : hb12_n -->
-				<pin index="233" name="" ></pin> <!-- F33 : gnd -->
-				<pin index="234" name="" ></pin> <!-- F34 : hb16_p -->
-				<pin index="235" name="" ></pin> <!-- F35 : hb16_n -->
-				<pin index="236" name="" ></pin> <!-- F36 : gnd -->
-				<pin index="237" name="" ></pin> <!-- F37 : hb20_p -->
-				<pin index="238" name="" ></pin> <!-- F38 : hb20_n -->
-				<pin index="239" name="" ></pin> <!-- F39 : gnd -->
-				<pin index="240" name="" ></pin> <!-- F40 : vadj -->
-				<pin index="241" name="" ></pin> <!-- G1 : gnd -->
-				<pin index="242" name="" ></pin> <!-- G2 : clk1_m2c_p -->
-				<pin index="243" name="" ></pin> <!-- G3 : clk1_m2c_n -->
-				<pin index="244" name="" ></pin> <!-- G4 : gnd -->
-				<pin index="245" name="" ></pin> <!-- G5 : gnd -->
-				<pin index="246" name="sysref2_p" ></pin> <!-- G6 : la00_p_cc -->
-				<pin index="247" name="sysref2_n" ></pin> <!-- G7 : la00_n_cc -->
-				<pin index="248" name="" ></pin> <!-- G8 : gnd -->
-				<pin index="249" name="fmc_sck" ></pin> <!-- G9 : la03_p -->
-				<pin index="250" name="fmc_mosi" ></pin> <!-- G10 : la03_n -->
-				<pin index="251" name="" ></pin> <!-- G11 : gnd -->
-				<pin index="252" name="" ></pin> <!-- G12 : la08_p -->
-				<pin index="253" name="" ></pin> <!-- G13 : la08_n -->
-				<pin index="254" name="" ></pin> <!-- G14 : gnd -->
-				<pin index="255" name="" ></pin> <!-- G15 : la12_p -->
-				<pin index="256" name="" ></pin> <!-- G16 : la12_n -->
-				<pin index="257" name="" ></pin> <!-- G17 : gnd -->
-				<pin index="258" name="" ></pin> <!-- G18 : la16_p -->
-				<pin index="259" name="" ></pin> <!-- G19 : la16_n -->
-				<pin index="260" name="" ></pin> <!-- G20 : gnd -->
-				<pin index="261" name="" ></pin> <!-- G21 : la20_p -->
-				<pin index="262" name="" ></pin> <!-- G22 : la20_n -->
-				<pin index="263" name="" ></pin> <!-- G23 : gnd -->
-				<pin index="264" name="" ></pin> <!-- G24 : la22_p -->
-				<pin index="265" name="" ></pin> <!-- G25 : la22_n -->
-				<pin index="266" name="" ></pin> <!-- G26 : gnd -->
-				<pin index="267" name="" ></pin> <!-- G27 : la25_p -->
-				<pin index="268" name="" ></pin> <!-- G28 : la25_n -->
-				<pin index="269" name="" ></pin> <!-- G29 : gnd -->
-				<pin index="270" name="" ></pin> <!-- G30 : la29_p -->
-				<pin index="271" name="" ></pin> <!-- G31 : la29_n -->
-				<pin index="272" name="" ></pin> <!-- G32 : gnd -->
-				<pin index="273" name="" ></pin> <!-- G33 : la31_p -->
-				<pin index="274" name="" ></pin> <!-- G34 : la31_n -->
-				<pin index="275" name="" ></pin> <!-- G35 : gnd -->
-				<pin index="276" name="" ></pin> <!-- G36 : la33_p -->
-				<pin index="277" name="" ></pin> <!-- G37 : la33_n -->
-				<pin index="278" name="" ></pin> <!-- G38 : gnd -->
-				<pin index="279" name="" ></pin> <!-- G39 : vadj -->
-				<pin index="280" name="" ></pin> <!-- G40 : gnd -->
-				<pin index="281" name="" ></pin> <!-- H1 : vref_a_m2c -->
-				<pin index="282" name="" ></pin> <!-- H2 : prsnt_m2c_l -->
-				<pin index="283" name="" ></pin> <!-- H3 : gnd -->
-				<pin index="284" name="" ></pin> <!-- H4 : clk0_m2c_p -->
-				<pin index="285" name="" ></pin> <!-- H5 : clk0_m2c_n -->
-				<pin index="286" name="" ></pin> <!-- H6 : gnd -->
-				<pin index="287" name="" ></pin> <!-- H7 : la02_p -->
-				<pin index="288" name="" ></pin> <!-- H8 : la02_n -->
-				<pin index="289" name="" ></pin> <!-- H9 : gnd -->
-				<pin index="290" name="fmc_miso" ></pin> <!-- H10 : la04_p -->
-				<pin index="291" name="fmc_cs1" ></pin> <!-- H11 : la04_n -->
-				<pin index="292" name="" ></pin> <!-- H12 : gnd -->
-				<pin index="293" name="" ></pin> <!-- H13 : la07_p -->
-				<pin index="294" name="" ></pin> <!-- H14 : la07_n -->
-				<pin index="295" name="" ></pin> <!-- H15 : gnd -->
-				<pin index="296" name="" ></pin> <!-- H16 : la11_p -->
-				<pin index="297" name="" ></pin> <!-- H17 : la11_n -->
-				<pin index="298" name="" ></pin> <!-- H18 : gnd -->
-				<pin index="299" name="" ></pin> <!-- H19 : la15_p -->
-				<pin index="300" name="" ></pin> <!-- H20 : la15_n -->
-				<pin index="301" name="" ></pin> <!-- H21 : gnd -->
-				<pin index="302" name="" ></pin> <!-- H22 : la19_p -->
-				<pin index="303" name="" ></pin> <!-- H23 : la19_n -->
-				<pin index="304" name="" ></pin> <!-- H24 : gnd -->
-				<pin index="305" name="" ></pin> <!-- H25 : la21_p -->
-				<pin index="306" name="" ></pin> <!-- H26 : la21_n -->
-				<pin index="307" name="" ></pin> <!-- H27 : gnd -->
-				<pin index="308" name="" ></pin> <!-- H28 : la24_p -->
-				<pin index="309" name="" ></pin> <!-- H29 : la24_n -->
-				<pin index="310" name="" ></pin> <!-- H30 : gnd -->
-				<pin index="311" name="" ></pin> <!-- H31 : la28_p -->
-				<pin index="312" name="" ></pin> <!-- H32 : la28_n -->
-				<pin index="313" name="" ></pin> <!-- H33 : gnd -->
-				<pin index="314" name="" ></pin> <!-- H34 : la30_p -->
-				<pin index="315" name="" ></pin> <!-- H35 : la30_n -->
-				<pin index="316" name="" ></pin> <!-- H36 : gnd -->
-				<pin index="317" name="" ></pin> <!-- H37 : la32_p -->
-				<pin index="318" name="" ></pin> <!-- H38 : la32_n -->
-				<pin index="319" name="" ></pin> <!-- H39 : gnd -->
-				<pin index="320" name="" ></pin> <!-- H40 : vadj -->
-				<pin index="321" name="" ></pin> <!-- J1 : gnd -->
-				<pin index="322" name="" ></pin> <!-- J2 : clk3_bidir_p -->
-				<pin index="323" name="" ></pin> <!-- J3 : clk3_bidir_n -->
-				<pin index="324" name="" ></pin> <!-- J4 : gnd -->
-				<pin index="325" name="" ></pin> <!-- J5 : gnd -->
-				<pin index="326" name="" ></pin> <!-- J6 : ha03_p -->
-				<pin index="327" name="" ></pin> <!-- J7 : ha03_n -->
-				<pin index="328" name="" ></pin> <!-- J8 : gnd -->
-				<pin index="329" name="" ></pin> <!-- J9 : ha07_p -->
-				<pin index="330" name="" ></pin> <!-- J10 : ha07_n -->
-				<pin index="331" name="" ></pin> <!-- J11 : gnd -->
-				<pin index="332" name="" ></pin> <!-- J12 : ha11_p -->
-				<pin index="333" name="" ></pin> <!-- J13 : ha11_n -->
-				<pin index="334" name="" ></pin> <!-- J14 : gnd -->
-				<pin index="335" name="" ></pin> <!-- J15 : ha14_p -->
-				<pin index="336" name="" ></pin> <!-- J16 : ha14_n -->
-				<pin index="337" name="" ></pin> <!-- J17 : gnd -->
-				<pin index="338" name="" ></pin> <!-- J18 : ha18_p -->
-				<pin index="339" name="" ></pin> <!-- J19 : ha18_n -->
-				<pin index="340" name="" ></pin> <!-- J20 : gnd -->
-				<pin index="341" name="" ></pin> <!-- J21 : ha22_p -->
-				<pin index="342" name="" ></pin> <!-- J22 : ha22_n -->
-				<pin index="343" name="" ></pin> <!-- J23 : gnd -->
-				<pin index="344" name="" ></pin> <!-- J24 : hb01_p -->
-				<pin index="345" name="" ></pin> <!-- J25 : hb01_n -->
-				<pin index="346" name="" ></pin> <!-- J26 : gnd -->
-				<pin index="347" name="" ></pin> <!-- J27 : hb07_p -->
-				<pin index="348" name="" ></pin> <!-- J28 : hb07_n -->
-				<pin index="349" name="" ></pin> <!-- J29 : gnd -->
-				<pin index="350" name="" ></pin> <!-- J30 : hb11_p -->
-				<pin index="351" name="" ></pin> <!-- J31 : hb11_n -->
-				<pin index="352" name="" ></pin> <!-- J32 : gnd -->
-				<pin index="353" name="" ></pin> <!-- J33 : hb15_p -->
-				<pin index="354" name="" ></pin> <!-- J34 : hb15_n -->
-				<pin index="355" name="" ></pin> <!-- J35 : gnd -->
-				<pin index="356" name="" ></pin> <!-- J36 : hb18_p -->
-				<pin index="357" name="" ></pin> <!-- J37 : hb18_n -->
-				<pin index="358" name="" ></pin> <!-- J38 : gnd -->
-				<pin index="359" name="" ></pin> <!-- J39 : vio_b_m2c -->
-				<pin index="360" name="" ></pin> <!-- J40 : gnd -->
-				<pin index="361" name="" ></pin> <!-- K1 : vref_b_m2c -->
-				<pin index="362" name="" ></pin> <!-- K2 : gnd -->
-				<pin index="363" name="" ></pin> <!-- K3 : gnd -->
-				<pin index="364" name="" ></pin> <!-- K4 : clk2_bidir_p -->
-				<pin index="365" name="" ></pin> <!-- K5 : clk2_bidir_n -->
-				<pin index="366" name="" ></pin> <!-- K6 : gnd -->
-				<pin index="367" name="" ></pin> <!-- K7 : ha02_p -->
-				<pin index="368" name="" ></pin> <!-- K8 : ha02_n -->
-				<pin index="369" name="" ></pin> <!-- K9 : gnd -->
-				<pin index="370" name="" ></pin> <!-- K10 : ha06_p -->
-				<pin index="371" name="" ></pin> <!-- K11 : ha06_n -->
-				<pin index="372" name="" ></pin> <!-- K12 : gnd -->
-				<pin index="373" name="" ></pin> <!-- K13 : ha10_p -->
-				<pin index="374" name="" ></pin> <!-- K14 : ha10_n -->
-				<pin index="375" name="" ></pin> <!-- K15 : gnd -->
-				<pin index="376" name="" ></pin> <!-- K16 : ha17_p_cc -->
-				<pin index="377" name="" ></pin> <!-- K17 : ha17_n_cc -->
-				<pin index="378" name="" ></pin> <!-- K18 : gnd -->
-				<pin index="379" name="" ></pin> <!-- K19 : ha21_p -->
-				<pin index="380" name="" ></pin> <!-- K20 : ha21_n -->
-				<pin index="381" name="" ></pin> <!-- K21 : gnd -->
-				<pin index="382" name="" ></pin> <!-- K22 : ha23_p -->
-				<pin index="383" name="" ></pin> <!-- K23 : ha23_n -->
-				<pin index="384" name="" ></pin> <!-- K24 : gnd -->
-				<pin index="385" name="" ></pin> <!-- K25 : hb00_p_cc -->
-				<pin index="386" name="" ></pin> <!-- K26 : hb00_n_cc -->
-				<pin index="387" name="" ></pin> <!-- K27 : gnd -->
-				<pin index="388" name="" ></pin> <!-- K28 : hb06_p_cc -->
-				<pin index="389" name="" ></pin> <!-- K29 : hb06_n_cc -->
-				<pin index="390" name="" ></pin> <!-- K30 : gnd -->
-				<pin index="391" name="" ></pin> <!-- K31 : hb10_p -->
-				<pin index="392" name="" ></pin> <!-- K32 : hb10_n -->
-				<pin index="393" name="" ></pin> <!-- K33 : gnd -->
-				<pin index="394" name="" ></pin> <!-- K34 : hb14_p -->
-				<pin index="395" name="" ></pin> <!-- K35 : hb14_n -->
-				<pin index="396" name="" ></pin> <!-- K36 : gnd -->
-				<pin index="397" name="" ></pin> <!-- K37 : hb17_p_cc -->
-				<pin index="398" name="" ></pin> <!-- K38 : hb17_n_cc -->
-				<pin index="399" name="" ></pin> <!-- K39 : gnd -->
-				<pin index="400" name="" ></pin> <!-- K40 : vio_b_m2c -->
-            </pins>
-            <interfaces>
-				<interface mode="master" name="jesd204_gt_8x" type="xilinx.com:ip:jesd204:7.2" of_component="ad9174_jesd" preset_proc="jesd204_preset" >
-				<description>JESD204 Core</description>
-				<preferred_ips>
-					<preferred_ip vendor="xilinx.com" library="ip" name="jesd204" order="0"/>
-				</preferred_ips>
-				<port_maps>
-					<port_map logical_port="txn" physical_port="txn8" dir="out" left="7" right="0">
-						<pin_maps>
-							<pin_map port_index="0" component_pin="serdin0_n"/>
-							<pin_map port_index="1" component_pin="serdin1_n"/>
-							<pin_map port_index="2" component_pin="serdin2_n"/>
-							<pin_map port_index="3" component_pin="serdin3_n"/>
-							<pin_map port_index="4" component_pin="serdin4_n"/>
-							<pin_map port_index="5" component_pin="serdin5_n"/>
-							<pin_map port_index="6" component_pin="serdin6_n"/>
-							<pin_map port_index="7" component_pin="serdin7_n"/>					  
-						</pin_maps>
-					</port_map>
-					<port_map logical_port="txp" physical_port="txp8" dir="out" left="7" right="0">
-					  <pin_maps>
-							<pin_map port_index="0" component_pin="serdin0_p"/>
-							<pin_map port_index="1" component_pin="serdin1_p"/>
-							<pin_map port_index="2" component_pin="serdin2_p"/>
-							<pin_map port_index="3" component_pin="serdin3_p"/>
-							<pin_map port_index="4" component_pin="serdin4_p"/>
-							<pin_map port_index="5" component_pin="serdin5_p"/>
-							<pin_map port_index="6" component_pin="serdin6_p"/>
-							<pin_map port_index="7" component_pin="serdin7_p"/>	
-					  </pin_maps>
-					</port_map>
-				</port_maps>
-				<parameters>
-					<parameter name="CONFIG.AXICLK_FREQ" value="100"/>
-					<parameter name="CONFIG.C_DEFAULT_F" value="1" />
-					<parameter name="CONFIG.C_DEFAULT_K" value="2" />
-					<parameter name="CONFIG.C_DEFAULT_SCR" value="0" />
-					<parameter name="CONFIG.C_DEFAULT_SYSREF_ALWAYS" value="0" />
-					<parameter name="CONFIG.C_DEFAULT_SYSREF_REQUIRED" value="1" />
-					<parameter name="CONFIG.C_LANES" value="8" />
-					<parameter name="CONFIG.C_LMFC_BUFFER_SIZE" value="1024" />
-					<parameter name="CONFIG.C_NODE_IS_TRANSMIT" value="1" />
-					<parameter name="CONFIG.C_PLL_SELECTION" value="1" />
-					<parameter name="CONFIG.C_SYSREF_SAMPLING_EDGE" value="0" />
-					<parameter name="CONFIG.DRPCLK_FREQ" value="100" />
-					<parameter name="CONFIG.GT_Line_Rate" value="15" />
-					<parameter name="CONFIG.GT_REFCLK_FREQ" value="187.5" />
-					<parameter name="CONFIG.Global_clk_sel" value="true" />
-					<parameter name="CONFIG.SupportLevel" value="1" />
-					<parameter name="CONFIG.Transceiver" value="GTHE3" />
-					<parameter name="CONFIG.TransceiverControl" value="false" />
-					<parameter name="CONFIG.USE_JSPAT" value="false" />
-					<parameter name="CONFIG.USE_RPAT" value="false" />
-				 </parameters>
-				</interface>
-				<interface mode="master" name="spi1" type="xilinx.com:interface:spi_rtl:1.0" of_component="ad9174_spi" >
-					<preferred_ips>
-						<preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
-					</preferred_ips>
-					<port_maps>
-						<port_map logical_port="IO0_I" physical_port="spi_miso_i" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="fmc_miso"/>
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="IO0_O" physical_port="spi_miso_o" dir="out">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="fmc_miso"/>
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="IO0_T" physical_port="spi_miso_t" dir="out">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="fmc_miso"/>
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="IO1_I" physical_port="spi_mosi_i" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="fmc_mosi"/>
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="IO1_O" physical_port="spi_mosi_o" dir="out">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="fmc_mosi"/>
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="IO1_T" physical_port="spi_mosi_t" dir="out">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="fmc_mosi"/>
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="SCK_I" physical_port="spi_sclk_i" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="fmc_sck"/>
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="SCK_O" physical_port="spi_sclk_o" dir="out">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="fmc_sck"/>
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="SCK_T" physical_port="spi_sclk_t" dir="out">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="fmc_sck"/>
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="SS_I" physical_port="spi_ss_i" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="fmc_cs1"/>
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="SS_O" physical_port="spi_ss_o" dir="out">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="fmc_cs1"/>
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="SS_T" physical_port="spi_ss_t" dir="out">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="fmc_cs1"/>
-							</pin_maps>
-						</port_map>
-					</port_maps>
-				</interface>								
-            </interfaces>
-        </component>
-        <component name="J34" display_name="AD9174 Clock IN - Differential (NOT USED)" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
-		<component name="J42" display_name="AD9174 Clock IN - Single Ended (NOT USED)" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
-		<component name="J41" display_name="HMC7044 Reference Clock - Single Ended" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
-		<component name="J1"  display_name="AD9174 DAC1 Out - Single Ended" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
-		<component name="J2"  display_name="AD9174 DAC0 Out - Single Ended" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
-		<component name="J3"  display_name="AD9174 DAC Clock Out - Single Ended" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
-		<component name="P3"  display_name="SPI Connector" type="connector" sub_type="fixed_io" major_group="FMC HPC">
-			<description>SPI interface for AD9174 and HMC7044</description>
-		</component>
-		<component name="P4"  display_name="USB Connector" type="connector" sub_type="fixed_io" major_group="FMC HPC">
-			<description>USB connector for ACE</description>
-		</component>
-		<component name="ad9174_jesd" display_name="AD9174 JESD" type="chip" sub_type="chip"  major_group="FMC HPC" part_name="AD9174" vendor="Analog Devices" spec_url="www.analog.com">
-			<description>FMC EVAL-AD9174 AD9174 JESD204</description>
-			<component_modes>
-				<component_mode name="jesd204_tx_1" display_name="AD9174 JESD204">
-					<interfaces>
-						<interface name="jesd204_gt_8x" order="0" />
-					</interfaces>
-					<preferred_ips>
-						<preferred_ip vendor="xilinx.com" library="ip" name="jesd204" order="0" />
-					</preferred_ips>
-				</component_mode>
-			</component_modes>		
-		</component>
-		<component name="ad9174_spi" display_name="AD9174 SPI" type="chip" sub_type="chip"  major_group="FMC HPC" part_name="AD9174" vendor="Analog Devices" spec_url="www.analog.com">
-			<description>FMC EVAL-AD9174 AD9174 SPI</description>
-			<component_modes>
-				<component_mode name="jesd204_spi_1" display_name="AD9174 SPI">
-					<interfaces>
-						<interface name="spi1" order="0" />
-					</interfaces>
-					<preferred_ips>
-						<preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0" />
-					</preferred_ips>
-				</component_mode>
-			</component_modes>		
-		</component>		
-    </components>
-    <connections>
-		<connection name="hpc_ad9174_jesd" component1="hpc_connector" component2="ad9174_jesd">
-			<connection_map name="hpc_connector_gtx1_1" typical_delay="5" c1_st_index="38" c1_end_index="38" c2_st_index="1" c2_end_index="1"/>
-			<connection_map name="hpc_connector_gtx1_1" typical_delay="5" c1_st_index="39" c1_end_index="39" c2_st_index="0" c2_end_index="0"/>
-			<connection_map name="hpc_connector_gtx2_1" typical_delay="5" c1_st_index="76" c1_end_index="76" c2_st_index="3" c2_end_index="3"/>
-			<connection_map name="hpc_connector_gtx2_1" typical_delay="5" c1_st_index="77" c1_end_index="77" c2_st_index="2" c2_end_index="2"/>
-			<connection_map name="hpc_connector_gtx3_1" typical_delay="5" c1_st_index="34" c1_end_index="34" c2_st_index="5" c2_end_index="5"/>
-			<connection_map name="hpc_connector_gtx3_1" typical_delay="5" c1_st_index="35" c1_end_index="35" c2_st_index="4" c2_end_index="4"/>
-			<connection_map name="hpc_connector_gtx4_1" typical_delay="5" c1_st_index="52" c1_end_index="52" c2_st_index="7" c2_end_index="7"/>
-			<connection_map name="hpc_connector_gtx4_1" typical_delay="5" c1_st_index="53" c1_end_index="53" c2_st_index="6" c2_end_index="6"/>
-			<connection_map name="hpc_connector_gtx5_1" typical_delay="5" c1_st_index="30" c1_end_index="31" c2_st_index="8" c2_end_index="9"/>
-			<connection_map name="hpc_connector_gtx6_1" typical_delay="5" c1_st_index="26" c1_end_index="27" c2_st_index="10" c2_end_index="11"/>
-			<connection_map name="hpc_connector_gtx7_1" typical_delay="5" c1_st_index="22" c1_end_index="23" c2_st_index="12" c2_end_index="13"/>
-			<connection_map name="hpc_connector_gtx8_1" typical_delay="5" c1_st_index="82" c1_end_index="83" c2_st_index="14" c2_end_index="15"/>
-		</connection>
-		<connection name="hpc_ad9174_spi" component1="hpc_connector" component2="ad9174_spi">
-			<connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="290" c1_end_index="290" c2_st_index="0" c2_end_index="0"/>
-			<connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="250" c1_end_index="250" c2_st_index="1" c2_end_index="1"/>	
-			<connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="249" c1_end_index="249" c2_st_index="2" c2_end_index="2"/>	
-			<connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="291" c1_end_index="291" c2_st_index="3" c2_end_index="3"/>	
-		</connection>
-    </connections>
-	<ip_associated_rules>
-		<!--ip_associated_rule name="default">
+<board schema_version="2.2" vendor="analog" name="eval-ad917x" display_name="FMC EVAL-AD917x" url="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad9172.html" preset_file="preset.xml">
+  <images>
+    <image name="ad9172fmc.png" display_name="EVAL-AD9174 BOARD" sub_type="board">
+      <description>FMC EVAL-AD9174 Board Image</description>
+    </image>
+  </images>
+  <compatible_board_revisions>
+    <revision id="0">1.0</revision>
+  </compatible_board_revisions>
+  <file_version>1.0</file_version>
+  <description>FMC EVAL-AD9174</description>
+  <components>
+    <component name="hpc_connector" display_name="FMC EVAL-AD917x" type="connector" sub_type="fmc_hpc" major_group="FMC HPC">
+      <description>FMC HPC connector</description>
+      <parameters>
+        <parameter name="mode" value="hpc" value_type="list" range="hpc"/>
+      </parameters>
+      <pins>
+        <!--pin index="1" name=""/ --> <!-- A1 : gnd -->
+        <!--pin index="2" name=""/ --> <!-- A2 : dp1_m2c_p -->
+        <!--pin index="3" name=""/ --> <!-- A3 : dp1_m2c_n -->
+        <!--pin index="4" name=""/ --> <!-- A4 : gnd -->
+        <!--pin index="5" name=""/ --> <!-- A5 : gnd -->
+        <!--pin index="6" name=""/ --> <!-- A6 : dp2_m2c_p -->
+        <!--pin index="7" name=""/ --> <!-- A7 : dp2_m2c_n -->
+        <!--pin index="8" name=""/ --> <!-- A8 : gnd -->
+        <!--pin index="9" name=""/ --> <!-- A9 : gnd -->
+        <!--pin index="10" name=""/ --> <!-- A10 : dp3_m2c_p -->
+        <!--pin index="11" name=""/ --> <!-- A11 : dp3_m2c_n -->
+        <!--pin index="12" name=""/ --> <!-- A12 : gnd -->
+        <!--pin index="13" name=""/ --> <!-- A13 : gnd -->
+        <!--pin index="14" name=""/ --> <!-- A14 : dp4_m2c_p -->
+        <!--pin index="15" name=""/ --> <!-- A15 : dp4_m2c_n -->
+        <!--pin index="16" name=""/ --> <!-- A16 : gnd -->
+        <!--pin index="17" name=""/ --> <!-- A17 : gnd -->
+        <!--pin index="18" name=""/ --> <!-- A18 : dp5_m2c_p -->
+        <!--pin index="19" name=""/ --> <!-- A19 : dp5_m2c_n -->
+        <!--pin index="20" name=""/ --> <!-- A20 : gnd -->
+        <!--pin index="21" name=""/ --> <!-- A21 : gnd -->
+        <pin index="22" name="serdin6_p"/> <!-- A22 : dp1_c2m_p -->
+        <pin index="23" name="serdin6_n"/> <!-- A23 : dp1_c2m_n -->
+        <!--pin index="24" name=""/ --> <!-- A24 : gnd -->
+        <!--pin index="25" name=""/ --> <!-- A25 : gnd -->
+        <pin index="26" name="serdin5_p"/> <!-- A26 : dp2_c2m_p -->
+        <pin index="27" name="serdin5_n"/> <!-- A27 : dp2_c2m_n -->
+        <!--pin index="28" name=""/ --> <!-- A28 : gnd -->
+        <!--pin index="29" name=""/ --> <!-- A29 : gnd -->
+        <pin index="30" name="serdin4_p"/> <!-- A30 : dp3_c2m_p -->
+        <pin index="31" name="serdin4_n"/> <!-- A31 : dp3_c2m_n -->
+        <!--pin index="32" name=""/ --> <!-- A32 : gnd -->
+        <!--pin index="33" name=""/ --> <!-- A33 : gnd -->
+        <pin index="34" name="serdin2_n"/> <!-- A34 : dp4_c2m_p -->
+        <pin index="35" name="serdin2_p"/> <!-- A35 : dp4_c2m_n -->
+        <!--pin index="36" name=""/ --> <!-- A36 : gnd -->
+        <!--pin index="37" name=""/ --> <!-- A37 : gnd -->
+        <pin index="38" name="serdin0_n"/> <!-- A38 : dp5_c2m_p -->
+        <pin index="39" name="serdin0_p"/> <!-- A39 : dp5_c2m_n -->
+        <!--pin index="40" name=""/ --> <!-- A40 : gnd -->
+        <!--pin index="41" name=""/ --> <!-- B1 : clk_dir -->
+        <!--pin index="42" name=""/ --> <!-- B2 : gnd -->
+        <!--pin index="43" name=""/ --> <!-- B3 : gnd -->
+        <!--pin index="44" name=""/ --> <!-- B4 : dp9_m2c_p -->
+        <!--pin index="45" name=""/ --> <!-- B5 : dp9_m2c_n -->
+        <!--pin index="46" name=""/ --> <!-- B6 : gnd -->
+        <!--pin index="47" name=""/ --> <!-- B7 : gnd -->
+        <!--pin index="48" name=""/ --> <!-- B8 : dp8_m2c_p -->
+        <!--pin index="49" name=""/ --> <!-- B9 : dp8_m2c_n -->
+        <!--pin index="50" name=""/ --> <!-- B10 : gnd -->
+        <!--pin index="51" name=""/ --> <!-- B11 : gnd -->
+        <pin index="52" name="serdin3_n"/> <!-- B12 : dp7_m2c_p -->
+        <pin index="53" name="serdin3_p"/> <!-- B13 : dp7_m2c_n -->
+        <!--pin index="54" name=""/ --> <!-- B14 : gnd -->
+        <!--pin index="55" name=""/ --> <!-- B15 : gnd -->
+        <!--pin index="56" name=""/ --> <!-- B16 : dp6_m2c_p -->
+        <!--pin index="57" name=""/ --> <!-- B17 : dp6_m2c_n -->
+        <!--pin index="58" name=""/ --> <!-- B18 : gnd -->
+        <!--pin index="59" name=""/ --> <!-- B19 : gnd -->
+        <pin index="60" name="br40_ext_p"/> <!-- B20 : gbtclk1_m2c_p -->
+        <pin index="61" name="br40_ext_n"/> <!-- B21 : gbtclk1_m2c_n -->
+        <!--pin index="62" name=""/ --> <!-- B22 : gnd -->
+        <!--pin index="63" name=""/ --> <!-- B23 : gnd -->
+        <!--pin index="64" name=""/ --> <!-- B24 : dp9_c2m_p -->
+		<!--pin index="65" name=""/ --> <!-- B25 : dp9_c2m_n -->
+        <!--pin index="66" name=""/ --> <!-- B26 : gnd -->
+        <!--pin index="67" name=""/ --> <!-- B27 : gnd -->
+        <!--pin index="68" name=""/ --> <!-- B28 : dp8_c2m_p -->
+        <!--pin index="69" name=""/ --> <!-- B29 : dp8_c2m_n -->
+        <!--pin index="70" name=""/ --> <!-- B30 : gnd -->
+        <!--pin index="71" name=""/ --> <!-- B31 : gnd -->
+        <!--pin index="72" name=""/ --> <!-- B32 : dp7_c2m_p -->
+        <!--pin index="73" name=""/ --> <!-- B33 : dp7_c2m_n -->
+        <!--pin index="74" name=""/ --> <!-- B34 : gnd -->
+        <!--pin index="75" name=""/ --> <!-- B35 : gnd -->
+        <pin index="76" name="serdin1_n"/> <!-- B36 : dp6_c2m_p -->
+        <pin index="77" name="serdin1_p"/> <!-- B37 : dp6_c2m_n -->
+        <!--pin index="78" name=""/ --> <!-- B38 : gnd -->
+        <!--pin index="79" name=""/ --> <!-- B39 : gnd -->
+        <!--pin index="80" name=""/ --> <!-- B40 : res0 -->
+        <!--pin index="81" name=""/ --> <!-- C1 : gnd -->
+        <pin index="82" name="serdin7_p"/> <!-- C2 : dp0_c2m_p -->
+        <pin index="83" name="serdin7_n"/> <!-- C3 : dp0_c2m_n -->
+        <!--pin index="84" name=""/ --> <!-- C4 : gnd -->
+        <!--pin index="85" name=""/ --> <!-- C5 : gnd -->
+        <!--pin index="86" name=""/ --> <!-- C6 : dp0_m2c_p -->
+        <!--pin index="87" name=""/ --> <!-- C7 : dp0_m2c_n -->
+        <!--pin index="88" name=""/ --> <!-- C8 : gnd -->
+        <!--pin index="89" name=""/ --> <!-- C9 : gnd -->
+        <pin index="90" name="fmc_txen_0"/> <!-- C10 : la06_p -->
+        <pin index="91" name="fmc_txen_1"/> <!-- C11 : la06_n -->
+        <!--pin index="92" name=""/ --> <!-- C12 : gnd -->
+        <!--pin index="93" name=""/ --> <!-- C13 : gnd -->
+        <!--pin index="94" name=""/ --> <!-- C14 : la10_p -->
+        <!--pin index="95" name=""/ --> <!-- C15 : la10_n -->
+        <!--pin index="96" name=""/ --> <!-- C16 : gnd -->
+        <!--pin index="97" name=""/ --> <!-- C17 : gnd -->
+        <!--pin index="98" name=""/ --> <!-- C18 : la14_p -->
+        <!--pin index="99" name=""/ --> <!-- C19 : la14_n -->
+        <!--pin index="100" name=""/ --> <!-- C20 : gnd -->
+        <!--pin index="101" name=""/ -->       <!-- C21 : gnd -->
+        <!--pin index="102" name=""/ --> <!-- C22 : la18_p_cc -->
+        <!--pin index="103" name=""/ --> <!-- C23 : la18_n_cc -->
+        <!--pin index="104" name=""/ --> <!-- C24 : gnd -->
+        <!--pin index="105" name=""/ --> <!-- C25 : gnd -->
+        <!--pin index="106" name=""/ --> <!-- C26 : la27_p -->
+        <!--pin index="107" name=""/ --> <!-- C27 : la27_n -->
+        <!--pin index="108" name=""/ --> <!-- C28 : gnd -->
+        <!--pin index="109" name=""/ --> <!-- C29 : gnd -->
+        <pin index="110" name="fmc_scl"/> <!-- C30 : scl -->
+        <pin index="111" name="fmc_sda"/> <!-- C31 : sda -->
+        <!--pin index="112" name=""/ --> <!-- C32 : gnd -->
+        <!--pin index="113" name=""/ --> <!-- C33 : gnd -->
+        <!--pin index="114" name=""/ --> <!-- C34 : ga0 -->
+        <!--pin index="115" name=""/ --> <!-- C35 : 12p0v -->
+        <!--pin index="116" name=""/ --> <!-- C36 : gnd -->
+        <!--pin index="117" name=""/ --> <!-- C37 : 12p0v -->
+        <!--pin index="118" name=""/ --> <!-- C38 : gnd -->
+        <!--pin index="119" name=""/ --> <!-- C39 : 3p3v -->
+        <!--pin index="120" name=""/ --> <!-- C40 : gnd -->
+        <!--pin index="121" name=""/ --> <!-- D1 : pg_c2m -->
+        <!--pin index="122" name=""/ --> <!-- D2 : gnd -->
+        <!--pin index="123" name=""/ --> <!-- D3 : gnd -->
+        <pin index="124" name="br40_p"/> <!-- D4 : gbtclk0_m2c_p -->
+        <pin index="125" name="br40_n"/> <!-- D5 : gbtclk0_m2c_n -->
+        <!--pin index="126" name=""/ --> <!-- D6 : gnd -->
+        <!--pin index="127" name=""/ --> <!-- D7 : gnd -->
+        <pin index="128" name="sync0_p"/> <!-- D8 : la01_p_cc -->
+        <pin index="129" name="sync0_n"/> <!-- D9 : la01_n_cc -->
+        <!--pin index="130" name=""/ --> <!-- D10 : gnd -->
+        <pin index="131" name="fmc_cs2"/> <!-- D11 : la05_p -->
+        <pin index="132" name="fmc_spi_en"/> <!-- D12 : la05_n -->
+        <!--pin index="133" name=""/ --> <!-- D13 : gnd -->
+        <!--pin index="134" name=""/ --> <!-- D14 : la09_p -->
+        <!--pin index="135" name=""/ --> <!-- D15 : la09_n -->
+        <!--pin index="136" name=""/ --> <!-- D16 : gnd -->
+        <!--pin index="137" name=""/ --> <!-- D17 : la13_p -->
+        <!--pin index="138" name=""/ --> <!-- D18 : la13_n -->
+        <!--pin index="139" name=""/ --> <!-- D19 : gnd -->
+        <!--pin index="140" name=""/ --> <!-- D20 : la17_p_cc -->
+        <!--pin index="141" name=""/ --> <!-- D21 : la17_n_cc -->
+        <!--pin index="142" name=""/ --> <!-- D22 : gnd -->
+        <!--pin index="143" name=""/ --> <!-- D23 : la23_p -->
+        <!--pin index="144" name=""/ --> <!-- D24 : la23_n -->
+        <!--pin index="145" name=""/ --> <!-- D25 : gnd -->
+        <!--pin index="146" name=""/ --> <!-- D26 : la26_p -->
+        <!--pin index="147" name=""/ --> <!-- D27 : la26_n -->
+        <!--pin index="148" name=""/ --> <!-- D28 : gnd -->
+        <!--pin index="149" name=""/ --> <!-- D29 : tck -->
+        <!--pin index="150" name=""/ --> <!-- D30 : tdi -->
+        <!--pin index="151" name=""/ --> <!-- D31 : tdo -->
+        <!--pin index="152" name=""/ --> <!-- D32 : 3p3vaux -->
+        <!--pin index="153" name=""/ --> <!-- D33 : tms -->
+        <!--pin index="154" name=""/ --> <!-- D34 : trst_l -->
+        <!--pin index="155" name=""/ --> <!-- D35 : ga1 -->
+        <!--pin index="156" name=""/ --> <!-- D36 : 3p3v -->
+        <!--pin index="157" name=""/ --> <!-- D37 : gnd -->
+        <!--pin index="158" name=""/ --> <!-- D38 : 3p3v -->
+        <!--pin index="159" name=""/ --> <!-- D39 : gnd -->
+        <!--pin index="160" name=""/ --> <!-- D40 : 3p3v -->
+        <!--pin index="161" name=""/ --> <!-- E1 : gnd -->
+        <!--pin index="162" name=""/ --> <!-- E2 : ha01_p_cc -->
+        <!--pin index="163" name=""/ --> <!-- E3 : ha01_n_cc -->
+        <!--pin index="164" name=""/ --> <!-- E4 : gnd -->
+        <!--pin index="165" name=""/ --> <!-- E5 : gnd -->
+        <!--pin index="166" name=""/ --> <!-- E6 : ha05_p -->
+        <!--pin index="167" name=""/ --> <!-- E7 : ha05_n -->
+        <!--pin index="168" name=""/ --> <!-- E8 : gnd -->
+        <!--pin index="169" name=""/ --> <!-- E9 : ha09_p -->
+        <!--pin index="170" name=""/ --> <!-- E10 : ha09_n -->
+        <!--pin index="171" name=""/ --> <!-- E11 : gnd -->
+        <!--pin index="172" name=""/ --> <!-- E12 : ha13_p -->
+        <!--pin index="173" name=""/ --> <!-- E13 : ha13_n -->
+        <!--pin index="174" name=""/ --> <!-- E14 : gnd -->
+        <!--pin index="175" name=""/ --> <!-- E15 : ha16_p -->
+        <!--pin index="176" name=""/ --> <!-- E16 : ha16_n -->
+        <!--pin index="177" name=""/ --> <!-- E17 : gnd -->
+        <!--pin index="178" name=""/ --> <!-- E18 : ha20_p -->
+        <!--pin index="179" name=""/ --> <!-- E19 : ha20_n -->
+        <!--pin index="180" name=""/ --> <!-- E20 : gnd -->
+        <!--pin index="181" name=""/ --> <!-- E21 : hb03_p -->
+        <!--pin index="182" name=""/ --> <!-- E22 : hb03_n -->
+        <!--pin index="183" name=""/ --> <!-- E23 : gnd -->
+        <!--pin index="184" name=""/ --> <!-- E24 : hb05_p -->
+        <!--pin index="185" name=""/ --> <!-- E25 : hb05_n -->
+        <!--pin index="186" name=""/ --> <!-- E26 : gnd -->
+        <!--pin index="187" name=""/ --> <!-- E27 : hb09_p -->
+        <!--pin index="188" name=""/ --> <!-- E28 : hb09_n -->
+        <!--pin index="189" name=""/ --> <!-- E29 : gnd -->
+        <!--pin index="190" name=""/ --> <!-- E30 : hb13_p -->
+        <!--pin index="191" name=""/ --> <!-- E31 : hb13_n -->
+        <!--pin index="192" name=""/ --> <!-- E32 : gnd -->
+        <!--pin index="193" name=""/ --> <!-- E33 : hb19_p -->
+        <!--pin index="194" name=""/ --> <!-- E34 : hb19_n -->
+        <!--pin index="195" name=""/ --> <!-- E35 : gnd -->
+        <!--pin index="196" name=""/ --> <!-- E36 : hb21_p -->
+        <!--pin index="197" name=""/ --> <!-- E37 : hb21_n -->
+        <!--pin index="198" name=""/ --> <!-- E38 : gnd -->
+        <!--pin index="199" name=""/ --> <!-- E39 : vadj -->
+        <!--pin index="200" name=""/ --> <!-- E40 : gnd -->
+        <!--pin index="201" name=""/ --> <!-- F1 : pg_m2c -->
+        <!--pin index="202" name=""/ --> <!-- F2 : gnd -->
+        <!--pin index="203" name=""/ --> <!-- F3 : gnd -->
+        <!--pin index="204" name=""/ --> <!-- F4 : ha00_p_cc -->
+        <!--pin index="205" name=""/ --> <!-- F5 : ha00_n_cc -->
+        <!--pin index="206" name=""/ --> <!-- F6 : gnd -->
+        <!--pin index="207" name=""/ --> <!-- F7 : ha04_p -->
+        <!--pin index="208" name=""/ --> <!-- F8 : ha04_n -->
+        <!--pin index="209" name=""/ --> <!-- F9 : gnd -->
+        <!--pin index="210" name=""/ --> <!-- F10 : ha08_p -->
+        <!--pin index="211" name=""/ --> <!-- F11 : ha08_n -->
+        <!--pin index="212" name=""/ --> <!-- F12 : gnd -->
+        <!--pin index="213" name=""/ --> <!-- F13 : ha12_p -->
+        <!--pin index="214" name=""/ --> <!-- F14 : ha12_n -->
+        <!--pin index="215" name=""/ --> <!-- F15 : gnd -->
+        <!--pin index="216" name=""/ --> <!-- F16 : ha15_p -->
+        <!--pin index="217" name=""/ --> <!-- F17 : ha15_n -->
+        <!--pin index="218" name=""/ --> <!-- F18 : gnd -->
+        <!--pin index="219" name=""/ --> <!-- F19 : ha19_p -->
+        <!--pin index="220" name=""/ --> <!-- F20 : ha19_n -->
+        <!--pin index="221" name=""/ --> <!-- F21 : gnd -->
+        <!--pin index="222" name=""/ --> <!-- F22 : hb02_p -->
+        <!--pin index="223" name=""/ --> <!-- F23 : hb02_n -->
+        <!--pin index="224" name=""/ --> <!-- F24 : gnd -->
+        <!--pin index="225" name=""/ --> <!-- F25 : hb04_p -->
+        <!--pin index="226" name=""/ --> <!-- F26 : hb04_n -->
+        <!--pin index="227" name=""/ --> <!-- F27 : gnd -->
+        <!--pin index="228" name=""/ --> <!-- F28 : hb08_p -->
+        <!--pin index="229" name=""/ --> <!-- F29 : hb08_n -->
+        <!--pin index="230" name=""/ --> <!-- F30 : gnd -->
+        <!--pin index="231" name=""/ --> <!-- F31 : hb12_p -->
+        <!--pin index="232" name=""/ --> <!-- F32 : hb12_n -->
+        <!--pin index="233" name=""/ --> <!-- F33 : gnd -->
+        <!--pin index="234" name=""/ --> <!-- F34 : hb16_p -->
+        <!--pin index="235" name=""/ --> <!-- F35 : hb16_n -->
+        <!--pin index="236" name=""/ --> <!-- F36 : gnd -->
+        <!--pin index="237" name=""/ --> <!-- F37 : hb20_p -->
+        <!--pin index="238" name=""/ --> <!-- F38 : hb20_n -->
+        <!--pin index="239" name=""/ --> <!-- F39 : gnd -->
+        <!--pin index="240" name=""/ --> <!-- F40 : vadj -->
+        <!--pin index="241" name=""/ --> <!-- G1 : gnd -->
+        <!--pin index="242" name=""/ --> <!-- G2 : clk1_m2c_p -->
+        <!--pin index="243" name=""/ --> <!-- G3 : clk1_m2c_n -->
+        <!--pin index="244" name=""/ --> <!-- G4 : gnd -->
+        <!--pin index="245" name=""/ --> <!-- G5 : gnd -->
+        <pin index="246" name="sysref2_p"/> <!-- G6 : la00_p_cc -->
+        <pin index="247" name="sysref2_n"/> <!-- G7 : la00_n_cc -->
+        <!--pin index="248" name=""/ --> <!-- G8 : gnd -->
+        <pin index="249" name="fmc_sck"/> <!-- G9 : la03_p -->
+        <pin index="250" name="fmc_mosi"/> <!-- G10 : la03_n -->
+        <!--pin index="251" name=""/ --> <!-- G11 : gnd -->
+        <!--pin index="252" name=""/ --> <!-- G12 : la08_p -->
+        <!--pin index="253" name=""/ --> <!-- G13 : la08_n -->
+        <!--pin index="254" name=""/ --> <!-- G14 : gnd -->
+        <!--pin index="255" name=""/ --> <!-- G15 : la12_p -->
+        <!--pin index="256" name=""/ --> <!-- G16 : la12_n -->
+        <!--pin index="257" name=""/ --> <!-- G17 : gnd -->
+        <!--pin index="258" name=""/ --> <!-- G18 : la16_p -->
+        <!--pin index="259" name=""/ --> <!-- G19 : la16_n -->
+        <!--pin index="260" name=""/ --> <!-- G20 : gnd -->
+        <!--pin index="261" name=""/ --> <!-- G21 : la20_p -->
+        <!--pin index="262" name=""/ --> <!-- G22 : la20_n -->
+        <!--pin index="263" name=""/ --> <!-- G23 : gnd -->
+        <!--pin index="264" name=""/ --> <!-- G24 : la22_p -->
+        <!--pin index="265" name=""/ --> <!-- G25 : la22_n -->
+        <!--pin index="266" name=""/ --> <!-- G26 : gnd -->
+        <!--pin index="267" name=""/ --> <!-- G27 : la25_p -->
+        <!--pin index="268" name=""/ --> <!-- G28 : la25_n -->
+        <!--pin index="269" name=""/ --> <!-- G29 : gnd -->
+        <!--pin index="270" name=""/ --> <!-- G30 : la29_p -->
+        <!--pin index="271" name=""/ --> <!-- G31 : la29_n -->
+        <!--pin index="272" name=""/ --> <!-- G32 : gnd -->
+        <!--pin index="273" name=""/ --> <!-- G33 : la31_p -->
+        <!--pin index="274" name=""/ --> <!-- G34 : la31_n -->
+        <!--pin index="275" name=""/ --> <!-- G35 : gnd -->
+        <!--pin index="276" name=""/ --> <!-- G36 : la33_p -->
+        <!--pin index="277" name=""/ --> <!-- G37 : la33_n -->
+        <!--pin index="278" name=""/ --> <!-- G38 : gnd -->
+        <!--pin index="279" name=""/ --> <!-- G39 : vadj -->
+        <!--pin index="280" name=""/ --> <!-- G40 : gnd -->
+        <!--pin index="281" name=""/ --> <!-- H1 : vref_a_m2c -->
+        <!--pin index="282" name=""/ --> <!-- H2 : prsnt_m2c_l -->
+        <!--pin index="283" name=""/ --> <!-- H3 : gnd -->
+        <!--pin index="284" name=""/ --> <!-- H4 : clk0_m2c_p -->
+        <!--pin index="285" name=""/ --> <!-- H5 : clk0_m2c_n -->
+        <!--pin index="286" name=""/ --> <!-- H6 : gnd -->
+        <!--pin index="287" name=""/ --> <!-- H7 : la02_p -->
+        <!--pin index="288" name=""/ --> <!-- H8 : la02_n -->
+        <!--pin index="289" name=""/ --> <!-- H9 : gnd -->
+        <pin index="290" name="fmc_miso"/> <!-- H10 : la04_p -->
+        <pin index="291" name="fmc_cs1"/> <!-- H11 : la04_n -->
+        <!--pin index="292" name=""/ --> <!-- H12 : gnd -->
+        <!--pin index="293" name=""/ --> <!-- H13 : la07_p -->
+        <!--pin index="294" name=""/ --> <!-- H14 : la07_n -->
+        <!--pin index="295" name=""/ --> <!-- H15 : gnd -->
+        <!--pin index="296" name=""/ --> <!-- H16 : la11_p -->
+        <!--pin index="297" name=""/ --> <!-- H17 : la11_n -->
+        <!--pin index="298" name=""/ --> <!-- H18 : gnd -->
+        <!--pin index="299" name=""/ --> <!-- H19 : la15_p -->
+        <!--pin index="300" name=""/ --> <!-- H20 : la15_n -->
+        <!--pin index="301" name=""/ --> <!-- H21 : gnd -->
+        <!--pin index="302" name=""/ --> <!-- H22 : la19_p -->
+        <!--pin index="303" name=""/ --> <!-- H23 : la19_n -->
+        <!--pin index="304" name=""/ --> <!-- H24 : gnd -->
+        <!--pin index="305" name=""/ --> <!-- H25 : la21_p -->
+        <!--pin index="306" name=""/ --> <!-- H26 : la21_n -->
+        <!--pin index="307" name=""/ --> <!-- H27 : gnd -->
+        <!--pin index="308" name=""/ --> <!-- H28 : la24_p -->
+        <!--pin index="309" name=""/ --> <!-- H29 : la24_n -->
+        <!--pin index="310" name=""/ --> <!-- H30 : gnd -->
+        <!--pin index="311" name=""/ --> <!-- H31 : la28_p -->
+        <!--pin index="312" name=""/ --> <!-- H32 : la28_n -->
+        <!--pin index="313" name=""/ --> <!-- H33 : gnd -->
+        <!--pin index="314" name=""/ --> <!-- H34 : la30_p -->
+        <!--pin index="315" name=""/ --> <!-- H35 : la30_n -->
+        <!--pin index="316" name=""/ --> <!-- H36 : gnd -->
+        <!--pin index="317" name=""/ --> <!-- H37 : la32_p -->
+        <!--pin index="318" name=""/ --> <!-- H38 : la32_n -->
+        <!--pin index="319" name=""/ --> <!-- H39 : gnd -->
+        <!--pin index="320" name=""/ --> <!-- H40 : vadj -->
+        <!--pin index="321" name=""/ --> <!-- J1 : gnd -->
+        <!--pin index="322" name=""/ --> <!-- J2 : clk3_bidir_p -->
+        <!--pin index="323" name=""/ --> <!-- J3 : clk3_bidir_n -->
+        <!--pin index="324" name=""/ --> <!-- J4 : gnd -->
+        <!--pin index="325" name=""/ --> <!-- J5 : gnd -->
+        <!--pin index="326" name=""/ --> <!-- J6 : ha03_p -->
+        <!--pin index="327" name=""/ --> <!-- J7 : ha03_n -->
+        <!--pin index="328" name=""/ --> <!-- J8 : gnd -->
+        <!--pin index="329" name=""/ --> <!-- J9 : ha07_p -->
+        <!--pin index="330" name=""/ --> <!-- J10 : ha07_n -->
+        <!--pin index="331" name=""/ --> <!-- J11 : gnd -->
+        <!--pin index="332" name=""/ --> <!-- J12 : ha11_p -->
+        <!--pin index="333" name=""/ --> <!-- J13 : ha11_n -->
+        <!--pin index="334" name=""/ --> <!-- J14 : gnd -->
+        <!--pin index="335" name=""/ --> <!-- J15 : ha14_p -->
+        <!--pin index="336" name=""/ --> <!-- J16 : ha14_n -->
+        <!--pin index="337" name=""/ --> <!-- J17 : gnd -->
+        <!--pin index="338" name=""/ --> <!-- J18 : ha18_p -->
+        <!--pin index="339" name=""/ --> <!-- J19 : ha18_n -->
+        <!--pin index="340" name=""/ --> <!-- J20 : gnd -->
+        <!--pin index="341" name=""/ --> <!-- J21 : ha22_p -->
+        <!--pin index="342" name=""/ --> <!-- J22 : ha22_n -->
+        <!--pin index="343" name=""/ --> <!-- J23 : gnd -->
+        <!--pin index="344" name=""/ --> <!-- J24 : hb01_p -->
+        <!--pin index="345" name=""/ --> <!-- J25 : hb01_n -->
+        <!--pin index="346" name=""/ --> <!-- J26 : gnd -->
+        <!--pin index="347" name=""/ --> <!-- J27 : hb07_p -->
+        <!--pin index="348" name=""/ --> <!-- J28 : hb07_n -->
+        <!--pin index="349" name=""/ --> <!-- J29 : gnd -->
+        <!--pin index="350" name=""/ --> <!-- J30 : hb11_p -->
+        <!--pin index="351" name=""/ --> <!-- J31 : hb11_n -->
+        <!--pin index="352" name=""/ --> <!-- J32 : gnd -->
+        <!--pin index="353" name=""/ --> <!-- J33 : hb15_p -->
+        <!--pin index="354" name=""/ --> <!-- J34 : hb15_n -->
+        <!--pin index="355" name=""/ --> <!-- J35 : gnd -->
+        <!--pin index="356" name=""/ --> <!-- J36 : hb18_p -->
+        <!--pin index="357" name=""/ --> <!-- J37 : hb18_n -->
+        <!--pin index="358" name=""/ --> <!-- J38 : gnd -->
+        <!--pin index="359" name=""/ --> <!-- J39 : vio_b_m2c -->
+        <!--pin index="360" name=""/ --> <!-- J40 : gnd -->
+        <!--pin index="361" name=""/ --> <!-- K1 : vref_b_m2c -->
+        <!--pin index="362" name=""/ --> <!-- K2 : gnd -->
+        <!--pin index="363" name=""/ --> <!-- K3 : gnd -->
+        <!--pin index="364" name=""/ --> <!-- K4 : clk2_bidir_p -->
+        <!--pin index="365" name=""/ --> <!-- K5 : clk2_bidir_n -->
+        <!--pin index="366" name=""/ --> <!-- K6 : gnd -->
+        <!--pin index="367" name=""/ --> <!-- K7 : ha02_p -->
+        <!--pin index="368" name=""/ --> <!-- K8 : ha02_n -->
+        <!--pin index="369" name=""/ --> <!-- K9 : gnd -->
+        <!--pin index="370" name=""/ --> <!-- K10 : ha06_p -->
+        <!--pin index="371" name=""/ --> <!-- K11 : ha06_n -->
+        <!--pin index="372" name=""/ --> <!-- K12 : gnd -->
+        <!--pin index="373" name=""/ --> <!-- K13 : ha10_p -->
+        <!--pin index="374" name=""/ --> <!-- K14 : ha10_n -->
+        <!--pin index="375" name=""/ --> <!-- K15 : gnd -->
+        <!--pin index="376" name=""/ --> <!-- K16 : ha17_p_cc -->
+        <!--pin index="377" name=""/ --> <!-- K17 : ha17_n_cc -->
+        <!--pin index="378" name=""/ --> <!-- K18 : gnd -->
+        <!--pin index="379" name=""/ --> <!-- K19 : ha21_p -->
+        <!--pin index="380" name=""/ --> <!-- K20 : ha21_n -->
+        <!--pin index="381" name=""/ --> <!-- K21 : gnd -->
+        <!--pin index="382" name=""/ --> <!-- K22 : ha23_p -->
+        <!--pin index="383" name=""/ --> <!-- K23 : ha23_n -->
+        <!--pin index="384" name=""/ --> <!-- K24 : gnd -->
+        <!--pin index="385" name=""/ --> <!-- K25 : hb00_p_cc -->
+        <!--pin index="386" name=""/ --> <!-- K26 : hb00_n_cc -->
+        <!--pin index="387" name=""/ --> <!-- K27 : gnd -->
+        <!--pin index="388" name=""/ --> <!-- K28 : hb06_p_cc -->
+        <!--pin index="389" name=""/ --> <!-- K29 : hb06_n_cc -->
+        <!--pin index="390" name=""/ --> <!-- K30 : gnd -->
+        <!--pin index="391" name=""/ --> <!-- K31 : hb10_p -->
+        <!--pin index="392" name=""/ --> <!-- K32 : hb10_n -->
+        <!--pin index="393" name=""/ --> <!-- K33 : gnd -->
+        <!--pin index="394" name=""/ --> <!-- K34 : hb14_p -->
+        <!--pin index="395" name=""/ --> <!-- K35 : hb14_n -->
+        <!--pin index="396" name=""/ --> <!-- K36 : gnd -->
+        <!--pin index="397" name=""/ --> <!-- K37 : hb17_p_cc -->
+        <!--pin index="398" name=""/ --> <!-- K38 : hb17_n_cc -->
+        <!--pin index="399" name=""/ --> <!-- K39 : gnd -->
+        <!--pin index="400" name=""/ --> <!-- K40 : vio_b_m2c -->
+      </pins>
+      <interfaces>
+        <interface mode="master" name="jesd204_gt_8x" type="xilinx.com:ip:jesd204:7.2" of_component="ad9174_jesd" preset_proc="jesd204_preset">
+          <description>JESD204 Core</description>
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="jesd204" order="0"/>
+          </preferred_ips>
+          <port_maps>
+            <port_map logical_port="txn" physical_port="txn8" dir="out" left="7" right="0">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="serdin0_n"/>
+                <pin_map port_index="1" component_pin="serdin1_n"/>
+                <pin_map port_index="2" component_pin="serdin2_n"/>
+                <pin_map port_index="3" component_pin="serdin3_n"/>
+                <pin_map port_index="4" component_pin="serdin4_n"/>
+                <pin_map port_index="5" component_pin="serdin5_n"/>
+                <pin_map port_index="6" component_pin="serdin6_n"/>
+                <pin_map port_index="7" component_pin="serdin7_n"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="txp" physical_port="txp8" dir="out" left="7" right="0">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="serdin0_p"/>
+                <pin_map port_index="1" component_pin="serdin1_p"/>
+                <pin_map port_index="2" component_pin="serdin2_p"/>
+                <pin_map port_index="3" component_pin="serdin3_p"/>
+                <pin_map port_index="4" component_pin="serdin4_p"/>
+                <pin_map port_index="5" component_pin="serdin5_p"/>
+                <pin_map port_index="6" component_pin="serdin6_p"/>
+                <pin_map port_index="7" component_pin="serdin7_p"/>
+              </pin_maps>
+            </port_map>
+          </port_maps>
+          <parameters>
+            <parameter name="CONFIG.AXICLK_FREQ" value="100"/>
+            <parameter name="CONFIG.C_DEFAULT_F" value="1"/>
+            <parameter name="CONFIG.C_DEFAULT_K" value="2"/>
+            <parameter name="CONFIG.C_DEFAULT_SCR" value="0"/>
+            <parameter name="CONFIG.C_DEFAULT_SYSREF_ALWAYS" value="0"/>
+            <parameter name="CONFIG.C_DEFAULT_SYSREF_REQUIRED" value="1"/>
+            <parameter name="CONFIG.C_LANES" value="8"/>
+            <parameter name="CONFIG.C_LMFC_BUFFER_SIZE" value="1024"/>
+            <parameter name="CONFIG.C_NODE_IS_TRANSMIT" value="1"/>
+            <parameter name="CONFIG.C_PLL_SELECTION" value="1"/>
+            <parameter name="CONFIG.C_SYSREF_SAMPLING_EDGE" value="0"/>
+            <parameter name="CONFIG.DRPCLK_FREQ" value="100"/>
+            <parameter name="CONFIG.GT_Line_Rate" value="15"/>
+            <parameter name="CONFIG.GT_REFCLK_FREQ" value="187.5"/>
+            <parameter name="CONFIG.Global_clk_sel" value="true"/>
+            <parameter name="CONFIG.SupportLevel" value="1"/>
+            <parameter name="CONFIG.Transceiver" value="GTHE3"/>
+            <parameter name="CONFIG.TransceiverControl" value="false"/>
+            <parameter name="CONFIG.USE_JSPAT" value="false"/>
+            <parameter name="CONFIG.USE_RPAT" value="false"/>
+          </parameters>
+        </interface>
+        <interface mode="master" name="spi1" type="xilinx.com:interface:spi_rtl:1.0" of_component="ad9174_spi">
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
+          </preferred_ips>
+          <port_maps>
+            <port_map logical_port="IO0_I" physical_port="spi_miso_i" dir="in">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_miso"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="IO0_O" physical_port="spi_miso_o" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_miso"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="IO0_T" physical_port="spi_miso_t" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_miso"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="IO1_I" physical_port="spi_mosi_i" dir="in">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_mosi"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="IO1_O" physical_port="spi_mosi_o" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_mosi"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="IO1_T" physical_port="spi_mosi_t" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_mosi"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="SCK_I" physical_port="spi_sclk_i" dir="in">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_sck"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="SCK_O" physical_port="spi_sclk_o" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_sck"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="SCK_T" physical_port="spi_sclk_t" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_sck"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="SS_I" physical_port="spi_ss_i" dir="in">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_cs1"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="SS_O" physical_port="spi_ss_o" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_cs1"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="SS_T" physical_port="spi_ss_t" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_cs1"/>
+              </pin_maps>
+            </port_map>
+          </port_maps>
+        </interface>
+      </interfaces>
+    </component>
+    <component name="J34" display_name="AD9174 Clock IN - Differential (NOT USED)" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
+    <component name="J42" display_name="AD9174 Clock IN - Single Ended (NOT USED)" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
+    <component name="J41" display_name="HMC7044 Reference Clock - Single Ended" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
+    <component name="J1" display_name="AD9174 DAC1 Out - Single Ended" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
+    <component name="J2" display_name="AD9174 DAC0 Out - Single Ended" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
+    <component name="J3" display_name="AD9174 DAC Clock Out - Single Ended" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
+    <component name="P3" display_name="SPI Connector" type="connector" sub_type="fixed_io" major_group="FMC HPC">
+      <description>SPI interface for AD9174 and HMC7044</description>
+    </component>
+    <component name="P4" display_name="USB Connector" type="connector" sub_type="fixed_io" major_group="FMC HPC">
+      <description>USB connector for ACE</description>
+    </component>
+    <component name="ad9174_jesd" display_name="AD9174 JESD" type="chip" sub_type="chip" major_group="FMC HPC" part_name="AD9174" vendor="Analog Devices" spec_url="www.analog.com">
+      <description>FMC EVAL-AD9174 AD9174 JESD204</description>
+      <component_modes>
+        <component_mode name="jesd204_tx_1" display_name="AD9174 JESD204">
+          <interfaces>
+            <interface name="jesd204_gt_8x" order="0"/>
+          </interfaces>
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="jesd204" order="0"/>
+          </preferred_ips>
+        </component_mode>
+      </component_modes>
+    </component>
+    <component name="ad9174_spi" display_name="AD9174 SPI" type="chip" sub_type="chip" major_group="FMC HPC" part_name="AD9174" vendor="Analog Devices" spec_url="www.analog.com">
+      <description>FMC EVAL-AD9174 AD9174 SPI</description>
+      <component_modes>
+        <component_mode name="jesd204_spi_1" display_name="AD9174 SPI">
+          <interfaces>
+            <interface name="spi1" order="0"/>
+          </interfaces>
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
+          </preferred_ips>
+        </component_mode>
+      </component_modes>
+    </component>
+  </components>
+  <connections>
+    <connection name="hpc_ad9174_jesd" component1="hpc_connector" component2="ad9174_jesd">
+      <connection_map name="hpc_connector_gtx1_1" typical_delay="5" c1_st_index="38" c1_end_index="38" c2_st_index="1" c2_end_index="1"/>
+      <connection_map name="hpc_connector_gtx1_1" typical_delay="5" c1_st_index="39" c1_end_index="39" c2_st_index="0" c2_end_index="0"/>
+      <connection_map name="hpc_connector_gtx2_1" typical_delay="5" c1_st_index="76" c1_end_index="76" c2_st_index="3" c2_end_index="3"/>
+      <connection_map name="hpc_connector_gtx2_1" typical_delay="5" c1_st_index="77" c1_end_index="77" c2_st_index="2" c2_end_index="2"/>
+      <connection_map name="hpc_connector_gtx3_1" typical_delay="5" c1_st_index="34" c1_end_index="34" c2_st_index="5" c2_end_index="5"/>
+      <connection_map name="hpc_connector_gtx3_1" typical_delay="5" c1_st_index="35" c1_end_index="35" c2_st_index="4" c2_end_index="4"/>
+      <connection_map name="hpc_connector_gtx4_1" typical_delay="5" c1_st_index="52" c1_end_index="52" c2_st_index="7" c2_end_index="7"/>
+      <connection_map name="hpc_connector_gtx4_1" typical_delay="5" c1_st_index="53" c1_end_index="53" c2_st_index="6" c2_end_index="6"/>
+      <connection_map name="hpc_connector_gtx5_1" typical_delay="5" c1_st_index="30" c1_end_index="31" c2_st_index="8" c2_end_index="9"/>
+      <connection_map name="hpc_connector_gtx6_1" typical_delay="5" c1_st_index="26" c1_end_index="27" c2_st_index="10" c2_end_index="11"/>
+      <connection_map name="hpc_connector_gtx7_1" typical_delay="5" c1_st_index="22" c1_end_index="23" c2_st_index="12" c2_end_index="13"/>
+      <connection_map name="hpc_connector_gtx8_1" typical_delay="5" c1_st_index="82" c1_end_index="83" c2_st_index="14" c2_end_index="15"/>
+    </connection>
+    <connection name="hpc_ad9174_spi" component1="hpc_connector" component2="ad9174_spi">
+      <connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="290" c1_end_index="290" c2_st_index="0" c2_end_index="0"/>
+      <connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="250" c1_end_index="250" c2_st_index="1" c2_end_index="1"/>
+      <connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="249" c1_end_index="249" c2_st_index="2" c2_end_index="2"/>
+      <connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="291" c1_end_index="291" c2_st_index="3" c2_end_index="3"/>
+    </connection>
+  </connections>
+  <ip_associated_rules>
+    <!--ip_associated_rule name="default">
 			<ip vendor="xilinx.com" library="ip" name="jesd204" version="*" ip_interface="">
 				<associated_board_interfaces>
 					<associated_board_interface name="" order="0" />
 				</associated_board_interfaces>
 			</ip>
 		</ip_associated_rule-->
+	<ip_associated_rule name="default">
 		<ip vendor="xilinx.com" library="ip" name="axi_quad_spi" version="*" ip_interface="SPI_0">
-			<associated_board_interfaces>
-				<associated_board_interface name="spi1" order="0" />
-			</associated_board_interfaces>
+		  <associated_board_interfaces>
+			<associated_board_interface name="spi1" order="0"/>
+		  </associated_board_interfaces>
 		</ip>
-	</ip_associated_rules>	
+	</ip_associated_rule>
+  </ip_associated_rules>
 </board>
