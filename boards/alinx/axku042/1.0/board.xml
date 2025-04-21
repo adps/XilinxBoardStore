@@ -1307,7 +1307,7 @@
 			</interfaces>
 		</component>
 		<component name="ddr4_sdram" display_name="DDR4 SDRAM" type="chip" sub_type="ddr" major_group="External Memory" part_name="MT40A512M16HA-083E" vendor="Micron" spec_url="https://www.micron.com/products/memory/dram-components/ddr4-sdram/part-catalog/part-detail/mt40a512m16ly-062e-it-e">
-			<description>4GB DDR4 SDRAM memory SODIMM</description>
+			<description>4GB DDR4 SDRAM memory</description>
 			<parameters>
 				<parameter name="ddr_type" value="ddr4" />
 				<parameter name="size" value="4GB" />

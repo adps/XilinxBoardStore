@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!--DOCTYPE part_info SYSTEM "part0_pins.dtd"-->
-<part_info part_name="xcku040ffva1156i-2">
+<part_info part_name="xcku040-ffva1156-2-i">
     <pins>
         <!-- ############## DDR4 ############## -->
         <pin index="0" name="c0_ddr4_act_n" loc="AF18" />
@@ -120,10 +120,10 @@
         <pin index="114" name="c0_ddr4_dqs_t7" loc="AN34" />
         <pin index="115" name="c0_ddr4_par" loc="AF14" />
         <!-- ############## Sysclk LVDS ############## -->
-        <pin index="116" name="sysclk_200_p" iostandard="LVDS" loc="AK17" DIFF_TERM="TRUE" />
-        <pin index="117" name="sysclk_200_n" iostandard="LVDS" loc="AK16" DIFF_TERM="TRUE" />
-        <pin index="118" name="smaclk_p" iostandard="LVDS" loc="H12" DIFF_TERM="TRUE" />
-        <pin index="119" name="smaclk_n" iostandard="LVDS" loc="G12" DIFF_TERM="TRUE" />
+        <pin index="116" name="sysclk_200_p" iostandard="LVDS" loc="AK17" diff_term="TRUE" />
+        <pin index="117" name="sysclk_200_n" iostandard="LVDS" loc="AK16" diff_term="TRUE" />
+        <pin index="118" name="smaclk_p" iostandard="LVDS" loc="H12" diff_term="TRUE" />
+        <pin index="119" name="smaclk_n" iostandard="LVDS" loc="G12" diff_term="TRUE" />
         <!-- ############## PCIe ############## -->
         <pin index="120" name="pcie_mgt_clkn" loc="AB5" />
         <pin index="121" name="pcie_mgt_clkp" loc="AB6" />
