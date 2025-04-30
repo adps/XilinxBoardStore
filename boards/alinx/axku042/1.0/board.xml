@@ -7,7 +7,7 @@
 		</image>
 	</images>
 	<compatible_board_revisions>
-		<revision id="0">1.0</revision>
+		<revision id="0">1.1</revision>
 	</compatible_board_revisions>
 	<file_version>1.0</file_version>
 	<description>Kintex-UltraScale AXKU042 Evaluation Platform</description>
@@ -500,7 +500,7 @@
 								<pin_map port_index="7" component_pin="c0_ddr4_dqs_c7" />
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="DQS_T" physical_port="c0_ddr4_dqs_t" dir="out" left="7" right="0">
+						<port_map logical_port="DQS_T" physical_port="c0_ddr4_dqs_t" dir="inout" left="7" right="0">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="c0_ddr4_dqs_t0" />
 								<pin_map port_index="1" component_pin="c0_ddr4_dqs_t1" />
@@ -520,6 +520,11 @@
 						<port_map logical_port="PAR" physical_port="c0_ddr4_par" dir="out">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="c0_ddr4_par" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="RESET_N" physical_port="c0_ddr4_reset_n" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="c0_ddr4_reset_n" />
 							</pin_maps>
 						</port_map>
 					</port_maps>
@@ -1133,7 +1138,7 @@
 						<preferred_ip vendor="xilinx.com" library="ip" name="axi_ethernet" order="0" />
 					</preferred_ips>
 					<port_maps>
-						<port_map logical_port="RESET" physical_port="phy_rst_out" dir="out">
+						<port_map logical_port="RST" physical_port="phy_rst_out" dir="out">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="PHY_RESET" />
 							</pin_maps>
@@ -1379,7 +1384,7 @@
 		<component name="phy_onboard" display_name="Onboard PHY" type="chip" sub_type="ethernet" major_group="Ethernet Configurations" part_name="KSZ9031RNX" vendor="microchip" spec_url="www.microchip.com">
 			<description>PHY on the board</description>
 			<component_modes>
-				<component_mode name="rgmii" display_name="RGMII mode">
+				<component_mode name="rgmii_nb" display_name="RGMII mode without buffer">
 					<interfaces>
 						<interface name="rgmii" order="0" />
 						<interface name="mdio_mdc" order="1" />
@@ -1389,7 +1394,23 @@
 						<preferred_ip vendor="xilinx.com" library="ip" name="axi_ethernet" order="0" />
 					</preferred_ips>
 				</component_mode>
+				<component_mode name="rgmii_wb" display_name="RGMII mode with buffer">
+					<interfaces>
+						<interface name="rgmii" order="0" />
+						<interface name="mdio_io" order="1" />
+						<interface name="phy_reset_out" order="2" optional="true" />
+					</interfaces>
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_ethernet" order="0" />
+					</preferred_ips>
+				</component_mode>				
 			</component_modes>
+		</component>
+		<component name="mdio_io" display_name="MDIO IO" type="chip" sub_type="ethernet" major_group="Ethernet Configurations">
+		  <description>MDIO_IO</description>
+		</component>
+		<component name="mdio_mdc" display_name="MDIO MDC" type="chip" sub_type="ethernet" major_group="Ethernet Configurations">
+		  <description>MDIO_MDC</description>
 		</component>
 		<component name="phy_sfp0" display_name="PHY using SFP0" type="chip" sub_type="sfp" major_group="Ethernet Configurations">
 			<description>Small Form-factor Pluggable connector</description>
@@ -1864,6 +1885,9 @@
 		</connection>
 		<connection name="part0_mdio_mdc" component1="part0" component2="mdio_mdc">
 			<connection_map name="part0_mdio_mdc_1" typical_delay="5" c1_st_index="194" c1_end_index="195" c2_st_index="0" c2_end_index="1" />
+		</connection>
+		<connection name="part0_mdio_io" component1="part0" component2="mdio_io">
+			<connection_map name="part0_mdio_io_1" typical_delay="5" c1_st_index="194" c1_end_index="195" c2_st_index="0" c2_end_index="1" />
 		</connection>
 		<connection name="part0_phy_reset_out" component1="part0" component2="phy_reset_out">
 			<connection_map name="part0_phy_reset_out_1" c1_st_index="196" c1_end_index="196" c2_st_index="0" c2_end_index="0" />
