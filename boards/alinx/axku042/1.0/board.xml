@@ -7,7 +7,7 @@
 		</image>
 	</images>
 	<compatible_board_revisions>
-		<revision id="0">1.1</revision>
+		<revision id="0">1.0</revision>
 	</compatible_board_revisions>
 	<file_version>1.0</file_version>
 	<description>Kintex-UltraScale AXKU042 Evaluation Platform</description>
@@ -1108,7 +1108,7 @@
 				<interface mode="master" name="mdio_mdc" type="xilinx.com:interface:mdio_rtl:1.0" of_component="phy_onboard">
 					<description>Primary interface to communicate with ethernet phy in RGMII</description>
 					<preferred_ips>
-						<preferred_ip vendor="xilinx.com" library="ip" name="axi_ethernet" order="0" />
+						<preferred_ip vendor="xilinx.com" library="ip" name="tri_mode_ethernet_mac" order="0" />
 					</preferred_ips>
 					<port_maps>
 						<port_map logical_port="MDIO_I" physical_port="mdio_i" dir="in">
@@ -1311,7 +1311,7 @@
 				</interface>
 			</interfaces>
 		</component>
-		<component name="ddr4_sdram" display_name="DDR4 SDRAM" type="chip" sub_type="ddr" major_group="External Memory" part_name="MT40A512M16HA-083E" vendor="Micron" spec_url="https://www.micron.com/products/memory/dram-components/ddr4-sdram/part-catalog/part-detail/mt40a512m16ly-062e-it-e">
+		<component name="ddr4_sdram" display_name="DDR4 SDRAM" type="chip" sub_type="ddr" major_group="External Memory" part_name="MT40A512M16LY-075" vendor="Micron" spec_url="https://www.micron.com/products/memory/dram-components/ddr4-sdram/part-catalog/part-detail/mt40a512m16ly-062e-it-e">
 			<description>4GB DDR4 SDRAM memory</description>
 			<parameters>
 				<parameter name="ddr_type" value="ddr4" />
@@ -1362,8 +1362,8 @@
 		<component name="rs232_uart" display_name="UART" type="chip" sub_type="uart" major_group="Miscellaneous" part_name="CP2105-F01-GM" vendor="SiliconLabs">
 			<description>USB-to-UART Bridge, which allows serial communication to host computer with a USB port </description>
 			<pins>
-				<pin index="0" name="rs232_uart_USB_TX" iostandard="LVCMOS18" />
-				<pin index="1" name="rs232_uart_USB_RX" iostandard="LVCMOS18" />
+				<pin index="0" name="rs232_uart_USB_TX" iostandard="LVCMOS33" />
+				<pin index="1" name="rs232_uart_USB_RX" iostandard="LVCMOS33" />
 			</pins>
 		</component>
 		<component name="iic_main" display_name="IIC" type="chip" sub_type="mux" major_group="Miscellaneous">

@@ -120,8 +120,8 @@
         <pin index="114" name="c0_ddr4_dqs_t7" loc="AN34" />
         <pin index="115" name="c0_ddr4_par" loc="AF14" />
         <!-- ############## Sysclk LVDS ############## -->
-        <pin index="116" name="sysclk_200_p" iostandard="LVDS" loc="AK17" diff_term="TRUE" />
-        <pin index="117" name="sysclk_200_n" iostandard="LVDS" loc="AK16" diff_term="TRUE" />
+        <pin index="116" name="sysclk_200_p" iostandard="DIFF_SSTL12" loc="AK17" />
+        <pin index="117" name="sysclk_200_n" iostandard="DIFF_SSTL12" loc="AK16" />
         <pin index="118" name="smaclk_p" iostandard="LVDS" loc="H12" diff_term="TRUE" />
         <pin index="119" name="smaclk_n" iostandard="LVDS" loc="G12" diff_term="TRUE" />
         <!-- ############## PCIe ############## -->
