@@ -167,7 +167,7 @@
         <pin index="157" name="GPIO_LED_0_LS" iostandard="LVCMOS18" loc="E12" />
         <pin index="158" name="GPIO_LED_1_LS" iostandard="LVCMOS18" loc="F12" />
         <pin index="159" name="GPIO_LED_2_LS" iostandard="LVCMOS18" loc="L9" />
-        <pin index="160" name="GPIO_LED_3_LS" iostandard="LVCMOS18" loc="H23" />
+        <pin index="160" name="GPIO_LED_3_LS" iostandard="LVCMOS33" loc="H23" />
         <pin index="161" name="GPIO_LED_4_LS" iostandard="LVCMOS18" loc="E13" />
         <pin index="162" name="GPIO_LED_5_LS" iostandard="LVCMOS18" loc="F13" />
         <!-- ############## USB UART 3.3V ############## -->
@@ -190,8 +190,8 @@
         <pin index="177" name="IIC_SCL_MAIN" iostandard="LVCMOS18" loc="L13" drive="8" slew="SLOW" />
         <pin index="178" name="IIC_SDA_MAIN" iostandard="LVCMOS18" loc="K13" drive="8" slew="SLOW" />
         <!-- ############## FPGA Reset and Keys ############## -->
-        <pin index="179" name="CPU_RESET" iostandard="LVCMOS18" loc="N27" />
-        <pin index="180" name="GPIO_SW" iostandard="LVCMOS18" loc="N23" />
+        <pin index="179" name="CPU_RESET" iostandard="LVCMOS33" loc="N27" />
+        <pin index="180" name="GPIO_SW" iostandard="LVCMOS33" loc="N23" />
         <pin index="181" name="FAN_CTRL" iostandard="LVCMOS33" loc="AK11" />
         <!-- ############## RGMII Ethernet ############## -->
         <pin index="182" name="PHY_TXD0" iostandard="LVCMOS18" loc="AD33" />
