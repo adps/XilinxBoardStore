@@ -1004,7 +1004,7 @@
 						</port_map>
 					</port_maps>
 				</interface>
-				<interface mode="slave" name="reset" type="xilinx.com:signal:reset_rtl:1.0" of_component="reset">
+				<interface mode="slave" name="resetn" type="xilinx.com:signal:reset_rtl:1.0" of_component="sys_resetn">
 					<parameters>
 						<parameter name="rst_polarity" value="0" />
 					</parameters>
@@ -1012,7 +1012,7 @@
 						<preferred_ip vendor="xilinx.com" library="ip" name="proc_sys_reset" order="0" />
 					</preferred_ips>
 					<port_maps>
-						<port_map logical_port="RST" physical_port="reset" dir="in">
+						<port_map logical_port="RST" physical_port="resetn" dir="in">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="CPU_RESET" />
 							</pin_maps>
@@ -1212,17 +1212,32 @@
 						</port_map>
 						<port_map logical_port="SS_I" physical_port="spi0_ss_i" dir="inout">
 							<pin_maps>
-								<pin_map port_index="0" component_pin="FPGA0_FCS" />
+								<pin_map port_index="0" component_pin="FLASH0_FCS" />
 							</pin_maps>
 						</port_map>
 						<port_map logical_port="SS_O" physical_port="spi0_ss_o" dir="inout">
 							<pin_maps>
-								<pin_map port_index="0" component_pin="FPGA0_FCS" />
+								<pin_map port_index="0" component_pin="FLASH0_FCS" />
 							</pin_maps>
 						</port_map>
 						<port_map logical_port="SS_T" physical_port="spi0_ss_t" dir="inout">
 							<pin_maps>
-								<pin_map port_index="0" component_pin="FPGA0_FCS" />
+								<pin_map port_index="0" component_pin="FLASH0_FCS" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCK_I" physical_port="spi0_sck_i" dir="inout">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="FLASH_CCLK" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCK_O" physical_port="spi0_sck_o" dir="inout">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="FLASH_CCLK" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCK_T" physical_port="spi0_sck_t" dir="inout">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="FLASH_CCLK" />
 							</pin_maps>
 						</port_map>
 					</port_maps>
@@ -1307,11 +1322,26 @@
 								<pin_map port_index="0" component_pin="FLASH1_FCS" />
 							</pin_maps>
 						</port_map>
+						<port_map logical_port="SCK_I" physical_port="spi1_sck_i" dir="inout">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="FLASH_CCLK" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCK_O" physical_port="spi1_sck_o" dir="inout">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="FLASH_CCLK" />
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCK_T" physical_port="spi1_sck_t" dir="inout">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="FLASH_CCLK" />
+							</pin_maps>
+						</port_map>						
 					</port_maps>
 				</interface>
 			</interfaces>
 		</component>
-		<component name="ddr4_sdram" display_name="DDR4 SDRAM" type="chip" sub_type="ddr" major_group="External Memory" part_name="MT40A512M16LY-075" vendor="Micron" spec_url="https://www.micron.com/products/memory/dram-components/ddr4-sdram/part-catalog/part-detail/mt40a512m16ly-062e-it-e">
+		<component name="ddr4_sdram" display_name="DDR4 SDRAM" type="chip" sub_type="ddr" major_group="External Memory" part_name="MT40A512M16HA-083E" vendor="Micron" spec_url="https://www.micron.com/products/memory/dram-components/ddr4-sdram/part-catalog/part-detail/mt40a512m16ly-062e-it-e">
 			<description>4GB DDR4 SDRAM memory</description>
 			<parameters>
 				<parameter name="ddr_type" value="ddr4" />
@@ -1369,7 +1399,7 @@
 		<component name="iic_main" display_name="IIC" type="chip" sub_type="mux" major_group="Miscellaneous">
 			<description>I2C</description>
 		</component>
-		<component name="reset" display_name="FPGA Reset" type="chip" sub_type="system_reset" major_group="Reset" part_name="TL3301EF100QG" vendor="ESwitch">
+		<component name="sys_resetn" display_name="FPGA Reset" type="chip" sub_type="system_reset" major_group="Reset" part_name="TL3301EF100QG" vendor="ESwitch">
 			<description>CPU Reset Push Button, Active Low</description>
 		</component>
 		<component name="push_btn" display_name="Push Button" type="chip" sub_type="push_button" major_group="General Purpose Input or Output" part_name="TL3301EF100QG" vendor="ESwitch">
@@ -1856,8 +1886,8 @@
 		<connection name="part0_rs232_uart" component1="part0" component2="rs232_uart">
 			<connection_map name="part0_rs232_uart_1" typical_delay="5" c1_st_index="163" c1_end_index="164" c2_st_index="0" c2_end_index="1" />
 		</connection>
-		<connection name="part0_reset" component1="part0" component2="reset">
-			<connection_map name="part0_reset_1" typical_delay="5" c1_st_index="179" c1_end_index="179" component2="reset" c2_st_index="0" c2_end_index="0" />
+		<connection name="part0_reset" component1="part0" component2="sys_resetn">
+			<connection_map name="part0_reset_1" typical_delay="5" c1_st_index="179" c1_end_index="179" component2="sys_resetn" c2_st_index="0" c2_end_index="0" />
 		</connection>
 		<connection name="part0_default_sysclk_200" component1="part0" component2="default_sysclk_200">
 			<connection_map name="part0_sys_clk_200_1" typical_delay="5" c1_st_index="116" c1_end_index="117" c2_st_index="0" c2_end_index="1" />
@@ -1903,9 +1933,11 @@
 		</connection>
 		<connection name="part0_spi_flash0" component1="part0" component2="spi_flash0">
 			<connection_map name="part0_spi_flash_0" c1_st_index="197" c1_end_index="201" c2_st_index="0" c2_end_index="4" />
+			<connection_map name="part0_spi_flash_0" c1_st_index="519" c1_end_index="519" c2_st_index="5" c2_end_index="5" />
 		</connection>
 		<connection name="part0_spi_flash1" component1="part0" component2="spi_flash1">
 			<connection_map name="part0_spi_flash_1" c1_st_index="202" c1_end_index="206" c2_st_index="0" c2_end_index="4" />
+			<connection_map name="part0_spi_flash_1" c1_st_index="519" c1_end_index="519" c2_st_index="5" c2_end_index="5" />
 		</connection>
 	</connections>
 	<ip_associated_rules>

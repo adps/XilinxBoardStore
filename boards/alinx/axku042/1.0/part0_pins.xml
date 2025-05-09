@@ -214,12 +214,13 @@
         <pin index="198" name="FLASH0_D1" iostandard="LVCMOS33" loc="AB7" />
         <pin index="199" name="FLASH0_D2" iostandard="LVCMOS33" loc="AA7" />
         <pin index="200" name="FLASH0_D3" iostandard="LVCMOS33" loc="Y7" />
-        <pin index="201" name="FPGA0_FCS" iostandard="LVCMOS33" loc="U7" />
+        <pin index="201" name="FLASH0_FCS" iostandard="LVCMOS33" loc="U7" />
         <pin index="202" name="FLASH1_D0" iostandard="LVCMOS33" loc="M20" />
         <pin index="203" name="FLASH1_D1" iostandard="LVCMOS33" loc="L20" />
         <pin index="204" name="FLASH1_D2" iostandard="LVCMOS33" loc="R21" />
         <pin index="205" name="FLASH1_D3" iostandard="LVCMOS33" loc="R22" />
         <pin index="206" name="FLASH1_FCS" iostandard="LVCMOS33" loc="G26" />
+        <pin index="519" name="FLASH_CCLK" iostandard="LVCMOS33" loc="AA9" />
         <!-- ############## FMC LPC0 ############## -->
         <pin index="207" name="fmc_lpc0_la09_p" iostandard="LVCMOS18" loc="T22" />
         <pin index="208" name="fmc_lpc0_la09_n" iostandard="LVCMOS18" loc="T23" />
