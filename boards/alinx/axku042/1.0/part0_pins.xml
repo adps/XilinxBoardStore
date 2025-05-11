@@ -220,7 +220,7 @@
         <pin index="204" name="FLASH1_D2" iostandard="LVCMOS33" loc="R21" />
         <pin index="205" name="FLASH1_D3" iostandard="LVCMOS33" loc="R22" />
         <pin index="206" name="FLASH1_FCS" iostandard="LVCMOS33" loc="G26" />
-        <pin index="519" name="FLASH_CCLK" iostandard="LVCMOS33" loc="AA9" />
+        <pin index="519" name="FLASH_CCLK" iostandard="LVCMOS33" loc="AA9" /> <!-- EK -->
         <!-- ############## FMC LPC0 ############## -->
         <pin index="207" name="fmc_lpc0_la09_p" iostandard="LVCMOS18" loc="T22" />
         <pin index="208" name="fmc_lpc0_la09_n" iostandard="LVCMOS18" loc="T23" />
