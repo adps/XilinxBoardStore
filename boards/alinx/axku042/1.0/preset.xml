@@ -9,7 +9,7 @@
                 <user_parameter name="CONFIG.C0.DDR4_TimePeriod" value="833" />
                 <user_parameter name="CONFIG.C0.DDR4_InputClockPeriod" value="4998" />
                 <user_parameter name="CONFIG.ADDN_UI_CLKOUT1_FREQ_HZ" value="100" />
-				<user_parameter name="CONFIG.C0.DDR4_AxiDataWidth" value="64" />
+				<!--user_parameter name="CONFIG.C0.DDR4_AxiDataWidth" value="64" /-->
             </user_parameters>
         </ip>
     </ip_preset>
