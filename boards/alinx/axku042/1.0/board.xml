@@ -1543,6 +1543,9 @@
 		<component name="spi_flash1" display_name="SPI flash 2" type="chip" sub_type="memory_flash_qspi" major_group="External Memory" part_name="N25Q128A" vendor="Numonyx">
 			<description>128 MB of nonvolatile storage that can be used for data storage</description>
 		</component>
+		<component name="pcie_perstn" display_name="PCIe PERSTN" type="chip" sub_type="reset" major_group="Reset">
+			<description>PCIe Reset Signal from Host</description>
+		</component>
 	</components>
 	<jtag_chains>
 		<jtag_chain name="chain1">
@@ -1938,6 +1941,9 @@
 		<connection name="part0_spi_flash1" component1="part0" component2="spi_flash1">
 			<connection_map name="part0_spi_flash_1" c1_st_index="202" c1_end_index="206" c2_st_index="0" c2_end_index="4" />
 			<connection_map name="part0_spi_flash_1" c1_st_index="519" c1_end_index="519" c2_st_index="5" c2_end_index="5" />
+		</connection>
+		<connection name="part0_fan_pwm" component1="part0" component2="fan_pwm">
+			<connection_map name="part0_fan_pwm_1" c1_st_index="181" c1_end_index="181" c2_st_index="0" c2_end_index="0" />
 		</connection>
 	</connections>
 	<ip_associated_rules>
