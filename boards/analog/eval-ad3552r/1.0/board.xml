@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--DOCTYPE board SYSTEM "D:\xilinx\Vivado\2020.2\data\boards\board_schemas\current\board.dtd"-->
+<board schema_version="2.2" vendor="analog" name="eval-ad917x" display_name="FMC EVAL-AD3552R" url="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad3552r.html" preset_file="preset.xml">
+  <images>
+    <image name="ad9172fmc.png" display_name="EVAL-AD3552R BOARD" sub_type="board">
+      <description>FMC EVAL-AD3552R Board Image</description>
+    </image>
+  </images>
+  <compatible_board_revisions>
+    <revision id="0">1.0</revision>
+  </compatible_board_revisions>
+  <file_version>1.0</file_version>
+  <description>FMC EVAL-AD3552R</description>
+  <components>
+    <component name="lpc_connector" display_name="FMC EVAL-AD3552R" type="connector" sub_type="fmc_lpc" major_group="FMC LPC">
+      <description>FMC LPC connector</description>
+      <parameters>
+        <parameter name="mode" value="lpc" value_type="list" range="lpc"/>
+      </parameters>
+      <pins>
+        <!--pin index="81" name=""/ --> <!-- C1 : gnd -->
+        <!--pin index="82" name="serdin7_p"/ --> <!-- C2 : dp0_c2m_p -->
+        <!--pin index="83" name="serdin7_n"/ --> <!-- C3 : dp0_c2m_n -->
+        <!--pin index="84" name=""/ --> <!-- C4 : gnd -->
+        <!--pin index="85" name=""/ --> <!-- C5 : gnd -->
+        <!--pin index="86" name=""/ --> <!-- C6 : dp0_m2c_p -->
+        <!--pin index="87" name=""/ --> <!-- C7 : dp0_m2c_n -->
+        <!--pin index="88" name=""/ --> <!-- C8 : gnd -->
+        <!--pin index="89" name=""/ --> <!-- C9 : gnd -->
+        <pin index="90" name="fmc_txen_0"/> <!-- C10 : la06_p --> <!-- GPIO_6 --> new
+        <pin index="91" name="fmc_txen_1"/> <!-- C11 : la06_n --> <!-- GPIO_7 --> new
+        <!--pin index="92" name=""/ --> <!-- C12 : gnd -->
+        <!--pin index="93" name=""/ --> <!-- C13 : gnd -->
+        <!--pin index="94" name=""/ --> <!-- C14 : la10_p -->
+        <!--pin index="95" name=""/ --> <!-- C15 : la10_n -->
+        <!--pin index="96" name=""/ --> <!-- C16 : gnd -->
+        <!--pin index="97" name=""/ --> <!-- C17 : gnd -->
+        <!--pin index="98" name=""/ --> <!-- C18 : la14_p -->
+        <!--pin index="99" name=""/ --> <!-- C19 : la14_n -->
+        <!--pin index="100" name=""/ --> <!-- C20 : gnd -->
+        <!--pin index="101" name=""/ --> <!-- C21 : gnd -->
+        <!--pin index="102" name=""/ --> <!-- C22 : la18_p_cc -->
+        <!--pin index="103" name=""/ --> <!-- C23 : la18_n_cc -->
+        <!--pin index="104" name=""/ --> <!-- C24 : gnd -->
+        <!--pin index="105" name=""/ --> <!-- C25 : gnd -->
+        <!--pin index="106" name=""/ --> <!-- C26 : la27_p -->
+        <!--pin index="107" name=""/ --> <!-- C27 : la27_n -->
+        <!--pin index="108" name=""/ --> <!-- C28 : gnd -->
+        <!--pin index="109" name=""/ --> <!-- C29 : gnd -->
+        <!--pin index="110" name="fmc_scl"/ --> <!-- C30 : scl -->
+        <!--pin index="111" name="fmc_sda"/ --> <!-- C31 : sda -->
+        <!--pin index="112" name=""/ --> <!-- C32 : gnd -->
+        <!--pin index="113" name=""/ --> <!-- C33 : gnd -->
+        <!--pin index="114" name=""/ --> <!-- C34 : ga0 --> <!-- GA0 --> new
+        <!--pin index="115" name=""/ --> <!-- C35 : 12p0v -->
+        <!--pin index="116" name=""/ --> <!-- C36 : gnd -->
+        <!--pin index="117" name=""/ --> <!-- C37 : 12p0v -->
+        <!--pin index="118" name=""/ --> <!-- C38 : gnd -->
+        <!--pin index="119" name=""/ --> <!-- C39 : 3p3v -->
+        <!--pin index="120" name=""/ --> <!-- C40 : gnd -->
+        <!--pin index="121" name=""/ --> <!-- D1 : pg_c2m --> <!-- POWER_ON_FMC --> new
+        <!--pin index="122" name=""/ --> <!-- D2 : gnd -->
+        <!--pin index="123" name=""/ --> <!-- D3 : gnd -->
+        <pin index="124" name="br40_p"/> <!-- D4 : gbtclk0_m2c_p -->
+        <pin index="125" name="br40_n"/> <!-- D5 : gbtclk0_m2c_n -->
+        <!--pin index="126" name=""/ --> <!-- D6 : gnd -->
+        <!--pin index="127" name=""/ --> <!-- D7 : gnd -->
+        <pin index="128" name="sync0_p"/> <!-- D8 : la01_p_cc --> <!-- CLOCK_FMC --> new
+        <pin index="129" name="sync0_n"/> <!-- D9 : la01_n_cc --> <!-- SYNC_EVENTS --> new
+        <!--pin index="130" name=""/ --> <!-- D10 : gnd -->
+        <pin index="131" name="fmc_cs2"/> <!-- D11 : la05_p --> <!-- /LDAC --> new
+        <pin index="132" name="fmc_spi_en"/> <!-- D12 : la05_n --> <!-- /RESET --> new
+        <!--pin index="133" name=""/ --> <!-- D13 : gnd -->
+        <!--pin index="134" name=""/ --> <!-- D14 : la09_p -->
+        <!--pin index="135" name=""/ --> <!-- D15 : la09_n -->
+        <!--pin index="136" name=""/ --> <!-- D16 : gnd -->
+        <!--pin index="137" name=""/ --> <!-- D17 : la13_p -->
+        <!--pin index="138" name=""/ --> <!-- D18 : la13_n -->
+        <!--pin index="139" name=""/ --> <!-- D19 : gnd -->
+        <!--pin index="140" name=""/ --> <!-- D20 : la17_p_cc -->
+        <!--pin index="141" name=""/ --> <!-- D21 : la17_n_cc -->
+        <!--pin index="142" name=""/ --> <!-- D22 : gnd -->
+        <!--pin index="143" name=""/ --> <!-- D23 : la23_p -->
+        <!--pin index="144" name=""/ --> <!-- D24 : la23_n -->
+        <!--pin index="145" name=""/ --> <!-- D25 : gnd -->
+        <!--pin index="146" name=""/ --> <!-- D26 : la26_p -->
+        <!--pin index="147" name=""/ --> <!-- D27 : la26_n -->
+        <!--pin index="148" name=""/ --> <!-- D28 : gnd -->
+        <!--pin index="149" name=""/ --> <!-- D29 : tck -->
+        <!--pin index="150" name=""/ --> <!-- D30 : tdi -->
+        <!--pin index="151" name=""/ --> <!-- D31 : tdo -->
+        <!--pin index="152" name=""/ --> <!-- D32 : 3p3vaux -->
+        <!--pin index="153" name=""/ --> <!-- D33 : tms -->
+        <!--pin index="154" name=""/ --> <!-- D34 : trst_l -->
+        <!--pin index="155" name=""/ --> <!-- D35 : ga1 --> <!-- GA1 --> new
+        <!--pin index="156" name=""/ --> <!-- D36 : 3p3v -->
+        <!--pin index="157" name=""/ --> <!-- D37 : gnd -->
+        <!--pin index="158" name=""/ --> <!-- D38 : 3p3v -->
+        <!--pin index="159" name=""/ --> <!-- D39 : gnd -->
+        <!--pin index="160" name=""/ --> <!-- D40 : 3p3v -->
+        <!--pin index="241" name=""/ --> <!-- G1 : gnd -->
+        <!--pin index="242" name=""/ --> <!-- G2 : clk1_m2c_p -->
+        <!--pin index="243" name=""/ --> <!-- G3 : clk1_m2c_n -->
+        <!--pin index="244" name=""/ --> <!-- G4 : gnd -->
+        <!--pin index="245" name=""/ --> <!-- G5 : gnd -->
+        <pin index="246" name="sysref2_p"/> <!-- G6 : la00_p_cc --> <!-- SPI_SCLK --> new
+        <pin index="247" name="sysref2_n"/> <!-- G7 : la00_n_cc --> <!-- SPI_/CS --> new
+        <!--pin index="248" name=""/ --> <!-- G8 : gnd -->
+        <pin index="249" name="fmc_sck"/> <!-- G9 : la03_p --> <!-- SPI_SDIO2 --> new
+        <pin index="250" name="fmc_mosi"/> <!-- G10 : la03_n --> <!-- SPI_SDIO3 --> new
+        <!--pin index="251" name=""/ --> <!-- G11 : gnd -->
+        <!--pin index="252" name=""/ --> <!-- G12 : la08_p -->
+        <!--pin index="253" name=""/ --> <!-- G13 : la08_n -->
+        <!--pin index="254" name=""/ --> <!-- G14 : gnd -->
+        <!--pin index="255" name=""/ --> <!-- G15 : la12_p -->
+        <!--pin index="256" name=""/ --> <!-- G16 : la12_n -->
+        <!--pin index="257" name=""/ --> <!-- G17 : gnd -->
+        <!--pin index="258" name=""/ --> <!-- G18 : la16_p -->
+        <!--pin index="259" name=""/ --> <!-- G19 : la16_n -->
+        <!--pin index="260" name=""/ --> <!-- G20 : gnd -->
+        <!--pin index="261" name=""/ --> <!-- G21 : la20_p -->
+        <!--pin index="262" name=""/ --> <!-- G22 : la20_n -->
+        <!--pin index="263" name=""/ --> <!-- G23 : gnd -->
+        <!--pin index="264" name=""/ --> <!-- G24 : la22_p -->
+        <!--pin index="265" name=""/ --> <!-- G25 : la22_n -->
+        <!--pin index="266" name=""/ --> <!-- G26 : gnd -->
+        <!--pin index="267" name=""/ --> <!-- G27 : la25_p -->
+        <!--pin index="268" name=""/ --> <!-- G28 : la25_n -->
+        <!--pin index="269" name=""/ --> <!-- G29 : gnd -->
+        <!--pin index="270" name=""/ --> <!-- G30 : la29_p -->
+        <!--pin index="271" name=""/ --> <!-- G31 : la29_n -->
+        <!--pin index="272" name=""/ --> <!-- G32 : gnd -->
+        <!--pin index="273" name=""/ --> <!-- G33 : la31_p -->
+        <!--pin index="274" name=""/ --> <!-- G34 : la31_n -->
+        <!--pin index="275" name=""/ --> <!-- G35 : gnd -->
+        <!--pin index="276" name=""/ --> <!-- G36 : la33_p -->
+        <!--pin index="277" name=""/ --> <!-- G37 : la33_n -->
+        <!--pin index="278" name=""/ --> <!-- G38 : gnd -->
+        <!--pin index="279" name=""/ --> <!-- G39 : vadj -->
+        <!--pin index="280" name=""/ --> <!-- G40 : gnd -->
+        <!--pin index="281" name=""/ --> <!-- H1 : vref_a_m2c -->
+        <!--pin index="282" name=""/ --> <!-- H2 : prsnt_m2c_l -->
+        <!--pin index="283" name=""/ --> <!-- H3 : gnd -->
+        <!--pin index="284" name=""/ --> <!-- H4 : clk0_m2c_p -->
+        <!--pin index="285" name=""/ --> <!-- H5 : clk0_m2c_n -->
+        <!--pin index="286" name=""/ --> <!-- H6 : gnd -->
+        <pin index="287" name="sync1_p"/> <!-- H7 : la02_p --> <!-- SPI_SDIO0 --> new
+        <pin index="288" name="sync1_n"/> <!-- H8 : la02_n --> <!-- SPI_SDIO1 --> new
+        <!--pin index="289" name=""/ --> <!-- H9 : gnd -->
+        <pin index="290" name="fmc_miso"/> <!-- H10 : la04_p --> <!-- /ALERT --> new
+        <pin index="291" name="fmc_cs1"/> <!-- H11 : la04_n --> <!-- SPI_QPI --> new
+        <!--pin index="292" name=""/ --> <!-- H12 : gnd -->
+        <pin index="293" name="fmc_pe_ctrl"/> <!-- H13 : la07_p --> <!-- GPIO_8 --> new
+        <!--pin index="294" name=""/ --> <!-- H14 : la07_n --> <!-- GPIO_9 --> new
+        <!--pin index="295" name=""/ --> <!-- H15 : gnd -->
+        <!--pin index="296" name=""/ --> <!-- H16 : la11_p -->
+        <!--pin index="297" name=""/ --> <!-- H17 : la11_n -->
+        <!--pin index="298" name=""/ --> <!-- H18 : gnd -->
+        <!--pin index="299" name=""/ --> <!-- H19 : la15_p -->
+        <!--pin index="300" name=""/ --> <!-- H20 : la15_n -->
+        <!--pin index="301" name=""/ --> <!-- H21 : gnd -->
+        <!--pin index="302" name=""/ --> <!-- H22 : la19_p -->
+        <!--pin index="303" name=""/ --> <!-- H23 : la19_n -->
+        <!--pin index="304" name=""/ --> <!-- H24 : gnd -->
+        <!--pin index="305" name=""/ --> <!-- H25 : la21_p -->
+        <!--pin index="306" name=""/ --> <!-- H26 : la21_n -->
+        <!--pin index="307" name=""/ --> <!-- H27 : gnd -->
+        <!--pin index="308" name=""/ --> <!-- H28 : la24_p -->
+        <!--pin index="309" name=""/ --> <!-- H29 : la24_n -->
+        <!--pin index="310" name=""/ --> <!-- H30 : gnd -->
+        <!--pin index="311" name=""/ --> <!-- H31 : la28_p -->
+        <!--pin index="312" name=""/ --> <!-- H32 : la28_n -->
+        <!--pin index="313" name=""/ --> <!-- H33 : gnd -->
+        <!--pin index="314" name=""/ --> <!-- H34 : la30_p -->
+        <!--pin index="315" name=""/ --> <!-- H35 : la30_n -->
+        <!--pin index="316" name=""/ --> <!-- H36 : gnd -->
+        <!--pin index="317" name=""/ --> <!-- H37 : la32_p -->
+        <!--pin index="318" name=""/ --> <!-- H38 : la32_n -->
+        <!--pin index="319" name=""/ --> <!-- H39 : gnd -->
+        <!--pin index="320" name=""/ --> <!-- H40 : vadj -->
+      </pins>
+      <interfaces>
+        <interface mode="master" name="jesd204_gt_8x" type="xilinx.com:ip:jesd204_phy:4.0" of_component="ad9174_jesd" preset_proc="jesd204_preset">
+          <description>JESD204 Core Transceiver interface</description>
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="jesd204_phy" order="0"/>
+          </preferred_ips>
+          <port_maps>
+            <port_map logical_port="txn_out" physical_port="txn_8" dir="out" left="7" right="0">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="serdin0_n"/>
+                <pin_map port_index="1" component_pin="serdin1_n"/>
+                <pin_map port_index="2" component_pin="serdin2_n"/>
+                <pin_map port_index="3" component_pin="serdin3_n"/>
+                <pin_map port_index="4" component_pin="serdin4_n"/>
+                <pin_map port_index="5" component_pin="serdin5_n"/>
+                <pin_map port_index="6" component_pin="serdin6_n"/>
+                <pin_map port_index="7" component_pin="serdin7_n"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="txp_out" physical_port="txp_8" dir="out" left="7" right="0">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="serdin0_p"/>
+                <pin_map port_index="1" component_pin="serdin1_p"/>
+                <pin_map port_index="2" component_pin="serdin2_p"/>
+                <pin_map port_index="3" component_pin="serdin3_p"/>
+                <pin_map port_index="4" component_pin="serdin4_p"/>
+                <pin_map port_index="5" component_pin="serdin5_p"/>
+                <pin_map port_index="6" component_pin="serdin6_p"/>
+                <pin_map port_index="7" component_pin="serdin7_p"/>
+              </pin_maps>
+            </port_map>
+          </port_maps>
+          <parameters>
+            <parameter name="CONFIG.AXICLK_FREQ" value="100"/>
+            <parameter name="CONFIG.C_DEFAULT_F" value="1"/>
+            <parameter name="CONFIG.C_DEFAULT_K" value="2"/>
+            <parameter name="CONFIG.C_DEFAULT_SCR" value="0"/>
+            <parameter name="CONFIG.C_DEFAULT_SYSREF_ALWAYS" value="0"/>
+            <parameter name="CONFIG.C_DEFAULT_SYSREF_REQUIRED" value="1"/>
+            <parameter name="CONFIG.C_LANES" value="8"/>
+            <parameter name="CONFIG.C_LMFC_BUFFER_SIZE" value="1024"/>
+            <parameter name="CONFIG.C_NODE_IS_TRANSMIT" value="1"/>
+            <parameter name="CONFIG.C_PLL_SELECTION" value="1"/>
+            <parameter name="CONFIG.C_SYSREF_SAMPLING_EDGE" value="0"/>
+            <parameter name="CONFIG.DRPCLK_FREQ" value="100"/>
+            <parameter name="CONFIG.GT_Line_Rate" value="15"/>
+            <parameter name="CONFIG.GT_REFCLK_FREQ" value="187.5"/>
+            <parameter name="CONFIG.Global_clk_sel" value="true"/>
+            <parameter name="CONFIG.SupportLevel" value="1"/>
+            <parameter name="CONFIG.Transceiver" value="GTHE3"/>
+            <parameter name="CONFIG.TransceiverControl" value="false"/>
+            <parameter name="CONFIG.USE_JSPAT" value="false"/>
+            <parameter name="CONFIG.USE_RPAT" value="false"/>
+          </parameters>
+        </interface>
+        <interface mode="master" name="spi_interface" type="xilinx.com:interface:spi_rtl:1.0" of_component="fmc_hpc_spi" preset_proc="fmc_hpc_spi_preset">
+		  <description>SPI Interfaces for HMC7044 and AD9174 </description>
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
+          </preferred_ips>
+          <port_maps>
+            <port_map logical_port="IO0_I" physical_port="spi_mosi_i" dir="in">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_mosi"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="IO0_O" physical_port="spi_mosi_o" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_mosi"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="IO0_T" physical_port="spi_mosi_t" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_mosi"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="IO1_I" physical_port="spi_miso_i" dir="in">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_miso"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="IO1_O" physical_port="spi_miso_o" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_miso"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="IO1_T" physical_port="spi_miso_t" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_miso"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="SCK_I" physical_port="spi_sclk_i" dir="in">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_sck"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="SCK_O" physical_port="spi_sclk_o" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_sck"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="SCK_T" physical_port="spi_sclk_t" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_sck"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="SS_I" physical_port="spi_ss_i" dir="in" left="1" right="0">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_cs1"/> <!-- AD9174 -->
+				<pin_map port_index="1" component_pin="fmc_cs2"/> <!-- HMC7044 -->
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="SS_O" physical_port="spi_ss_o" dir="out" left="1" right="0">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_cs1"/><!-- AD9174 -->
+				<pin_map port_index="1" component_pin="fmc_cs2"/><!-- HMC7044 -->
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="SS_T" physical_port="spi_ss_t" dir="out">
+			<!-- left="1" right="0"-->
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_cs1"/><!-- AD9174 -->
+				<!-- pin_map port_index="1" component_pin="fmc_cs2"/ --><!-- HMC7044 -->
+              </pin_maps>
+            </port_map>
+			
+			<port_map logical_port="SS1_O" physical_port="spi_ss1_o" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_cs1"/>
+              </pin_maps>
+            </port_map>
+			<port_map logical_port="SS2_O" physical_port="spi_ss2_o" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="fmc_cs2"/>
+              </pin_maps>
+            </port_map>
+			
+          </port_maps>
+        </interface>
+		<interface mode="master" name="gpio_interface" type="xilinx.com:interface:gpio_rtl:1.0" of_component="fmc_gpio" preset_proc="fmc_gpio_preset">
+			<preferred_ips>
+				<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0" />
+			</preferred_ips>
+			<port_maps>
+				<port_map logical_port="TRI_O" physical_port="fmc_gpio_tri_o" dir="out" left="3" right="0">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="fmc_spi_en" />
+						<pin_map port_index="1" component_pin="fmc_txen_0" />
+						<pin_map port_index="2" component_pin="fmc_txen_1" />
+						<pin_map port_index="3" component_pin="fmc_pe_ctrl" />
+					</pin_maps>
+				</port_map>
+			</port_maps>
+		</interface>
+      </interfaces>
+    </component>
+    <component name="J34" display_name="AD9174 Clock IN - Differential (NOT USED)" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
+    <component name="J42" display_name="AD9174 Clock IN - Single Ended (NOT USED)" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
+    <component name="J41" display_name="HMC7044 Reference Clock - Single Ended" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
+    <component name="J1" display_name="AD9174 DAC1 Out - Single Ended" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
+    <component name="J2" display_name="AD9174 DAC0 Out - Single Ended" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
+    <component name="J3" display_name="AD9174 DAC Clock Out - Single Ended" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
+    <component name="P3" display_name="SPI Connector" type="connector" sub_type="fixed_io" major_group="FMC HPC">
+      <description>SPI interface for AD9174 and HMC7044</description>
+    </component>
+    <component name="P4" display_name="USB Connector" type="connector" sub_type="fixed_io" major_group="FMC HPC">
+      <description>USB connector for ACE</description>
+    </component>
+    <component name="ad9174_jesd" display_name="AD9174 JESD" type="chip" sub_type="chip" major_group="FMC HPC" part_name="AD9174" vendor="Analog Devices" spec_url="www.analog.com">
+      <description>FMC EVAL-AD3552R AD9174 JESD204</description>
+      <component_modes>
+        <component_mode name="jesd204_tx_1" display_name="AD9174 JESD204">
+          <interfaces>
+            <interface name="jesd204_gt_8x" order="0"/>
+          </interfaces>
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="jesd204" order="0"/>
+          </preferred_ips>
+        </component_mode>
+      </component_modes>
+    </component>
+    <component name="fmc_hpc_spi" display_name="AD9174 and HMC7044 SPI" type="chip" sub_type="mux" major_group="FMC HPC" part_name="EVAL-AD3552R" vendor="Analog Devices" spec_url="www.analog.com">
+      <description>FMC EVAL-AD3552R AD9174 and HMC7044 SPI</description>
+      <component_modes>
+        <component_mode name="fmc_hpc_spi_1" display_name="AD9174 and HMC7044 SPI">
+          <interfaces>
+            <interface name="spi_interface" order="0"/>
+          </interfaces>
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
+          </preferred_ips>
+        </component_mode>
+      </component_modes>
+    </component>
+    <component name="fmc_gpio" display_name="FMC Output Enable Signals" type="chip" sub_type="chip" major_group="FMC HPC" part_name="EVAL-AD3552R" vendor="Analog Devices" spec_url="www.analog.com">
+      <description>FMC EVAL-AD3552R FMC Output enable signals</description>
+      <component_modes>
+        <component_mode name="fmc_gpio_1" display_name="EVAL-AD3552R Output Enable Signals">
+          <interfaces>
+            <interface name="gpio_interface" order="0"/>
+          </interfaces>
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+          </preferred_ips>
+        </component_mode>
+      </component_modes>
+    </component>
+  </components>
+  <connections>
+    <connection name="hpc_ad9174_jesd" component1="hpc_connector" component2="ad9174_jesd">
+      <connection_map name="hpc_connector_gtx1_1" typical_delay="5" c1_st_index="38" c1_end_index="38" c2_st_index="1" c2_end_index="1"/>
+      <connection_map name="hpc_connector_gtx1_1" typical_delay="5" c1_st_index="39" c1_end_index="39" c2_st_index="0" c2_end_index="0"/>
+      <connection_map name="hpc_connector_gtx2_1" typical_delay="5" c1_st_index="76" c1_end_index="76" c2_st_index="3" c2_end_index="3"/>
+      <connection_map name="hpc_connector_gtx2_1" typical_delay="5" c1_st_index="77" c1_end_index="77" c2_st_index="2" c2_end_index="2"/>
+      <connection_map name="hpc_connector_gtx3_1" typical_delay="5" c1_st_index="34" c1_end_index="34" c2_st_index="5" c2_end_index="5"/>
+      <connection_map name="hpc_connector_gtx3_1" typical_delay="5" c1_st_index="35" c1_end_index="35" c2_st_index="4" c2_end_index="4"/>
+      <connection_map name="hpc_connector_gtx4_1" typical_delay="5" c1_st_index="52" c1_end_index="52" c2_st_index="7" c2_end_index="7"/>
+      <connection_map name="hpc_connector_gtx4_1" typical_delay="5" c1_st_index="53" c1_end_index="53" c2_st_index="6" c2_end_index="6"/>
+      <connection_map name="hpc_connector_gtx5_1" typical_delay="5" c1_st_index="30" c1_end_index="31" c2_st_index="8" c2_end_index="9"/>
+      <connection_map name="hpc_connector_gtx6_1" typical_delay="5" c1_st_index="26" c1_end_index="27" c2_st_index="10" c2_end_index="11"/>
+      <connection_map name="hpc_connector_gtx7_1" typical_delay="5" c1_st_index="22" c1_end_index="23" c2_st_index="12" c2_end_index="13"/>
+      <connection_map name="hpc_connector_gtx8_1" typical_delay="5" c1_st_index="82" c1_end_index="83" c2_st_index="14" c2_end_index="15"/>
+    </connection>
+    <connection name="hpc_fmc_hpc_spi" component1="hpc_connector" component2="fmc_hpc_spi">
+      <connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="290" c1_end_index="290" c2_st_index="0" c2_end_index="0"/>
+      <connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="250" c1_end_index="250" c2_st_index="1" c2_end_index="1"/>
+      <connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="249" c1_end_index="249" c2_st_index="2" c2_end_index="2"/>
+      <connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="291" c1_end_index="291" c2_st_index="3" c2_end_index="3"/>
+	  <connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="131" c1_end_index="131" c2_st_index="4" c2_end_index="4"/>
+    </connection>
+    <connection name="hpc_fmc_fmc_gpio" component1="hpc_connector" component2="fmc_gpio">
+      <connection_map name="hpc_connector_gpio" typical_delay="5" c1_st_index="90" c1_end_index="90" c2_st_index="0" c2_end_index="0"/>
+      <connection_map name="hpc_connector_gpio" typical_delay="5" c1_st_index="91" c1_end_index="91" c2_st_index="1" c2_end_index="1"/>
+      <connection_map name="hpc_connector_gpio" typical_delay="5" c1_st_index="132" c1_end_index="132" c2_st_index="2" c2_end_index="2"/>
+      <connection_map name="hpc_connector_gpio" typical_delay="5" c1_st_index="293" c1_end_index="293" c2_st_index="3" c2_end_index="3"/>
+    </connection>
+  </connections>
+  <ip_associated_rules>
+    <!--ip_associated_rule name="default">
+			<ip vendor="xilinx.com" library="ip" name="jesd204" version="*" ip_interface="">
+				<associated_board_interfaces>
+					<associated_board_interface name="" order="0" />
+				</associated_board_interfaces>
+			</ip>
+		</ip_associated_rule-->
+	<ip_associated_rule name="default">
+		<ip vendor="xilinx.com" library="ip" name="axi_quad_spi" version="*" ip_interface="SPI_0">
+		  <associated_board_interfaces>
+			<associated_board_interface name="spi_interface" order="0"/>
+		  </associated_board_interfaces>
+		</ip>
+	</ip_associated_rule>
+  </ip_associated_rules>
+</board>
