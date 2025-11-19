@@ -1,0 +1,33 @@
+{
+  "config": {
+    "items": [
+      {
+        "infra": {
+          "name": "eval-ad3552r", 
+          "display": "FMC EVAL-AD3552R", 
+          "revision": "1.0", 
+          "description": "FMC EVAL-AD3552R Evaluation Board", 
+          "company": "analog.com", 
+          "company_display": "Analog Devices", 
+          "author": "Engin C.", 
+          "contributors": [
+            {
+              "group": "Analog Devices", 
+              "url": "www.analog.com"
+            }
+          ], 
+          "category": "FMC", 
+          "website": "https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad3552r.html", 
+          "search-keywords": [
+            "eval-ad3552r", 
+            "analog.com", 
+            "fmc", 
+            "dac"
+          ]
+        }
+      }
+    ]
+  }, 
+  "_major": 1, 
+  "_minor": 0
+}
