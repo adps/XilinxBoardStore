@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <board schema_version="2.2" vendor="analog" name="eval-ad3552r" display_name="FMC EVAL-AD3552R" url="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad3552r.html" preset_file="preset.xml">
   <images>
-    <image name="ad9172fmc.png" display_name="EVAL-AD3552R BOARD" sub_type="board">
+    <image name="ad3552fmc.png" display_name="EVAL-AD3552R BOARD" sub_type="board">
       <description>FMC EVAL-AD3552R Board Image</description>
     </image>
   </images>
   <compatible_board_revisions>
     <revision id="0">1.0</revision>
   </compatible_board_revisions>
-  <file_version>1.3</file_version>
+  <file_version>1.4</file_version>
   <description>FMC EVAL-AD3552R</description>
   <components>
     <component name="lpc_connector" display_name="FMC EVAL-AD3552R" type="connector" sub_type="fmc_lpc" major_group="FMC LPC">
@@ -38,9 +38,9 @@
         <pin index="294" name="GPIO_9"/>     <!-- H14: Test Pad -->
       </pins>
       <interfaces>
-        <!-- QUAD SPI INTERFACE -->
+        <!-- QUAD SPI INTERFACE (4 Data Bits) -->
         <interface mode="master" name="spi_interface" type="xilinx.com:interface:spi_rtl:1.0" of_component="fmc_lpc_spi" preset_proc="fmc_lpc_spi_preset">
-          <description>SPI Interface for AD3552R</description>
+          <description>Quad SPI Interface for AD3552R</description>
           <preferred_ips>
             <preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
           </preferred_ips>
@@ -60,6 +60,31 @@
             <port_map logical_port="IO3_I" physical_port="spi_sdio3_i" dir="in"> <pin_maps><pin_map port_index="0" component_pin="SPI_SDIO3"/></pin_maps> </port_map>
             <port_map logical_port="IO3_O" physical_port="spi_sdio3_o" dir="out"><pin_maps><pin_map port_index="0" component_pin="SPI_SDIO3"/></pin_maps> </port_map>
             <port_map logical_port="IO3_T" physical_port="spi_sdio3_t" dir="out"><pin_maps><pin_map port_index="0" component_pin="SPI_SDIO3"/></pin_maps> </port_map>
+            
+            <port_map logical_port="SCK_I" physical_port="spi_sclk_i" dir="in"> <pin_maps><pin_map port_index="0" component_pin="SPI_SCLK"/></pin_maps> </port_map>
+            <port_map logical_port="SCK_O" physical_port="spi_sclk_o" dir="out"><pin_maps><pin_map port_index="0" component_pin="SPI_SCLK"/></pin_maps> </port_map>
+            <port_map logical_port="SCK_T" physical_port="spi_sclk_t" dir="out"><pin_maps><pin_map port_index="0" component_pin="SPI_SCLK"/></pin_maps> </port_map>
+            
+            <port_map logical_port="SS_I" physical_port="spi_ss_i" dir="in">   <pin_maps><pin_map port_index="0" component_pin="SPI_CS_n"/></pin_maps> </port_map>
+            <port_map logical_port="SS_O" physical_port="spi_ss_o" dir="out">  <pin_maps><pin_map port_index="0" component_pin="SPI_CS_n"/></pin_maps> </port_map>
+            <port_map logical_port="SS_T" physical_port="spi_ss_t" dir="out">  <pin_maps><pin_map port_index="0" component_pin="SPI_CS_n"/></pin_maps> </port_map>
+          </port_maps>
+        </interface>
+        
+        <!-- CLASSIC SPI INTERFACE (MOSI/MISO Only) -->
+        <interface mode="master" name="spi_classic_interface" type="xilinx.com:interface:spi_rtl:1.0" of_component="fmc_lpc_spi" preset_proc="fmc_lpc_spi_classic_preset">
+          <description>Classic SPI Interface for AD3552R</description>
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
+          </preferred_ips>
+          <port_maps>
+            <port_map logical_port="MOSI_I" physical_port="spi_mosi_i" dir="in"> <pin_maps><pin_map port_index="0" component_pin="SPI_SDIO0"/></pin_maps> </port_map>
+            <port_map logical_port="MOSI_O" physical_port="spi_mosi_o" dir="out"><pin_maps><pin_map port_index="0" component_pin="SPI_SDIO0"/></pin_maps> </port_map>
+            <port_map logical_port="MOSI_T" physical_port="spi_mosi_t" dir="out"><pin_maps><pin_map port_index="0" component_pin="SPI_SDIO0"/></pin_maps> </port_map>
+            
+            <port_map logical_port="MISO_I" physical_port="spi_miso_i" dir="in"> <pin_maps><pin_map port_index="0" component_pin="SPI_SDIO1"/></pin_maps> </port_map>
+            <port_map logical_port="MISO_O" physical_port="spi_miso_o" dir="out"><pin_maps><pin_map port_index="0" component_pin="SPI_SDIO1"/></pin_maps> </port_map>
+            <port_map logical_port="MISO_T" physical_port="spi_miso_t" dir="out"><pin_maps><pin_map port_index="0" component_pin="SPI_SDIO1"/></pin_maps> </port_map>
             
             <port_map logical_port="SCK_I" physical_port="spi_sclk_i" dir="in"> <pin_maps><pin_map port_index="0" component_pin="SPI_SCLK"/></pin_maps> </port_map>
             <port_map logical_port="SCK_O" physical_port="spi_sclk_o" dir="out"><pin_maps><pin_map port_index="0" component_pin="SPI_SCLK"/></pin_maps> </port_map>
@@ -146,8 +171,12 @@
     <component name="fmc_lpc_spi" display_name="EVAL-AD3552R SPI" type="chip" sub_type="mux" major_group="FMC LPC" part_name="EVAL-AD3552R" vendor="Analog Devices" spec_url="www.analog.com">
       <description>FMC EVAL-AD3552R SPI</description>
       <component_modes>
-        <component_mode name="fmc_lpc_spi_1" display_name="EVAL-AD3552R SPI">
+        <component_mode name="quad_spi" display_name="Quad SPI Mode">
           <interfaces><interface name="spi_interface" order="0"/></interfaces>
+        </component_mode>
+        <!-- NEW MODE: Classic SPI -->
+        <component_mode name="classic_spi" display_name="Classic SPI Mode">
+          <interfaces><interface name="spi_classic_interface" order="0"/></interfaces>
         </component_mode>
       </component_modes>
     </component>
