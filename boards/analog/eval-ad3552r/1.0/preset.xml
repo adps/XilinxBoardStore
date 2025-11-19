@@ -2,11 +2,24 @@
 <!--DOCTYPE ip_presets SYSTEM "D:\xilinx\Vivado\2020.2\data\boards\board_schemas\current\preset.dtd"-->
 <ip_presets schema="2.2">
 
-    <!-- SPI PRESET (Matches 'fmc_lpc_spi_preset' in board.xml) -->
+    <!-- QUAD SPI PRESET (For 'quad_spi' mode) -->
 	<ip_preset preset_proc_name="fmc_lpc_spi_preset">
         <ip vendor="xilinx.com" library="ip" name="axi_quad_spi" ip_interface="SPI_0">
             <user_parameters>
 				<user_parameter name="CONFIG.C_SPI_MODE" value="2"/> <!-- Quad SPI Mode -->
+				<user_parameter name="CONFIG.C_SCK_RATIO" value="2"/>
+				<user_parameter name="CONFIG.C_FIFO_DEPTH" value="16" />
+				<user_parameter name="CONFIG.C_USE_STARTUP" value="0" />
+				<user_parameter name="CONFIG.C_NUM_SS_BITS" value="1"/>
+            </user_parameters>
+        </ip>
+    </ip_preset>
+    
+    <!-- CLASSIC SPI PRESET (For 'classic_spi' mode) -->
+    <ip_preset preset_proc_name="fmc_lpc_spi_classic_preset">
+        <ip vendor="xilinx.com" library="ip" name="axi_quad_spi" ip_interface="SPI_0">
+            <user_parameters>
+				<user_parameter name="CONFIG.C_SPI_MODE" value="0"/> <!-- Standard SPI Mode -->
 				<user_parameter name="CONFIG.C_SCK_RATIO" value="2"/>
 				<user_parameter name="CONFIG.C_FIFO_DEPTH" value="16" />
 				<user_parameter name="CONFIG.C_USE_STARTUP" value="0" />
