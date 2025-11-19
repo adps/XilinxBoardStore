@@ -47,8 +47,8 @@
         <!--pin index="107" name=""/ --> <!-- C27 : la27_n -->
         <!--pin index="108" name=""/ --> <!-- C28 : gnd -->
         <!--pin index="109" name=""/ --> <!-- C29 : gnd -->
-        <!--pin index="110" name="fmc_scl"/ --> <!-- C30 : scl -->
-        <!--pin index="111" name="fmc_sda"/ --> <!-- C31 : sda -->
+        <pin index="110" name="fmc_scl"/> <!-- C30 : scl -->
+        <pin index="111" name="fmc_sda"/> <!-- C31 : sda -->
         <!--pin index="112" name=""/ --> <!-- C32 : gnd -->
         <!--pin index="113" name=""/ --> <!-- C33 : gnd -->
         <!--pin index="114" name="GA0"/ --> <!-- C34 : ga0 --> <!-- GA0 --> 
@@ -58,7 +58,7 @@
         <!--pin index="118" name=""/ --> <!-- C38 : gnd -->
         <!--pin index="119" name=""/ --> <!-- C39 : 3p3v -->
         <!--pin index="120" name=""/ --> <!-- C40 : gnd -->
-        <!--pin index="121" name=""/ --> <!-- D1 : pg_c2m --> <!-- POWER_ON_FMC --> 
+        <pin index="121" name="POWER_ON_FMC"/> <!-- D1 : pg_c2m --> <!-- POWER_ON_FMC --> 
         <!--pin index="122" name=""/ --> <!-- D2 : gnd -->
         <!--pin index="123" name=""/ --> <!-- D3 : gnd -->
         <!--pin index="124" name="br40_p"/ --> <!-- D4 : gbtclk0_m2c_p -->
@@ -216,6 +216,36 @@
                 <pin_map port_index="0" component_pin="SPI_SDIO1"/>
               </pin_maps>
             </port_map>
+            <port_map logical_port="IO2_I" physical_port="spi_sdio2_i" dir="in">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="SPI_SDIO2"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="IO2_O" physical_port="spi_sdio2_o" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="SPI_SDIO2"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="IO2_T" physical_port="spi_sdio2_t" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="SPI_SDIO2"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="IO3_I" physical_port="spi_sdio3_i" dir="in">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="SPI_SDIO3"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="IO3_O" physical_port="spi_sdio3_o" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="SPI_SDIO3"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="IO3_T" physical_port="spi_sdio3_t" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="SPI_SDIO3"/>
+              </pin_maps>
+            </port_map>		
             <port_map logical_port="SCK_I" physical_port="spi_sclk_i" dir="in">
               <pin_maps>
                 <pin_map port_index="0" component_pin="SPI_SCLK"/>
@@ -253,47 +283,59 @@
 				<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0" />
 			</preferred_ips>
 			<port_maps>
-				<port_map logical_port="TRI_O" physical_port="fmc_gpio_tri_o" dir="out" left="3" right="0">
+				<port_map logical_port="TRI_T" physical_port="fmc_gpio_tri_o" dir="out" left="6" right="0">
 					<pin_maps>
-						<pin_map port_index="0" component_pin="fmc_spi_en" />
-						<pin_map port_index="1" component_pin="fmc_txen_0" />
-						<pin_map port_index="2" component_pin="fmc_txen_1" />
-						<pin_map port_index="3" component_pin="fmc_pe_ctrl" />
+					    <pin_map port_index="0" component_pin="POWER_ON_FMC" />
+					    <pin_map port_index="1" component_pin="SPI_QPI" />
+						<pin_map port_index="2" component_pin="ALERT_n" />
+						<pin_map port_index="3" component_pin="GPIO_6" />
+						<pin_map port_index="4" component_pin="GPIO_7" />
+						<pin_map port_index="5" component_pin="GPIO_8" />
+						<pin_map port_index="6" component_pin="GPIO_9" />
+						
+					</pin_maps>
+				</port_map>
+				<port_map logical_port="TRI_O" physical_port="fmc_gpio_tri_o" dir="out" left="6" right="0">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="POWER_ON_FMC" />
+					    <pin_map port_index="1" component_pin="SPI_QPI" />
+						<pin_map port_index="2" component_pin="ALERT_n" />					
+						<pin_map port_index="3" component_pin="GPIO_6" />
+						<pin_map port_index="4" component_pin="GPIO_7" />
+						<pin_map port_index="5" component_pin="GPIO_8" />
+						<pin_map port_index="6" component_pin="GPIO_9" />
+					</pin_maps>
+				</port_map>
+				<port_map logical_port="TRI_I" physical_port="fmc_gpio_tri_o" dir="in" left="6" right="0">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="POWER_ON_FMC" />
+					    <pin_map port_index="1" component_pin="SPI_QPI" />
+						<pin_map port_index="2" component_pin="ALERT_n" />
+						<pin_map port_index="3" component_pin="GPIO_6" />
+						<pin_map port_index="4" component_pin="GPIO_7" />
+						<pin_map port_index="5" component_pin="GPIO_8" />
+						<pin_map port_index="6" component_pin="GPIO_9" />
 					</pin_maps>
 				</port_map>
 			</port_maps>
 		</interface>
       </interfaces>
     </component>
-    <component name="J34" display_name="AD9174 Clock IN - Differential (NOT USED)" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
-    <component name="J42" display_name="AD9174 Clock IN - Single Ended (NOT USED)" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
-    <component name="J41" display_name="HMC7044 Reference Clock - Single Ended" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
-    <component name="J1" display_name="AD9174 DAC1 Out - Single Ended" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
-    <component name="J2" display_name="AD9174 DAC0 Out - Single Ended" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
-    <component name="J3" display_name="AD9174 DAC Clock Out - Single Ended" type="connector" sub_type="fixed_io" major_group="FMC HPC"/>
-    <component name="P3" display_name="SPI Connector" type="connector" sub_type="fixed_io" major_group="FMC HPC">
-      <description>SPI interface for AD9174 and HMC7044</description>
-    </component>
-    <component name="P4" display_name="USB Connector" type="connector" sub_type="fixed_io" major_group="FMC HPC">
-      <description>USB connector for ACE</description>
-    </component>
-    <component name="ad9174_jesd" display_name="AD9174 JESD" type="chip" sub_type="chip" major_group="FMC HPC" part_name="AD9174" vendor="Analog Devices" spec_url="www.analog.com">
-      <description>FMC EVAL-AD3552R AD9174 JESD204</description>
+    <component name="P3" display_name="Power Input" type="connector" sub_type="fixed_io" major_group="FMC LPC"/>
+    <component name="J4" display_name="AD3552R - CH1 Output" type="connector" sub_type="fixed_io" major_group="FMC LPC"/>
+    <component name="J5" display_name="AD3552R - CH2 Output" type="connector" sub_type="fixed_io" major_group="FMC LPC"/>
+	<component name="J_FB0" display_name="AD3552R - GAIN CH1" type="connector" sub_type="fixed_io" major_group="FMC LPC"/>
+	<component name="J_FB1" display_name="AD3552R - GAIN CH2" type="connector" sub_type="fixed_io" major_group="FMC LPC"/>
+    <component name="J_VIO" display_name="AD3552R - VIO" type="connector" sub_type="fixed_io" major_group="FMC LPC"/>
+    <component name="J_DVDD" display_name="AD9174 - VDD" type="connector" sub_type="fixed_io" major_group="FMC LPC"/>
+    <component name="J_PVSS" display_name="AD9174 - VSS" type="connector" sub_type="fixed_io" major_group="FMC LPC"/>
+    <component name="J_VDD" display_name="AD9174 - VDD" type="connector" sub_type="fixed_io" major_group="FMC LPC"/>
+    <component name="J_PVDD" display_name="AD9174 - VDD" type="connector" sub_type="fixed_io" major_group="FMC LPC">
+    <component name="P4" display_name="USB Connector" type="connector" sub_type="fixed_io" major_group="FMC LPC">
+    <component name="fmc_lpc_spi" display_name="EVAL-AD3552R SPI" type="chip" sub_type="mux" major_group="FMC LPC" part_name="EVAL-AD3552R" vendor="Analog Devices" spec_url="www.analog.com">
+      <description>FMC EVAL-AD3552R SPI</description>
       <component_modes>
-        <component_mode name="jesd204_tx_1" display_name="AD9174 JESD204">
-          <interfaces>
-            <interface name="jesd204_gt_8x" order="0"/>
-          </interfaces>
-          <preferred_ips>
-            <preferred_ip vendor="xilinx.com" library="ip" name="jesd204" order="0"/>
-          </preferred_ips>
-        </component_mode>
-      </component_modes>
-    </component>
-    <component name="fmc_hpc_spi" display_name="AD9174 and HMC7044 SPI" type="chip" sub_type="mux" major_group="FMC HPC" part_name="EVAL-AD3552R" vendor="Analog Devices" spec_url="www.analog.com">
-      <description>FMC EVAL-AD3552R AD9174 and HMC7044 SPI</description>
-      <component_modes>
-        <component_mode name="fmc_hpc_spi_1" display_name="AD9174 and HMC7044 SPI">
+        <component_mode name="fmc_lpc_spi_1" display_name="EVAL-AD3552R SPI">
           <interfaces>
             <interface name="spi_interface" order="0"/>
           </interfaces>
@@ -303,10 +345,10 @@
         </component_mode>
       </component_modes>
     </component>
-    <component name="fmc_gpio" display_name="FMC Output Enable Signals" type="chip" sub_type="chip" major_group="FMC HPC" part_name="EVAL-AD3552R" vendor="Analog Devices" spec_url="www.analog.com">
-      <description>FMC EVAL-AD3552R FMC Output enable signals</description>
+    <component name="fmc_gpio" display_name="EVAL-AD3552R GPIO and Control Signals" type="chip" sub_type="chip" major_group="FMC LPC" part_name="EVAL-AD3552R" vendor="Analog Devices" spec_url="www.analog.com">
+      <description>FMC EVAL-AD3552R Output enable signals</description>
       <component_modes>
-        <component_mode name="fmc_gpio_1" display_name="EVAL-AD3552R Output Enable Signals">
+        <component_mode name="fmc_gpio_1" display_name="EVAL-AD3552R GPIO and Control Signals">
           <interfaces>
             <interface name="gpio_interface" order="0"/>
           </interfaces>
@@ -318,28 +360,14 @@
     </component>
   </components>
   <connections>
-    <connection name="hpc_ad9174_jesd" component1="hpc_connector" component2="ad9174_jesd">
-      <connection_map name="hpc_connector_gtx1_1" typical_delay="5" c1_st_index="38" c1_end_index="38" c2_st_index="1" c2_end_index="1"/>
-      <connection_map name="hpc_connector_gtx1_1" typical_delay="5" c1_st_index="39" c1_end_index="39" c2_st_index="0" c2_end_index="0"/>
-      <connection_map name="hpc_connector_gtx2_1" typical_delay="5" c1_st_index="76" c1_end_index="76" c2_st_index="3" c2_end_index="3"/>
-      <connection_map name="hpc_connector_gtx2_1" typical_delay="5" c1_st_index="77" c1_end_index="77" c2_st_index="2" c2_end_index="2"/>
-      <connection_map name="hpc_connector_gtx3_1" typical_delay="5" c1_st_index="34" c1_end_index="34" c2_st_index="5" c2_end_index="5"/>
-      <connection_map name="hpc_connector_gtx3_1" typical_delay="5" c1_st_index="35" c1_end_index="35" c2_st_index="4" c2_end_index="4"/>
-      <connection_map name="hpc_connector_gtx4_1" typical_delay="5" c1_st_index="52" c1_end_index="52" c2_st_index="7" c2_end_index="7"/>
-      <connection_map name="hpc_connector_gtx4_1" typical_delay="5" c1_st_index="53" c1_end_index="53" c2_st_index="6" c2_end_index="6"/>
-      <connection_map name="hpc_connector_gtx5_1" typical_delay="5" c1_st_index="30" c1_end_index="31" c2_st_index="8" c2_end_index="9"/>
-      <connection_map name="hpc_connector_gtx6_1" typical_delay="5" c1_st_index="26" c1_end_index="27" c2_st_index="10" c2_end_index="11"/>
-      <connection_map name="hpc_connector_gtx7_1" typical_delay="5" c1_st_index="22" c1_end_index="23" c2_st_index="12" c2_end_index="13"/>
-      <connection_map name="hpc_connector_gtx8_1" typical_delay="5" c1_st_index="82" c1_end_index="83" c2_st_index="14" c2_end_index="15"/>
-    </connection>
-    <connection name="hpc_fmc_hpc_spi" component1="hpc_connector" component2="fmc_hpc_spi">
+    <connection name="lpc_fmc_fmc_lpc_spi" component1="lpc_connector" component2="fmc_lpc_spi">
       <connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="290" c1_end_index="290" c2_st_index="0" c2_end_index="0"/>
       <connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="250" c1_end_index="250" c2_st_index="1" c2_end_index="1"/>
       <connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="249" c1_end_index="249" c2_st_index="2" c2_end_index="2"/>
       <connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="291" c1_end_index="291" c2_st_index="3" c2_end_index="3"/>
 	  <connection_map name="hpc_connector_spi" typical_delay="5" c1_st_index="131" c1_end_index="131" c2_st_index="4" c2_end_index="4"/>
     </connection>
-    <connection name="hpc_fmc_fmc_gpio" component1="hpc_connector" component2="fmc_gpio">
+    <connection name="lpc_fmc_fmc_gpio" component1="lpc_connector" component2="fmc_gpio">
       <connection_map name="hpc_connector_gpio" typical_delay="5" c1_st_index="90" c1_end_index="90" c2_st_index="0" c2_end_index="0"/>
       <connection_map name="hpc_connector_gpio" typical_delay="5" c1_st_index="91" c1_end_index="91" c2_st_index="1" c2_end_index="1"/>
       <connection_map name="hpc_connector_gpio" typical_delay="5" c1_st_index="132" c1_end_index="132" c2_st_index="2" c2_end_index="2"/>
