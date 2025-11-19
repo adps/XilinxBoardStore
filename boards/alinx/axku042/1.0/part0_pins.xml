@@ -302,6 +302,7 @@
         <pin index="284" name="fmc_lpc0_dp0_c2m_n" loc="R3" />
 		<pin index="443" name="fmc_lpc0_scl" loc="AC21" /> <!-- EK -->
         <pin index="444" name="fmc_lpc0_sda" loc="AB21" /> <!-- EK -->
+        <pin index="520" name="fmc_lpc0_pg_c2m" loc="AB20" /> <!-- New Pin -->
 
 		<!-- ############## FMC HPC ############## -->
         <pin index="285" name="fmc_hpc_la06_p" iostandard="LVCMOS18" loc="B29" />
@@ -462,6 +463,7 @@
         <pin index="440" name="fmc_hpc_dp0_c2m_n" loc="N3" />
         <pin index="441" name="fmc_hpc_scl" loc="K12" /> <!-- EK -->
         <pin index="442" name="fmc_hpc_sda" loc="L12" /> <!-- EK -->
+        <pin index="521" name="fmc_hpc_pg_c2m" loc="C12" /> <!-- New Pin -->
 
 		<!-- ############## FMC LPC1 ############## -->
 		<pin index="445" name="fmc_lpc1_clk0_m2c_n" iostandard="LVCMOS33" loc="N26" />
@@ -538,5 +540,6 @@
 		<pin index="516" name="fmc_lpc1_la33_p" iostandard="LVCMOS33" loc="AE12" />
 		<pin index="517" name="fmc_lpc1_scl" iostandard="LVCMOS33" loc="K21" />
 		<pin index="518" name="fmc_lpc1_sda" iostandard="LVCMOS33" loc="K20" />
+        <pin index="522" name="fmc_lpc1_pg_c2m" loc="L24" /> <!-- New Pin -->
     </pins>
 </part_info>

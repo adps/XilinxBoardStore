@@ -35,6 +35,7 @@
 				<pin index="107" name="fmc_lpc0_la27_n" /> <!-- AF34 -->
 				<pin index="110" name="fmc_lpc0_scl" /> <!-- AC21 -->				<!-- EK -->
 				<pin index="111" name="fmc_lpc0_sda" /> <!-- AB21 -->				<!-- EK -->
+				<pin index="121" name="fmc_lpc0_pg_c2m" /> <!-- AB20 -->
 				<pin index="124" name="fmc_lpc0_gbtclk0_m2c_p" /> <!-- V6 -->
 				<pin index="125" name="fmc_lpc0_gbtclk0_m2c_n" /> <!-- V5 -->
 				<pin index="128" name="fmc_lpc0_la01_p" /> <!-- AA24 -->
@@ -177,6 +178,7 @@
 				<pin index="276" name="fmc_lpc1_la33_p" /> <!-- AE12 -->
 				<pin index="110" name="fmc_lpc1_scl" /> <!-- K21 -->
 				<pin index="111" name="fmc_lpc1_sda" /> <!-- K20 -->
+				<pin index="121" name="fmc_lpc1_pg_c2m" /> <!-- L24 -->
 			</pins>
 		</component>
 		<component name="fmc_hpc_connector" display_name="FMC_HPC" type="connector" sub_type="fmc_hpc">
@@ -227,6 +229,7 @@
 				<pin index="107" name="fmc_hpc_la27_n" /> <!-- C9 -->
 				<pin index="110" name="fmc_hpc_scl" /> <!-- K12 -->				<!-- EK -->
 				<pin index="111" name="fmc_hpc_sda" /> <!-- L12 -->				<!-- EK -->
+				<pin index="121" name="fmc_hpc_pg_c2m" /> <!-- C12 -->
 				<pin index="124" name="fmc_hpc_gbtclk0_m2c_p" /> <!-- M6 -->
 				<pin index="125" name="fmc_hpc_gbtclk0_m2c_n" /> <!-- M5 -->
 				<pin index="128" name="fmc_hpc_la01_p" /> <!-- D23 -->
@@ -1636,6 +1639,7 @@
 			<connection_map name="part0_fmc_lpc0_dp0_m2c_p" c1_st_index="282" c1_end_index="282" c2_st_index="86" c2_end_index="86" />
 			<connection_map name="part0_fmc_lpc0_dp0_m2c_n" c1_st_index="283" c1_end_index="283" c2_st_index="87" c2_end_index="87" />
 			<connection_map name="part0_fmc_lpc0_dp0_c2m_n" c1_st_index="284" c1_end_index="284" c2_st_index="83" c2_end_index="83" />
+			<connection_map name="part0_fmc_lpc0_pg_c2m" c1_st_index="520" c1_end_index="520" c2_st_index="121" c2_end_index="121" />
 		</connection>
 		<connection name="part0_fmc_lpc1" component1="part0" component2="fmc_lpc1_connector">
 			<connection_map name="fmc_lpc1_clk0_m2c_n" c1_st_index="445" c1_end_index="445" c2_st_index="285" c2_end_index="285" />
@@ -1714,6 +1718,7 @@
 			<!-- EK -->
 			<connection_map name="fmc_lpc1_sda" c1_st_index="518" c1_end_index="518" c2_st_index="111" c2_end_index="111" />
 			<!-- EK -->
+			<connection_map name="part0_fmc_lpc1_pg_c2m" c1_st_index="522" c1_end_index="522" c2_st_index="121" c2_end_index="121" />
 		</connection>
 		<connection name="part0_fmc_hpc" component1="part0" component2="fmc_hpc_connector">
 			<connection_map name="part0_fmc_hpc_la06_p" c1_st_index="285" c1_end_index="285" c2_st_index="90" c2_end_index="90" />
@@ -1876,6 +1881,7 @@
 			<connection_map name="part0_fmc_hpc_dp0_m2c_p" c1_st_index="438" c1_end_index="438" c2_st_index="86" c2_end_index="86" />
 			<connection_map name="part0_fmc_hpc_dp0_m2c_n" c1_st_index="439" c1_end_index="439" c2_st_index="87" c2_end_index="87" />
 			<connection_map name="part0_fmc_hpc_dp0_c2m_n" c1_st_index="440" c1_end_index="440" c2_st_index="83" c2_end_index="83" />
+			<connection_map name="part0_fmc_hpc_pg_c2m" c1_st_index="521" c1_end_index="521" c2_st_index="121" c2_end_index="121" />
 		</connection>
 		<connection name="part0_iic_main" component1="part0" component2="iic_main">
 			<connection_map name="part0_iic_main_1" typical_delay="5" c1_st_index="177" c1_end_index="178" c2_st_index="0" c2_end_index="1" />
