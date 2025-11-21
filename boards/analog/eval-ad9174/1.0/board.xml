@@ -664,6 +664,14 @@
 				</associated_board_interfaces>
 			</ip>
 		</ip_associated_rule-->
+	<ip_associated_rules>
+    <ip_associated_rule name="default">
+      <ip vendor="xilinx.com" library="ip" name="jesd204" version="*" ip_interface="gt_serial_port">
+        <associated_board_interfaces>
+          <associated_board_interface name="jesd204_gt_8x" order="0"/>
+        </associated_board_interfaces>
+      </ip>
+    </ip_associated_rule>
 	<ip_associated_rule name="default">
 		<ip vendor="xilinx.com" library="ip" name="axi_quad_spi" version="*" ip_interface="SPI_0">
 		  <associated_board_interfaces>
@@ -673,4 +681,5 @@
 	</ip_associated_rule>
   </ip_associated_rules>
 </board>
+
 
