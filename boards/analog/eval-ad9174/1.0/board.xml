@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!--DOCTYPE board SYSTEM "D:\xilinx\Vivado\2020.2\data\boards\board_schemas\current\board.dtd"-->
-<board schema_version="2.1" vendor="analog" name="eval-ad917x" display_name="FMC EVAL-AD917x" url="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad9172.html" preset_file="preset.xml">
+<!-- DOCTYPE board SYSTEM "D:\xilinx\Vivado\2020.2\data\boards\board_schemas\current\board.dtd" -->
+<board schema_version="2.2" vendor="analog" name="eval-ad9174" display_name="FMC EVAL-AD9174" url="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad9172.html" preset_file="preset.xml">
   <images>
     <image name="ad9172fmc.png" display_name="EVAL-AD9174 BOARD" sub_type="board">
       <description>FMC EVAL-AD9174 Board Image</description>
@@ -12,7 +12,7 @@
   <file_version>1.0</file_version>
   <description>FMC EVAL-AD9174</description>
   <components>
-    <component name="hpc_connector" display_name="FMC EVAL-AD917x" type="connector" sub_type="fmc_hpc" major_group="FMC HPC">
+    <component name="hpc_connector" display_name="FMC EVAL-AD9174" type="connector" sub_type="fmc_hpc" major_group="FMC HPC">
       <description>FMC HPC connector</description>
       <parameters>
         <parameter name="mode" value="hpc" value_type="list" range="hpc"/>
@@ -420,7 +420,7 @@
         <!--pin index="400" name=""/ --> <!-- K40 : vio_b_m2c -->
       </pins>
       <interfaces>
-		<interface mode="slave" name="jesd204_gt_8x" type="xilinx.com:interface:gt:1.0" of_component="ad9174_jesd" preset_proc="jesd204_preset">
+		<interface mode="slave" name="jesd204_gt_8x" type="xilinx.com:interface:gt:1.0" of_component="ad9174_jesd">  <!--preset_proc="jesd204_preset"-->
           <description>JESD204 Core Transceiver interface</description>
           <preferred_ips>
             <preferred_ip vendor="xilinx.com" library="ip" name="jesd204_phy" order="0"/>
@@ -451,7 +451,7 @@
               </pin_maps>
             </port_map>
           </port_maps>
-          <parameters>
+          <!--parameters>
             <parameter name="CONFIG.AXICLK_FREQ" value="100"/>
             <parameter name="CONFIG.C_DEFAULT_F" value="1"/>
             <parameter name="CONFIG.C_DEFAULT_K" value="2"/>
@@ -472,7 +472,7 @@
             <parameter name="CONFIG.TransceiverControl" value="false"/>
             <parameter name="CONFIG.USE_JSPAT" value="false"/>
             <parameter name="CONFIG.USE_RPAT" value="false"/>
-          </parameters>
+          </parameters-->
         </interface>
         <interface mode="master" name="spi_interface" type="xilinx.com:interface:spi_rtl:1.0" of_component="fmc_hpc_spi" preset_proc="fmc_hpc_spi_preset">
 		  <description>SPI Interfaces for HMC7044 and AD9174 </description>
@@ -537,11 +537,10 @@
 				<pin_map port_index="1" component_pin="fmc_cs2"/><!-- HMC7044 -->
               </pin_maps>
             </port_map>
-            <port_map logical_port="SS_T" physical_port="spi_ss_t" dir="out">
-			<!-- left="1" right="0"-->
+            <port_map logical_port="SS_T" physical_port="spi_ss_t" dir="out" left="1" right="0">
               <pin_maps>
                 <pin_map port_index="0" component_pin="fmc_cs1"/><!-- AD9174 -->
-				<!-- pin_map port_index="1" component_pin="fmc_cs2"/ --><!-- HMC7044 -->
+				<pin_map port_index="1" component_pin="fmc_cs2"/><!-- HMC7044 -->
               </pin_maps>
             </port_map>
 			

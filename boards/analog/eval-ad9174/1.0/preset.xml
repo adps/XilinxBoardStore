@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?> 
 <!--DOCTYPE ip_presets SYSTEM "D:\xilinx\Vivado\2020.2\data\boards\board_schemas\current\preset.dtd"-->
 <ip_presets schema="2.2">
-	<ip_preset preset_proc_name="jesd204_preset">
+	<!--ip_preset preset_proc_name="jesd204_preset">
 		<ip vendor="xilinx.com" library="ip" name="jesd204" ip_interface="gt7_tx">
 			<user_parameters>
 				<parameter name="CONFIG.AXICLK_FREQ" value="100"/>
@@ -26,7 +26,7 @@
 				<parameter name="CONFIG.USE_RPAT" value="false" />
 			</user_parameters> 
 		</ip>
-	</ip_preset>
+	</ip_preset-->
 	<ip_preset preset_proc_name="fmc_hpc_spi_preset">
         <ip vendor="xilinx.com" library="ip" name="axi_quad_spi">
             <user_parameters>
