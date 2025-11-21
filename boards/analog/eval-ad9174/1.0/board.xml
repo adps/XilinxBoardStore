@@ -657,14 +657,13 @@
     </connection>
   </connections>
   <ip_associated_rules>
-    <!--ip_associated_rule name="default">
+       <!--ip_associated_rule name="default">
 			<ip vendor="xilinx.com" library="ip" name="jesd204" version="*" ip_interface="">
 				<associated_board_interfaces>
 					<associated_board_interface name="" order="0" />
 				</associated_board_interfaces>
 			</ip>
 		</ip_associated_rule-->
-	<ip_associated_rules>
     <ip_associated_rule name="default">
       <ip vendor="xilinx.com" library="ip" name="jesd204" version="*" ip_interface="gt_serial_port">
         <associated_board_interfaces>
@@ -681,5 +680,6 @@
 	</ip_associated_rule>
   </ip_associated_rules>
 </board>
+
 
 
