@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--DOCTYPE board SYSTEM "D:\xilinx\Vivado\2020.2\data\boards\board_schemas\current\board.dtd"-->
-<board schema_version="2.2" vendor="analog" name="eval-ad917x" display_name="FMC EVAL-AD917x" url="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad9172.html" preset_file="preset.xml">
+<board schema_version="2.1" vendor="analog" name="eval-ad917x" display_name="FMC EVAL-AD917x" url="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad9172.html" preset_file="preset.xml">
   <images>
     <image name="ad9172fmc.png" display_name="EVAL-AD9174 BOARD" sub_type="board">
       <description>FMC EVAL-AD9174 Board Image</description>
@@ -420,13 +420,13 @@
         <!--pin index="400" name=""/ --> <!-- K40 : vio_b_m2c -->
       </pins>
       <interfaces>
-        <interface mode="master" name="jesd204_gt_8x" type="xilinx.com:ip:jesd204_phy:4.0" of_component="ad9174_jesd" preset_proc="jesd204_preset">
+		<interface mode="slave" name="jesd204_gt_8x" type="xilinx.com:interface:gt:1.0" of_component="ad9174_jesd" preset_proc="jesd204_preset">
           <description>JESD204 Core Transceiver interface</description>
           <preferred_ips>
             <preferred_ip vendor="xilinx.com" library="ip" name="jesd204_phy" order="0"/>
           </preferred_ips>
           <port_maps>
-            <port_map logical_port="txn_out" physical_port="txn_8" dir="out" left="7" right="0">
+            <port_map logical_port="GTX_N" physical_port="txn_8" dir="out" left="7" right="0">
               <pin_maps>
                 <pin_map port_index="0" component_pin="serdin0_n"/>
                 <pin_map port_index="1" component_pin="serdin1_n"/>
@@ -438,7 +438,7 @@
                 <pin_map port_index="7" component_pin="serdin7_n"/>
               </pin_maps>
             </port_map>
-            <port_map logical_port="txp_out" physical_port="txp_8" dir="out" left="7" right="0">
+            <port_map logical_port="GTX_P" physical_port="txp_8" dir="out" left="7" right="0">
               <pin_maps>
                 <pin_map port_index="0" component_pin="serdin0_p"/>
                 <pin_map port_index="1" component_pin="serdin1_p"/>
@@ -673,3 +673,4 @@
 	</ip_associated_rule>
   </ip_associated_rules>
 </board>
+
