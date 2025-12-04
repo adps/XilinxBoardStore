@@ -7809,6 +7809,63 @@
           "metadata_file": "xitem.json"
         },
         "company": "iwavesystems.com"
+      },
+      {
+        "name": "axku042",
+        "display": "Kintex-UltraScale AXKU042 Evaluation Platform",
+        "latest_revision": "1.6",
+        "commit_id": "63eb3e52ac29d3970203cbd1e9e1f515af6a853f",
+        "revisions": [
+          {
+            "revision": "1.6",
+            "commit_id": "63eb3e52ac29d3970203cbd1e9e1f515af6a853f",
+            "date": "04-12-2025:16:05:20",
+            "history": "Added board Kintex-UltraScale AXKU042 Evaluation Platform v1.6"
+          }
+        ],
+        "config": {
+          "root": "boards/alinx/axku042/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "alinx.com"
+      },
+      {
+        "name": "eval-ad9174",
+        "display": "FMC EVAL-AD9174",
+        "latest_revision": "1.0",
+        "commit_id": "63eb3e52ac29d3970203cbd1e9e1f515af6a853f",
+        "revisions": [
+          {
+            "revision": "1.0",
+            "commit_id": "63eb3e52ac29d3970203cbd1e9e1f515af6a853f",
+            "date": "04-12-2025:16:05:20",
+            "history": "Added board FMC EVAL-AD9174 v1.0"
+          }
+        ],
+        "config": {
+          "root": "boards/analog/eval-ad9174/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "analog.com"
+      },
+      {
+        "name": "eval-ad3552r",
+        "display": "FMC EVAL-AD3552R",
+        "latest_revision": "1.0",
+        "commit_id": "63eb3e52ac29d3970203cbd1e9e1f515af6a853f",
+        "revisions": [
+          {
+            "revision": "1.0",
+            "commit_id": "63eb3e52ac29d3970203cbd1e9e1f515af6a853f",
+            "date": "04-12-2025:16:05:20",
+            "history": "Added board FMC EVAL-AD3552R v1.0"
+          }
+        ],
+        "config": {
+          "root": "boards/analog/eval-ad3552r/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "analog.com"
       }
     ],
     "categories": [
