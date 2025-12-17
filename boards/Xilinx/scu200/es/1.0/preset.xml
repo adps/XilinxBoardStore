@@ -33,11 +33,11 @@
       <user_parameters>
         <user_parameter name="CONFIG.CONTROLLERTYPE" value="LPDDR5_SDRAM"/>
         <user_parameter name="CONFIG.DATA_WIDTH" value="32"/>
-        <user_parameter name="CONFIG.INPUTCLK0_PERIOD" value="3125"/>
+        <user_parameter name="CONFIG.INPUTCLK0_PERIOD" value="3127"/>
         <user_parameter name="CONFIG.LPDDRMC_CONFIG_NUM" value="config6"/>
         <user_parameter name="CONFIG.ROW_WIDTH" value="15"/>
         <user_parameter name="CONFIG.SPEED_GRADE" value="LPDDR5X-8533"/>
-        <user_parameter name="CONFIG.TCK" value="2500"/>
+        <user_parameter name="CONFIG.TCK" value="1876"/>
       </user_parameters>
     </ip>
   </ip_preset>
