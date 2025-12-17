@@ -1,4 +1,7 @@
 ######### VEK385 change log ##############
+1.1 (2025.2.1)
+CAN0 MIO directions updated(CANFD0_INH, CAN0_nSTB)
+
 1.1 (2025.2)
 Added Noc2 modes to use internal clk.
 

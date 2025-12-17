@@ -72,8 +72,8 @@
 				<user_parameter name="PS_I3C_I2C0_PERIPHERAL" value="{ENABLE 1 IO PMC_MIO_42:43 IO_TYPE MIO TYPE I2C}"/>
 				<user_parameter name="PS_I3C_I2C1_PERIPHERAL" value="{ENABLE 1 IO PMC_MIO_44:45 IO_TYPE MIO TYPE I2C}"/>
 				<user_parameter name="PS_MIO11" value="{DRIVE_STRENGTH 8mA SLEW slow PULL disable SCHMITT 0 AUX_IO 0 USAGE Reserved OUTPUT_DATA default DIRECTION in}"/>
-				<user_parameter name="PS_MIO12" value="{DRIVE_STRENGTH 8mA SLEW slow PULL pullup SCHMITT 0 AUX_IO 0 USAGE GPIO OUTPUT_DATA default DIRECTION out}"/>
-				<user_parameter name="PS_MIO13" value="{DRIVE_STRENGTH 8mA SLEW slow PULL pullup SCHMITT 0 AUX_IO 0 USAGE GPIO OUTPUT_DATA default DIRECTION in}"/>
+				<user_parameter name="PS_MIO12" value="{DRIVE_STRENGTH 8mA SLEW slow PULL pullup SCHMITT 0 AUX_IO 0 USAGE GPIO OUTPUT_DATA default DIRECTION in}"/>
+				<user_parameter name="PS_MIO13" value="{DRIVE_STRENGTH 8mA SLEW slow PULL pullup SCHMITT 0 AUX_IO 0 USAGE GPIO OUTPUT_DATA default DIRECTION out}"/>
 				<user_parameter name="PS_MIO14" value="{DRIVE_STRENGTH 8mA SLEW slow PULL pullup SCHMITT 0 AUX_IO 0 USAGE GPIO OUTPUT_DATA default DIRECTION out}"/>
 				<user_parameter name="PS_MIO15" value="{DRIVE_STRENGTH 8mA SLEW slow PULL pullup SCHMITT 0 AUX_IO 0 USAGE GPIO OUTPUT_DATA default DIRECTION in}"/>
 				<user_parameter name="PS_MIO20" value="{DRIVE_STRENGTH 8mA SLEW slow PULL pullup SCHMITT 0 AUX_IO 0 USAGE GPIO OUTPUT_DATA default DIRECTION inout}"/>
