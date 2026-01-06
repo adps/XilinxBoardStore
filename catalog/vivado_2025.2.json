@@ -8336,12 +8336,6 @@
         "commit_id": "29bbdfd89b7048cac72bf971bcd4b18f6ca50c5a",
         "revisions": [
           {
-            "revision": "1.1",
-            "commit_id": "9f53a9f7308ca7e0fea89893597b757fa8ce894c",
-            "date": "27-03-2023:11:36:06",
-            "history": "Added board Versal VPK120 Evaluation Platform v1.1"
-          },
-          {
             "revision": "1.2",
             "commit_id": "29bbdfd89b7048cac72bf971bcd4b18f6ca50c5a",
             "date": "27-03-2023:11:52:54",
@@ -8948,12 +8942,6 @@
         "latest_revision": "1.5",
         "commit_id": "29bbdfd89b7048cac72bf971bcd4b18f6ca50c5a",
         "revisions": [
-          {
-            "revision": "1.4",
-            "commit_id": "a6f1b11d1d9d2420fe741f2d62d9a15654eafbe6",
-            "date": "25-08-2025:16:49:44",
-            "history": "Added board Zynq 7000 ZC706 Evaluation Board v1.4"
-          },
           {
             "revision": "1.5",
             "commit_id": "29bbdfd89b7048cac72bf971bcd4b18f6ca50c5a",
