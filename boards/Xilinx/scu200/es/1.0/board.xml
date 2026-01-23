@@ -24,7 +24,7 @@
   <components>
   
   
-    <component name="part0" display_name="Spartan Ultrascale+ SCU200 ES Evaluation Platform" type="fpga" part_name="xcsu200p-sbva1024-2-e-es1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="www.xilinx.com/SCU200">
+    <component name="part0" display_name="Spartan Ultrascale+ SCU200 ES Evaluation Platform" type="fpga" part_name="xcsu200p-sbva1024-2-e" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="www.xilinx.com/SCU200">
       <description>FPGA part on the board</description>
       <interfaces>
       
@@ -1078,10 +1078,10 @@
     </component>
 
     <component name="ddr4_sdram" display_name="DDR4 SDRAM" type="chip" sub_type="ddr" major_group="External Memory" part_name="MT40A512M16TB-062E:R" vendor="Micron" spec_url="https://www.micron.com/parts/dram/ddr4-sdram/MT40A512M16TB-062E">
-      <description>8Gb DDR4 SDRAM Memory</description>
+      <description>512M x 16 (512Mbx16) 8Gb DDR4 SDRAM Memory</description>
       <parameters>
         <parameter name="ddr_type" value="ddr4"/>
-        <parameter name="size" value="8GB"/>
+        <parameter name="size" value="1GB"/>
       </parameters> 
       
       <component_modes>
@@ -1096,10 +1096,10 @@
 
 
     <component name="lpddr5_sdram" display_name="LPDDR5_SDRAM" type="chip" sub_type="ddr" major_group="External Memory" part_name="MT62F512M32D1DS-023 WT:E" vendor="Micron" spec_url="https://www.micron.com/">
-            <description>512Mb x 32 (512Mbx16 x1Die x2 CH x 1R) lpddr5 memory</description>
+            <description>512Mb x 32 (512Mbx16 x1Die x2 CH x 1R) 16Gb lpddr5 memory</description>
             <parameters>
                 <parameter name="ddr_type" value="lpddr5" />
-                <parameter name="size" value="4GB" />
+                <parameter name="size" value="2GB" />
             </parameters>
             <component_modes>
                 <component_mode name="lpddr5_sdram" display_name="lpddr5_sdram">

@@ -11,7 +11,7 @@
  License for the specific language governing permissions and limitations
  under the License. -->
 
-<part_info part_name="xcsu200p-sbva1024-2-e-es1">
+<part_info part_name="xcsu200p-sbva1024-2-e">
   <pins>
     <!-- <pin index="0"   name ="GPIO_DIP_SW1" iostandard="LVCMOS12" loc="B17"/> -->
     <!-- <pin index="1"   name ="GPIO_DIP_SW2" iostandard="LVCMOS12" loc="G16"/> -->
