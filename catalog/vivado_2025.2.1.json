@@ -2674,19 +2674,19 @@
       },
       {
         "name": "scu200",
-        "display": "Spartan Ultrascale+ SCU200 ES Evaluation Platform",
+        "display": "Spartan Ultrascale+ SCU200 Evaluation Platform",
         "latest_revision": "1.0",
-        "commit_id": "34641fb7e4787d0e436b062fe5588c1ba3050ca7",
+        "commit_id": "4253361864bd28212415db3eaf116a8607635280",
         "revisions": [
           {
             "revision": "1.0",
-            "commit_id": "34641fb7e4787d0e436b062fe5588c1ba3050ca7",
-            "date": "10-12-2025:10:08:40",
-            "history": "Added board Spartan Ultrascale+ SCU200 ES Evaluation Platform v1.0"
+            "commit_id": "4253361864bd28212415db3eaf116a8607635280",
+            "date": "27-01-2026:10:10:43",
+            "history": "Added board Spartan Ultrascale+ SCU200 Evaluation Platform v1.0"
           }
         ],
         "config": {
-          "root": "boards/Xilinx/scu200/es/1.0",
+          "root": "boards/Xilinx/scu200/1.0",
           "metadata_file": "xitem.json"
         },
         "company": "xilinx.com"
