@@ -4,9 +4,9 @@
       {
         "infra": {
           "name": "scu200", 
-          "display": "Spartan Ultrascale+ SCU200 ES Evaluation Platform", 
+          "display": "Spartan Ultrascale+ SCU200 Evaluation Platform", 
           "revision": "1.0", 
-          "description": "Spartan Ultrascale+ SCU200 ES Evaluation Platform", 
+          "description": "Spartan Ultrascale+ SCU200 Evaluation Platform", 
           "company": "xilinx.com", 
           "company_display": "Xilinx", 
           "author": "Vanitha", 
