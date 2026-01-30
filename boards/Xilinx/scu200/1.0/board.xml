@@ -288,44 +288,44 @@
         </port_maps>
     </interface>
     
-        <interface mode="slave" name="default_sysclk1_320" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="default_sysclk1_320" preset_proc="default_sysclk1_320_preset">
+        <interface mode="slave" name="default_sysclk1_lpddrmc" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="default_sysclk1_lpddrmc" preset_proc="default_sysclk1_lpddrmc_preset">
           <parameters>
-            <parameter name="frequency" value="320000000"/>
+            <parameter name="frequency" value="266670000"/>
           </parameters>
           <preferred_ips>
             <preferred_ip vendor="xilinx.com" library="ip" name="lpddrmc" order="0"/>
           </preferred_ips>
           <port_maps>
-            <port_map logical_port="CLK_P" physical_port="sysclk1_320_p" dir="in">
+            <port_map logical_port="CLK_P" physical_port="sysclk1_lpddrmc_p" dir="in">
               <pin_maps>
-                <pin_map port_index="0" component_pin="sysclk1_320_p"/>
+                <pin_map port_index="0" component_pin="sysclk1_lpddrmc_p"/>
               </pin_maps>
             </port_map>
-            <port_map logical_port="CLK_N" physical_port="sysclk1_320_n" dir="in">
+            <port_map logical_port="CLK_N" physical_port="sysclk1_lpddrmc_n" dir="in">
               <pin_maps>
-                <pin_map port_index="0" component_pin="sysclk1_320_n"/>
+                <pin_map port_index="0" component_pin="sysclk1_lpddrmc_n"/>
               </pin_maps>
             </port_map>
           </port_maps>
         </interface>
     
-        <interface mode="slave" name="default_sysclk1_300" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="default_sysclk1_300" preset_proc="default_sysclk1_300_preset">
+        <interface mode="slave" name="default_sysclk1_ddr4" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="default_sysclk1_ddr4" preset_proc="default_sysclk1_ddr4_preset">
           <parameters>
-            <parameter name="frequency" value="300000000"/>
+            <parameter name="frequency" value="266670000"/>
           </parameters>
           <preferred_ips>
             <preferred_ip vendor="xilinx.com" library="ip" name="ddr4" order="0"/>
             <!-- <preferred_ip vendor="xilinx.com" library="ip" name="clk_wiz" order="1"/> -->
           </preferred_ips>
           <port_maps>
-            <port_map logical_port="CLK_P" physical_port="sysclk1_300_p" dir="in">
+            <port_map logical_port="CLK_P" physical_port="sysclk1_ddr4_p" dir="in">
               <pin_maps>
-                <pin_map port_index="0" component_pin="sysclk1_300_p"/>
+                <pin_map port_index="0" component_pin="sysclk1_ddr4_p"/>
               </pin_maps>
             </port_map>
-            <port_map logical_port="CLK_N" physical_port="sysclk1_300_n" dir="in">
+            <port_map logical_port="CLK_N" physical_port="sysclk1_ddr4_n" dir="in">
               <pin_maps>
-                <pin_map port_index="0" component_pin="sysclk1_300_n"/>
+                <pin_map port_index="0" component_pin="sysclk1_ddr4_n"/>
               </pin_maps>
             </port_map>
           </port_maps>
@@ -1088,7 +1088,7 @@
        <component_mode name="ddr4_sdram" display_name="ddr4_sdram">
           <interfaces>
             <interface name="ddr4_sdram"/>
-            <interface name="default_sysclk1_300" optional="true"/>
+            <interface name="default_sysclk1_ddr4" optional="true"/>
           </interfaces>
         </component_mode>    
       </component_modes>
@@ -1106,35 +1106,35 @@
                     <interfaces>
                         <interface name="lpddr5_sdram" />
                         <!-- <interface name="c0_ch1_lpddr5" optional="true" /> -->
-                        <interface name="default_sysclk1_320" optional="true" />
+                        <interface name="default_sysclk1_lpddrmc" optional="true" />
                     </interfaces>
                 </component_mode>
             </component_modes>
         </component>
         
-    <component name="default_sysclk1_300" display_name="DDR4, 300 MHz System differential clock" type="chip" sub_type="system_clock" major_group="Clock Sources" part_name="SI5335A-B02436-GM" vendor="Si Time" spec_url="www.sitime.com">
-      <description>1.8V LVDS differential 300 MHz oscillator used as system differential clock on the board</description>
+    <component name="default_sysclk1_ddr4" display_name="DDR4, 266.67 MHz System differential clock" type="chip" sub_type="system_clock" major_group="Clock Sources" part_name="SI5335A-B02436-GM" vendor="Si Time" spec_url="www.sitime.com">
+      <description>1.8V LVDS differential 266.67 MHz oscillator used as system differential clock on the board</description>
       <parameters>
-        <parameter name="frequency" value="300000000"/>
+        <parameter name="frequency" value="266670000"/>
       </parameters>
             <!-- <component_modes> -->
-                <!-- <component_mode name="default_sysclk1_300" display_name="default_sysclk1_300"> -->
+                <!-- <component_mode name="default_sysclk1_ddr4" display_name="default_sysclk1_ddr4"> -->
                     <!-- <interfaces> -->
-                        <!-- <interface name="default_sysclk1_300" /> -->
+                        <!-- <interface name="default_sysclk1_ddr4" /> -->
                     <!-- </interfaces> -->
                 <!-- </component_mode> -->
             <!-- </component_modes> -->
     </component>
 
-    <component name="default_sysclk1_320" display_name="LPDDR5, 320 MHz System differential clock" type="chip" sub_type="system_clock" major_group="Clock Sources" part_name="SI5335A-B02436-GM" vendor="Si Time" spec_url="www.sitime.com">
-      <description>1.8V LVDS differential 320 MHz oscillator used as system differential clock on the board</description>
+    <component name="default_sysclk1_lpddrmc" display_name="LPDDR5, 266.67 MHz System differential clock" type="chip" sub_type="system_clock" major_group="Clock Sources" part_name="SI5335A-B02436-GM" vendor="Si Time" spec_url="www.sitime.com">
+      <description>1.8V LVDS differential 266.67 MHz oscillator used as system differential clock on the board</description>
       <parameters>
-        <parameter name="frequency" value="320000000"/>
+        <parameter name="frequency" value="266670000"/>
       </parameters>
             <!-- <component_modes> -->
-                <!-- <component_mode name="default_sysclk1_320" display_name="default_sysclk1_320"> -->
+                <!-- <component_mode name="default_sysclk1_lpddrmc" display_name="default_sysclk1_lpddrmc"> -->
                     <!-- <interfaces> -->
-                        <!-- <interface name="default_sysclk1_320" /> -->
+                        <!-- <interface name="default_sysclk1_lpddrmc" /> -->
                     <!-- </interfaces> -->
                 <!-- </component_mode> -->
             <!-- </component_modes> -->
@@ -1304,12 +1304,12 @@
       <connection_map name="part0_reset_1" typical_delay="5" c1_st_index="0" c1_end_index="0" component2="reset" c2_st_index="0" c2_end_index="0"/>
     </connection>
 
-    <connection name="part0_default_sysclk1_300" component1="part0" component2="default_sysclk1_300">
-      <connection_map name="part0_sys_clk_300_1" typical_delay="5" c1_st_index="1" c1_end_index="2" c2_st_index="0" c2_end_index="1"/>
+    <connection name="part0_default_sysclk1_ddr4" component1="part0" component2="default_sysclk1_ddr4">
+      <connection_map name="part0_sys_clk_ddr4_1" typical_delay="5" c1_st_index="1" c1_end_index="2" c2_st_index="0" c2_end_index="1"/>
     </connection>
 
-    <connection name="part0_default_sysclk1_320" component1="part0" component2="default_sysclk1_320">
-      <connection_map name="part0_sys_clk_320_1" typical_delay="5" c1_st_index="3" c1_end_index="4" c2_st_index="0" c2_end_index="1"/>
+    <connection name="part0_default_sysclk1_lpddrmc" component1="part0" component2="default_sysclk1_lpddrmc">
+      <connection_map name="part0_sys_clk_lpddrmc_1" typical_delay="5" c1_st_index="3" c1_end_index="4" c2_st_index="0" c2_end_index="1"/>
     </connection>
 
     <connection name="part0_ddr4_sdram" component1="part0" component2="ddr4_sdram">
@@ -1407,7 +1407,7 @@
     
       <ip vendor="xilinx.com" library="ip" name="ddr4" version="*" ip_interface="C0_SYS_CLK"> 
         <associated_board_interfaces>
-          <associated_board_interface name="default_sysclk1_300" order="0"/> 
+          <associated_board_interface name="default_sysclk1_ddr4" order="0"/> 
         </associated_board_interfaces>
        </ip>
 

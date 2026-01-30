@@ -20,7 +20,7 @@
       <user_parameters>
 		<user_parameter name="CONFIG.C0.DDR4_MemoryPart" value="MT40A512M16TB-062E" />
 		<user_parameter name="CONFIG.C0.DDR4_TimePeriod" value="1250" />
-        <user_parameter name="CONFIG.C0.DDR4_InputClockPeriod" value="3333" />
+        <user_parameter name="CONFIG.C0.DDR4_InputClockPeriod" value="3750" />
         <user_parameter name="CONFIG.System_Clock" value="Differential" />
         <user_parameter name="CONFIG.C0.DDR4_DataWidth" value="16" />
         <user_parameter name="CONFIG.ADDN_UI_CLKOUT1_FREQ_HZ" value="100" />
@@ -33,7 +33,7 @@
       <user_parameters>
         <user_parameter name="CONFIG.CONTROLLERTYPE" value="LPDDR5_SDRAM"/>
         <user_parameter name="CONFIG.DATA_WIDTH" value="32"/>
-        <user_parameter name="CONFIG.INPUTCLK0_PERIOD" value="3127"/>
+        <user_parameter name="CONFIG.INPUTCLK0_PERIOD" value="3752"/>
         <user_parameter name="CONFIG.LPDDRMC_CONFIG_NUM" value="config6"/>
         <user_parameter name="CONFIG.ROW_WIDTH" value="15"/>
         <user_parameter name="CONFIG.SPEED_GRADE" value="LPDDR5X-8533"/>
@@ -43,7 +43,7 @@
   </ip_preset>
 
 
-  <ip_preset preset_proc_name="default_sysclk1_300_preset">
+  <ip_preset preset_proc_name="default_sysclk1_ddr4_preset">
     <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
         <user_parameters>
           <user_parameter name="CONFIG.PRIM_IN_FREQ" value="300"/> 
@@ -52,7 +52,7 @@
     </ip>
   </ip_preset>
 
-  <ip_preset preset_proc_name="default_sysclk1_320_preset">
+  <ip_preset preset_proc_name="default_sysclk1_lpddrmc_preset">
     <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
         <user_parameters>
           <user_parameter name="CONFIG.PRIM_IN_FREQ" value="320"/> 

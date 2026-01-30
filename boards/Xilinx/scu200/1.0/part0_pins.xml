@@ -59,12 +59,12 @@
     <pin index="0"  name ="CPU_RESET" iostandard="LVCMOS33" loc="B24"/>
 
 <!-- DDR4 320MHz Clock pin mapping -->
-    <pin index="1"  name ="sysclk1_300_p" iostandard="LVDS" loc="H28" />
-    <pin index="2"  name ="sysclk1_300_n" iostandard="LVDS" loc="G28" />
+    <pin index="1"  name ="sysclk1_ddr4_p" iostandard="LVDS" loc="H28" />
+    <pin index="2"  name ="sysclk1_ddr4_n" iostandard="LVDS" loc="G28" />
 
 <!-- LPDDR5 320MHz Clock pin mapping -->
-    <pin index="3"  name ="sysclk1_320_p" iostandard="LVDS15" loc="M5" />
-    <pin index="4"  name ="sysclk1_320_n" iostandard="LVDS15" loc="L5" />
+    <pin index="3"  name ="sysclk1_lpddrmc_p" iostandard="LVDS15" loc="M5" />
+    <pin index="4"  name ="sysclk1_lpddrmc_n" iostandard="LVDS15" loc="L5" />
 
 <!-- SiT570 200MHz Clock pin mapping -->
     <pin index="205"  name ="SYSCLK_P" iostandard="LVDS" loc="V28" />
@@ -79,7 +79,7 @@
     <!-- <pin index="208" name ="gth223_refclk1_400MHz_clock_n" iostandard="LVDS" loc="Y7"/> -->
 
 <!-- SiT570 EMCCLK 150MHz Clock pin mapping -->
-    <pin index="209" name ="emc_clk_150" iostandard="LVCMOS12" loc="H19"/>
+    <pin index="209" name ="emc_clk_150" iostandard="LVCMOS18" loc="H19"/>
 
 	<!-- ddr4 Pin Mapping-->
     <pin index="7"   name ="ddr4_act_n"     iostandard="SSTL12_DCI"      loc="K25" />
@@ -224,14 +224,14 @@
     <pin index="133"   name ="GPIO_DIP_SW_B7" iostandard="LVCMOS33" loc="AJ31"/>
 
 <!-- GPIO LED pin mapping -->
-    <pin index="134"  name ="GPIO_LED_1" iostandard="LVCMOS33" loc="B18"/>
-    <pin index="135"  name ="GPIO_LED_2" iostandard="LVCMOS33" loc="C18"/>
-    <pin index="136"  name ="GPIO_LED_3" iostandard="LVCMOS33" loc="H16"/>
-    <pin index="137"  name ="GPIO_LED_4" iostandard="LVCMOS33" loc="J16"/>
-    <pin index="138"  name ="GPIO_LED_5" iostandard="LVCMOS33" loc="D16"/>
-    <pin index="139"  name ="GPIO_LED_6" iostandard="LVCMOS33" loc="E16"/>
-    <pin index="140"  name ="GPIO_LED_7" iostandard="LVCMOS33" loc="A17"/>
-    <pin index="141"  name ="GPIO_LED_8" iostandard="LVCMOS33" loc="A16"/>
+    <pin index="134"  name ="GPIO_LED_1" iostandard="LVCMOS18" loc="B18"/>
+    <pin index="135"  name ="GPIO_LED_2" iostandard="LVCMOS18" loc="C18"/>
+    <pin index="136"  name ="GPIO_LED_3" iostandard="LVCMOS18" loc="H16"/>
+    <pin index="137"  name ="GPIO_LED_4" iostandard="LVCMOS18" loc="J16"/>
+    <pin index="138"  name ="GPIO_LED_5" iostandard="LVCMOS18" loc="D16"/>
+    <pin index="139"  name ="GPIO_LED_6" iostandard="LVCMOS18" loc="E16"/>
+    <pin index="140"  name ="GPIO_LED_7" iostandard="LVCMOS18" loc="A17"/>
+    <pin index="141"  name ="GPIO_LED_8" iostandard="LVCMOS18" loc="A16"/>
 
 <!-- GPIO PUSH Button pin mapping -->
     <pin index="142"  name ="GPIO_SW_C" iostandard="LVCMOS33" loc="E22"/>
@@ -314,8 +314,9 @@
   <!-- <pin index="156"  name ="IIC_HSIO_SDA_MAIN" iostandard="LVCMOS33" loc="J4" drive="8" slew="SLOW"/>  -->
 
 <!-- UART pin mapping -->
-  <pin index="199" name ="uartb_rxd" iostandard="LVCMOS33" loc="F18"/>
-  <pin index="200" name ="uartb_txd" iostandard="LVCMOS33" loc="E18"/> 
+  <pin index="199" name ="uartb_rxd" iostandard="LVCMOS18" loc="F18"/>
+  <pin index="200" name ="uartb_txd" iostandard="LVCMOS18" loc="E18"/>
+  
   <pin index="201" name ="uartc_rxd" iostandard="LVCMOS33" loc="A27"/>
   <pin index="202" name ="uartc_txd" iostandard="LVCMOS33" loc="D22"/>
   <pin index="203" name ="uart0_rxd" iostandard="LVCMOS33" loc="AL31"/>
