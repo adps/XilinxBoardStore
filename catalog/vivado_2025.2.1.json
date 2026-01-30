@@ -2676,11 +2676,11 @@
         "name": "scu200",
         "display": "Spartan Ultrascale+ SCU200 Evaluation Platform",
         "latest_revision": "1.0",
-        "commit_id": "4253361864bd28212415db3eaf116a8607635280",
+        "commit_id": "dca798397a42c63023d84d1f2a93e237d0ed14af",
         "revisions": [
           {
             "revision": "1.0",
-            "commit_id": "4253361864bd28212415db3eaf116a8607635280",
+            "commit_id": "dca798397a42c63023d84d1f2a93e237d0ed14af",
             "date": "27-01-2026:10:10:43",
             "history": "Added board Spartan Ultrascale+ SCU200 Evaluation Platform v1.0"
           }
