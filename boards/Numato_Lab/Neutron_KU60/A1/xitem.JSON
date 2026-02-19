@@ -1,0 +1,34 @@
+{
+  "config": {
+    "items": [
+      {
+        "infra": {
+          "name": "Neutron_KU60",
+          "display": "Neutron_KU60",
+          "revision": "A1",
+          "description": "Neutron KU60 FPGA Development Board",
+          "company": "numato.com",
+          "company_display": "Numatolab",
+          "author": "Akash",
+          "contributors": [
+            {
+              "group": "Numatolab",
+              "url": "https://numato.com/"
+            }
+          ],
+          "category": "Single Part",
+          "website": "www.numato.com/",
+          "logo": "Neutron.png",
+          "search-keywords": [
+            "Neutron_KU60",
+            "numato.com",
+            "board",
+            "Single Part"
+          ]
+        }
+      }
+    ]
+  },
+  "_major": 1,
+  "_minor": 0
+}
