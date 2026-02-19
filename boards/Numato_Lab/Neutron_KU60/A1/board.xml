@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?> 
 <board schema_version="2.2" vendor="numato.com" name="Neutron_KU60" display_name="Neutron_KU60" url="www.numato.com/" preset_file="preset.xml" supports_ced="false">
 <images>
-  <image name="Neutron.png" display_name="Neutron KU60 FPGA Development Board" sub_type="board">
+  <image name="Neutron_KU60.png" display_name="Neutron KU60 FPGA Development Board" sub_type="board">
     <description>Neutron KU60 FPGA Development Board</description>
   </image>
 </images>
