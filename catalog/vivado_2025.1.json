@@ -9284,6 +9284,25 @@
           "metadata_file": "xitem.json"
         },
         "company": "iwavesystems.com"
+      },
+      {
+        "name": "Neutron_KU60",
+        "display": "Neutron_KU60",
+        "latest_revision": "A1",
+        "commit_id": "2294b96dc9b71236ee550cfebdc5514d90311792",
+        "revisions": [
+          {
+            "revision": "A1",
+            "commit_id": "2294b96dc9b71236ee550cfebdc5514d90311792",
+            "date": "23-02-2026:05:32:32",
+            "history": "Added board Neutron_KU60 vA1"
+          }
+        ],
+        "config": {
+          "root": "boards/Numato_Lab/Neutron_KU60/A1",
+          "metadata_file": "xitem.json"
+        },
+        "company": "numato.com"
       }
     ],
     "categories": [
