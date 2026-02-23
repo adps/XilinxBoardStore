@@ -8,11 +8,11 @@
           "revision": "A1",
           "description": "Neutron KU60 FPGA Development Board",
           "company": "numato.com",
-          "company_display": "Numatolab",
+          "company_display": "Numato_Lab",
           "author": "Akash",
           "contributors": [
             {
-              "group": "Numatolab",
+              "group": "Numato_Lab",
               "url": "https://numato.com/"
             }
           ],
