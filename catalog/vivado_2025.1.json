@@ -9303,6 +9303,25 @@
           "metadata_file": "xitem.json"
         },
         "company": "numato.com"
+      },
+      {
+        "name": "admpb125_vp2502_2ms",
+        "display": "ADM-PB125/VP2502",
+        "latest_revision": "1.0",
+        "commit_id": "e50c03de6a1d791b2f27dee5ddd69c5ab36e84aa",
+        "revisions": [
+          {
+            "revision": "1.0",
+            "commit_id": "e50c03de6a1d791b2f27dee5ddd69c5ab36e84aa",
+            "date": "26-02-2026:06:59:13",
+            "history": "Added board ADM-PB125/VP2502 v1.0"
+          }
+        ],
+        "config": {
+          "root": "boards/AlphaData/admpb125_vp2502_2ms/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "alpha-data.com"
       }
     ],
     "categories": [
