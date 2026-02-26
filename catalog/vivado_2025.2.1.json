@@ -2690,6 +2690,25 @@
           "metadata_file": "xitem.json"
         },
         "company": "xilinx.com"
+      },
+      {
+        "name": "admpb125_vp2502_2ms",
+        "display": "ADM-PB125/VP2502",
+        "latest_revision": "1.0",
+        "commit_id": "63671602f761b2eb32cfe11fd342e668d3bb0ea9",
+        "revisions": [
+          {
+            "revision": "1.0",
+            "commit_id": "63671602f761b2eb32cfe11fd342e668d3bb0ea9",
+            "date": "26-02-2026:07:13:50",
+            "history": "Added board ADM-PB125/VP2502 v1.0"
+          }
+        ],
+        "config": {
+          "root": "boards/AlphaData/admpb125_vp2502_2ms/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "alpha-data.com"
       }
     ],
     "categories": [
