@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<part_info part_name="xcku060-ffva1517-1-i">
+<pins> 
+
+  <pin index="1" name="reset"        iostandard="LVCMOS33" loc="AP13"/>
+  <pin index="2" name="usb_uart_rxd" iostandard="LVCMOS33" loc="AT12"/>
+  <pin index="3" name="usb_uart_txd" iostandard="LVCMOS33" loc="AR12"/>
+  <pin index="4" name="eth_mdio_i"   iostandard="LVCMOS18" loc="AW28"/>
+  <pin index="5" name="eth_mdc"      iostandard="LVCMOS18" loc="AV28"/>
+  <pin index="6" name="phy_reset_n"  iostandard="LVCMOS18" loc="AW25"/>
+
+  <pin index="7" name="eth_txd_0" iostandard="LVCMOS18" loc="AM21"/>
+  <pin index="8" name="eth_txd_1" iostandard="LVCMOS18" loc="AN21"/>
+  <pin index="9" name="eth_txd_2" iostandard="LVCMOS18" loc="AL20"/>
+  <pin index="10" name="eth_txd_3" iostandard="LVCMOS18" loc="AM20"/>
+  <pin index="11" name="eth_tx_ctl" iostandard="LVCMOS18" loc="AL22"/>
+  <pin index="12" name="eth_tx_clk" iostandard="LVCMOS18" loc="AK22"/>
+  <pin index="13" name="eth_rxd_0" iostandard="LVCMOS18" loc="AJ20"/>
+  <pin index="14" name="eth_rxd_1" iostandard="LVCMOS18" loc="AJ21"/>
+  <pin index="15" name="eth_rxd_2" iostandard="LVCMOS18" loc="AP21"/>
+  <pin index="16" name="eth_rxd_3" iostandard="LVCMOS18" loc="AR21"/>
+  <pin index="17" name="eth_rx_ctl" iostandard="LVCMOS18" loc="AN22"/>
+  <pin index="18" name="eth_rx_clk" iostandard="LVCMOS18" loc="AM22"/>
+
+  <pin index="19" name="ddr4_rtl_0_act_n" iostandard="SSTL12_DCI" loc="H37"/>
+
+  <pin index="20" name="ddr4_rtl_0_adr_0"  iostandard="SSTL12_DCI" loc="C38"/>
+  <pin index="21" name="ddr4_rtl_0_adr_1"  iostandard="SSTL12_DCI" loc="A38"/>
+  <pin index="22" name="ddr4_rtl_0_adr_2"  iostandard="SSTL12_DCI" loc="A37"/>
+  <pin index="23" name="ddr4_rtl_0_adr_3"  iostandard="SSTL12_DCI" loc="B37"/>
+  <pin index="24" name="ddr4_rtl_0_adr_4"  iostandard="SSTL12_DCI" loc="C37"/>
+  <pin index="25" name="ddr4_rtl_0_adr_5"  iostandard="SSTL12_DCI" loc="D36"/>
+  <pin index="26" name="ddr4_rtl_0_adr_6"  iostandard="SSTL12_DCI" loc="E36"/>
+  <pin index="27" name="ddr4_rtl_0_adr_7"  iostandard="SSTL12_DCI" loc="B36"/>
+  <pin index="28" name="ddr4_rtl_0_adr_8"  iostandard="SSTL12_DCI" loc="C36"/>
+  <pin index="29" name="ddr4_rtl_0_adr_9"  iostandard="SSTL12_DCI" loc="D35"/>
+  <pin index="30" name="ddr4_rtl_0_adr_10" iostandard="SSTL12_DCI" loc="E35"/>
+  <pin index="31" name="ddr4_rtl_0_adr_11" iostandard="SSTL12_DCI" loc="A35"/>
+  <pin index="32" name="ddr4_rtl_0_adr_12" iostandard="SSTL12_DCI" loc="B35"/>
+  <pin index="33" name="ddr4_rtl_0_adr_13" iostandard="SSTL12_DCI" loc="C34"/>
+  <pin index="34" name="ddr4_rtl_0_adr_14" iostandard="SSTL12_DCI" loc="D34"/>
+  <pin index="35" name="ddr4_rtl_0_adr_15" iostandard="SSTL12_DCI" loc="A34"/>
+  <pin index="36" name="ddr4_rtl_0_adr_16" iostandard="SSTL12_DCI" loc="B34"/>
+
+  <pin index="37" name="ddr4_rtl_0_ba_0"  iostandard="SSTL12_DCI" loc="C39"/>
+  <pin index="38" name="ddr4_rtl_0_ba_1"  iostandard="SSTL12_DCI" loc="D39"/>
+  <pin index="39" name="ddr4_rtl_0_bg"  iostandard="SSTL12_DCI" loc="E37"/>
+  <pin index="40" name="ddr4_rtl_0_ck_t" iostandard="DIFF_SSTL12_DCI" loc="F38"/>
+  <pin index="41" name="ddr4_rtl_0_ck_c" iostandard="DIFF_SSTL12_DCI" loc="E38"/>
+  <pin index="42" name="ddr4_rtl_0_cke_0" iostandard="SSTL12_DCI" loc="F39"/>
+  <pin index="43" name="ddr4_rtl_0_cs_n_0" iostandard="SSTL12_DCI" loc="G37"/>
+
+  <pin index="44" name="ddr4_rtl_0_dm_n_0" iostandard="POD12_DCI" loc="M31"/>
+  <pin index="45" name="ddr4_rtl_0_dm_n_1" iostandard="POD12_DCI" loc="J30"/>
+  <pin index="46" name="ddr4_rtl_0_dm_n_2" iostandard="POD12_DCI" loc="F33"/>
+  <pin index="47" name="ddr4_rtl_0_dm_n_3" iostandard="POD12_DCI" loc="B30"/>
+  <pin index="48" name="ddr4_rtl_0_dm_n_4" iostandard="POD12_DCI" loc="P28"/>
+  <pin index="49" name="ddr4_rtl_0_dm_n_5" iostandard="POD12_DCI" loc="M25"/>
+  <pin index="50" name="ddr4_rtl_0_dm_n_6" iostandard="POD12_DCI" loc="H27"/>
+  <pin index="51" name="ddr4_rtl_0_dm_n_7" iostandard="POD12_DCI" loc="D28"/>
+  <pin index="52" name="ddr4_rtl_0_dm_n_8" iostandard="POD12_DCI" loc="K36"/>
+
+
+<pin index="53"  name="ddr4_rtl_0_dq_0"  loc="P30" iostandard="POD12_DCI"/>
+<pin index="54"  name="ddr4_rtl_0_dq_1"  loc="R30" iostandard="POD12_DCI"/>
+<pin index="55"  name="ddr4_rtl_0_dq_2"  loc="L33" iostandard="POD12_DCI"/>
+<pin index="56"  name="ddr4_rtl_0_dq_3"  loc="L32" iostandard="POD12_DCI"/>
+<pin index="57"  name="ddr4_rtl_0_dq_4"  loc="L29" iostandard="POD12_DCI"/>
+<pin index="58"  name="ddr4_rtl_0_dq_5"  loc="M29" iostandard="POD12_DCI"/>
+<pin index="59"  name="ddr4_rtl_0_dq_6"  loc="L30" iostandard="POD12_DCI"/>
+<pin index="60"  name="ddr4_rtl_0_dq_7"  loc="M30" iostandard="POD12_DCI"/>
+<pin index="61"  name="ddr4_rtl_0_dq_8"  loc="H33" iostandard="POD12_DCI"/>
+<pin index="62"  name="ddr4_rtl_0_dq_9"  loc="J33" iostandard="POD12_DCI"/>
+<pin index="63"  name="ddr4_rtl_0_dq_10" loc="H29" iostandard="POD12_DCI"/>
+<pin index="64"  name="ddr4_rtl_0_dq_11" loc="J29" iostandard="POD12_DCI"/>
+<pin index="65"  name="ddr4_rtl_0_dq_12" loc="G31" iostandard="POD12_DCI"/>
+<pin index="66"  name="ddr4_rtl_0_dq_13" loc="H31" iostandard="POD12_DCI"/>
+<pin index="67"  name="ddr4_rtl_0_dq_14" loc="G32" iostandard="POD12_DCI"/>
+<pin index="68"  name="ddr4_rtl_0_dq_15" loc="H32" iostandard="POD12_DCI"/>
+<pin index="69"  name="ddr4_rtl_0_dq_16" loc="E32" iostandard="POD12_DCI"/>
+<pin index="70"  name="ddr4_rtl_0_dq_17" loc="F32" iostandard="POD12_DCI"/>
+<pin index="71"  name="ddr4_rtl_0_dq_18" loc="F30" iostandard="POD12_DCI"/>
+<pin index="72"  name="ddr4_rtl_0_dq_19" loc="G30" iostandard="POD12_DCI"/>
+<pin index="73"  name="ddr4_rtl_0_dq_20" loc="F29" iostandard="POD12_DCI"/>
+<pin index="74"  name="ddr4_rtl_0_dq_21" loc="G29" iostandard="POD12_DCI"/>
+<pin index="75"  name="ddr4_rtl_0_dq_22" loc="D30" iostandard="POD12_DCI"/>
+<pin index="76"  name="ddr4_rtl_0_dq_23" loc="E30" iostandard="POD12_DCI"/>
+<pin index="77"  name="ddr4_rtl_0_dq_24" loc="C33" iostandard="POD12_DCI"/>
+<pin index="78"  name="ddr4_rtl_0_dq_25" loc="C32" iostandard="POD12_DCI"/>
+<pin index="79"  name="ddr4_rtl_0_dq_26" loc="C29" iostandard="POD12_DCI"/>
+<pin index="80"  name="ddr4_rtl_0_dq_27" loc="D29" iostandard="POD12_DCI"/>
+<pin index="81"  name="ddr4_rtl_0_dq_28" loc="A29" iostandard="POD12_DCI"/>
+<pin index="82"  name="ddr4_rtl_0_dq_29" loc="A28" iostandard="POD12_DCI"/>
+<pin index="83"  name="ddr4_rtl_0_dq_30" loc="B31" iostandard="POD12_DCI"/>
+<pin index="84"  name="ddr4_rtl_0_dq_31" loc="C31" iostandard="POD12_DCI"/>
+<pin index="85"  name="ddr4_rtl_0_dq_32" loc="R25" iostandard="POD12_DCI"/>
+<pin index="86"  name="ddr4_rtl_0_dq_33" loc="T25" iostandard="POD12_DCI"/>
+<pin index="87"  name="ddr4_rtl_0_dq_34" loc="R27" iostandard="POD12_DCI"/>
+<pin index="88"  name="ddr4_rtl_0_dq_35" loc="R26" iostandard="POD12_DCI"/>
+<pin index="89"  name="ddr4_rtl_0_dq_36" loc="R28" iostandard="POD12_DCI"/>
+<pin index="90"  name="ddr4_rtl_0_dq_37" loc="T28" iostandard="POD12_DCI"/>
+<pin index="91"  name="ddr4_rtl_0_dq_38" loc="N26" iostandard="POD12_DCI"/>
+<pin index="92"  name="ddr4_rtl_0_dq_39" loc="P26" iostandard="POD12_DCI"/>
+<pin index="93"  name="ddr4_rtl_0_dq_40" loc="M24" iostandard="POD12_DCI"/>
+<pin index="94"  name="ddr4_rtl_0_dq_41" loc="N24" iostandard="POD12_DCI"/>
+<pin index="95"  name="ddr4_rtl_0_dq_42" loc="L27" iostandard="POD12_DCI"/>
+<pin index="96"  name="ddr4_rtl_0_dq_43" loc="M27" iostandard="POD12_DCI"/>
+<pin index="97"  name="ddr4_rtl_0_dq_44" loc="J28" iostandard="POD12_DCI"/>
+<pin index="98"  name="ddr4_rtl_0_dq_45" loc="K28" iostandard="POD12_DCI"/>
+<pin index="99"  name="ddr4_rtl_0_dq_46" loc="K27" iostandard="POD12_DCI"/>
+<pin index="100" name="ddr4_rtl_0_dq_47" loc="K26" iostandard="POD12_DCI"/>
+<pin index="101" name="ddr4_rtl_0_dq_48" loc="H26" iostandard="POD12_DCI"/>
+<pin index="102" name="ddr4_rtl_0_dq_49" loc="J26" iostandard="POD12_DCI"/>
+<pin index="103" name="ddr4_rtl_0_dq_50" loc="E27" iostandard="POD12_DCI"/>
+<pin index="104" name="ddr4_rtl_0_dq_51" loc="F27" iostandard="POD12_DCI"/>
+<pin index="105" name="ddr4_rtl_0_dq_52" loc="E28" iostandard="POD12_DCI"/>
+<pin index="106" name="ddr4_rtl_0_dq_53" loc="F28" iostandard="POD12_DCI"/>
+<pin index="107" name="ddr4_rtl_0_dq_54" loc="G27" iostandard="POD12_DCI"/>
+<pin index="108" name="ddr4_rtl_0_dq_55" loc="G26" iostandard="POD12_DCI"/>
+<pin index="109" name="ddr4_rtl_0_dq_56" loc="E26" iostandard="POD12_DCI"/>
+<pin index="110" name="ddr4_rtl_0_dq_57" loc="E25" iostandard="POD12_DCI"/>
+<pin index="111" name="ddr4_rtl_0_dq_58" loc="C27" iostandard="POD12_DCI"/>
+<pin index="112" name="ddr4_rtl_0_dq_59" loc="C26" iostandard="POD12_DCI"/>
+<pin index="113" name="ddr4_rtl_0_dq_60" loc="B27" iostandard="POD12_DCI"/>
+<pin index="114" name="ddr4_rtl_0_dq_61" loc="B26" iostandard="POD12_DCI"/>
+<pin index="115" name="ddr4_rtl_0_dq_62" loc="A25" iostandard="POD12_DCI"/>
+<pin index="116" name="ddr4_rtl_0_dq_63" loc="B25" iostandard="POD12_DCI"/>
+<pin index="117" name="ddr4_rtl_0_dq_64" loc="J39" iostandard="POD12_DCI"/>
+<pin index="118" name="ddr4_rtl_0_dq_65" loc="J38" iostandard="POD12_DCI"/>
+<pin index="119" name="ddr4_rtl_0_dq_66" loc="K35" iostandard="POD12_DCI"/>
+<pin index="120" name="ddr4_rtl_0_dq_67" loc="L35" iostandard="POD12_DCI"/>
+<pin index="121" name="ddr4_rtl_0_dq_68" loc="J35" iostandard="POD12_DCI"/>
+<pin index="122" name="ddr4_rtl_0_dq_69" loc="J34" iostandard="POD12_DCI"/>
+<pin index="123" name="ddr4_rtl_0_dq_70" loc="K37" iostandard="POD12_DCI"/>
+<pin index="124" name="ddr4_rtl_0_dq_71" loc="L37" iostandard="POD12_DCI"/>
+
+
+  <pin index="125" name="ddr4_rtl_0_dqs_t_0" iostandard="DIFF_POD12_DCI" loc="P29"/>
+  <pin index="126" name="ddr4_rtl_0_dqs_c_0" iostandard="DIFF_POD12_DCI" loc="N29"/>
+  <pin index="127" name="ddr4_rtl_0_dqs_t_1" iostandard="DIFF_POD12_DCI" loc="K31"/>
+  <pin index="128" name="ddr4_rtl_0_dqs_c_1" iostandard="DIFF_POD12_DCI" loc="K32"/>
+  <pin index="129" name="ddr4_rtl_0_dqs_t_2" iostandard="DIFF_POD12_DCI" loc="E31"/>
+  <pin index="130" name="ddr4_rtl_0_dqs_c_2" iostandard="DIFF_POD12_DCI" loc="D31"/>
+  <pin index="131" name="ddr4_rtl_0_dqs_t_3" iostandard="DIFF_POD12_DCI" loc="B32"/>
+  <pin index="132" name="ddr4_rtl_0_dqs_c_3" iostandard="DIFF_POD12_DCI" loc="A32"/>
+  <pin index="133" name="ddr4_rtl_0_dqs_t_4" iostandard="DIFF_POD12_DCI" loc="P24"/>
+  <pin index="134" name="ddr4_rtl_0_dqs_c_4" iostandard="DIFF_POD12_DCI" loc="P25"/>
+  <pin index="135" name="ddr4_rtl_0_dqs_t_5" iostandard="DIFF_POD12_DCI" loc="L25"/>
+  <pin index="136" name="ddr4_rtl_0_dqs_c_5" iostandard="DIFF_POD12_DCI" loc="K25"/>
+  <pin index="137" name="ddr4_rtl_0_dqs_t_6" iostandard="DIFF_POD12_DCI" loc="G25"/>
+  <pin index="138" name="ddr4_rtl_0_dqs_c_6" iostandard="DIFF_POD12_DCI" loc="F25"/>
+  <pin index="139" name="ddr4_rtl_0_dqs_t_7" iostandard="DIFF_POD12_DCI" loc="D25"/>
+  <pin index="140" name="ddr4_rtl_0_dqs_c_7" iostandard="DIFF_POD12_DCI" loc="D26"/>
+  <pin index="141" name="ddr4_rtl_0_dqs_t_8" iostandard="DIFF_POD12_DCI" loc="L38"/>
+  <pin index="142" name="ddr4_rtl_0_dqs_c_8" iostandard="DIFF_POD12_DCI" loc="K38"/>
+
+  <pin index="143" name="ddr4_rtl_0_odt_0" iostandard="SSTL12_DCI" loc="F37"/>
+
+  <pin index="144" name="ddr4_rtl_0_reset_n" iostandard="LVCMOS12" loc="F34"/>
+
+  <pin index="145" name="fixed_fabric_200mhz_clk_p" iostandard="LVDS" diff_term="FALSE" loc="AN36"/>
+  <pin index="146" name="fixed_fabric_200mhz_clk_n" iostandard="LVDS" diff_term="FALSE" loc="AN37"/>
+
+  <pin index="147" name="fixed_ddr4_300mhz_clk_p" iostandard="LVDS" diff_term="FALSE" loc="H36"/>
+  <pin index="148" name="fixed_ddr4_300mhz_clk_n" iostandard="LVDS" diff_term="FALSE" loc="G36"/>
+
+</pins>
+</part_info>
