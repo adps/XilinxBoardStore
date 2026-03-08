@@ -2709,6 +2709,25 @@
           "metadata_file": "xitem.json"
         },
         "company": "alpha-data.com"
+      },
+      {
+        "name": "Neutron_KU60",
+        "display": "Neutron_KU60",
+        "latest_revision": "A1",
+        "commit_id": "b88ab0b74c7a2d2ebf3d0aa3f6866689e5f832eb",
+        "revisions": [
+          {
+            "revision": "A1",
+            "commit_id": "b88ab0b74c7a2d2ebf3d0aa3f6866689e5f832eb",
+            "date": "08-03-2026:15:26:36",
+            "history": "Added board Neutron_KU60 vA1"
+          }
+        ],
+        "config": {
+          "root": "boards/NumatoLab/Neutron_KU60/A1",
+          "metadata_file": "xitem.json"
+        },
+        "company": "numato.com"
       }
     ],
     "categories": [
