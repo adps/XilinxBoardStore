@@ -1883,7 +1883,7 @@
 			</component_modes>
 		</component>		
 		
-		<component name="pl_uart_bank713" display_name="Pl Uart Bank713" type="chip" sub_type="uart" major_group="Miscellaneous" part_name="FT4232HL" vendor="ftdichip">
+		<component name="pl_uart_bank713" display_name="Sysctrl Pl Uart Bank713" type="chip" sub_type="uart" major_group="Miscellaneous" part_name="FT4232HL" vendor="ftdichip">
 			<description>USB-to-UART Bridge, which allows serial communication to host computer with a USB port</description>
 			<pins>
 				<pin index="0" name="pl_uart_bank713_tx" iostandard="LVCMOS12"/>

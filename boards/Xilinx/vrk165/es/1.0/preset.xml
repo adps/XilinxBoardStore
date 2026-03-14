@@ -18,6 +18,17 @@
 			<user_hier_parameter name="CONFIG.PS_PMC_CONFIG">
 			<user_parameter name="PMC_MIO12" value="{DRIVE_STRENGTH 8mA SLEW slow PULL pullup SCHMITT 0 AUX_IO 0 USAGE GPIO OUTPUT_DATA default DIRECTION out}"/>
 			<user_parameter name="PMC_OSPI_PERIPHERAL" value="{PRIMARY_ENABLE 1 SECONDARY_ENABLE 0 IO PMC_MIO_0:13 MODE Single}"/>
+			<user_parameter name="PMC_MIO0" value="{DRIVE_STRENGTH 12mA SLEW slow PULL pullup SCHMITT 1 AUX_IO 0 USAGE Reserved OUTPUT_DATA default DIRECTION out}"/>
+			<user_parameter name="PMC_MIO1" value="{DRIVE_STRENGTH 12mA SLEW slow PULL pullup SCHMITT 1 AUX_IO 0 USAGE Reserved OUTPUT_DATA default DIRECTION inout}"/>
+			<user_parameter name="PMC_MIO2" value="{DRIVE_STRENGTH 12mA SLEW slow PULL pullup SCHMITT 1 AUX_IO 0 USAGE Reserved OUTPUT_DATA default DIRECTION inout}"/>
+			<user_parameter name="PMC_MIO3" value="{DRIVE_STRENGTH 12mA SLEW slow PULL pullup SCHMITT 1 AUX_IO 0 USAGE Reserved OUTPUT_DATA default DIRECTION inout}"/>
+			<user_parameter name="PMC_MIO4" value="{DRIVE_STRENGTH 12mA SLEW slow PULL pullup SCHMITT 1 AUX_IO 0 USAGE Reserved OUTPUT_DATA default DIRECTION inout}"/>
+			<user_parameter name="PMC_MIO5" value="{DRIVE_STRENGTH 12mA SLEW slow PULL pullup SCHMITT 1 AUX_IO 0 USAGE Reserved OUTPUT_DATA default DIRECTION inout}"/>
+			<user_parameter name="PMC_MIO6" value="{DRIVE_STRENGTH 12mA SLEW slow PULL pullup SCHMITT 1 AUX_IO 0 USAGE Reserved OUTPUT_DATA default DIRECTION in}"/>
+			<user_parameter name="PMC_MIO7" value="{DRIVE_STRENGTH 12mA SLEW slow PULL pullup SCHMITT 1 AUX_IO 0 USAGE Reserved OUTPUT_DATA default DIRECTION inout}"/>
+			<user_parameter name="PMC_MIO8" value="{DRIVE_STRENGTH 12mA SLEW slow PULL pullup SCHMITT 1 AUX_IO 0 USAGE Reserved OUTPUT_DATA default DIRECTION inout}"/>
+			<user_parameter name="PMC_MIO9" value="{DRIVE_STRENGTH 12mA SLEW slow PULL pullup SCHMITT 1 AUX_IO 0 USAGE Reserved OUTPUT_DATA default DIRECTION inout}"/>
+			<user_parameter name="PMC_MIO10" value="{DRIVE_STRENGTH 12mA SLEW slow PULL pullup SCHMITT 1 AUX_IO 0 USAGE Reserved OUTPUT_DATA default DIRECTION out}"/>
 			<user_parameter name="PMC_SD0_30AD" value="{CD_ENABLE 0 POW_ENABLE 0 WP_ENABLE 0 RESET_ENABLE 0 CD_IO PMC_MIO_39 POW_IO PMC_MIO_49 WP_IO PMC_MIO_37 RESET_IO PMC_MIO_17 CLK_50_SDR_ITAP_DLY 0x25 CLK_50_SDR_OTAP_DLY 0x4 CLK_50_DDR_ITAP_DLY 0x2A CLK_50_DDR_OTAP_DLY 0x3 CLK_100_SDR_OTAP_DLY 0x3 CLK_200_SDR_OTAP_DLY 0x2}"/>
 			<user_parameter name="PMC_SD0_30AD_PERIPHERAL" value="{PRIMARY_ENABLE 0 SECONDARY_ENABLE 0 IO PMC_MIO_37:49 IO_TYPE MIO}"/>
 			<user_parameter name="PMC_SD0_30_PERIPHERAL" value="{PRIMARY_ENABLE 0 SECONDARY_ENABLE 0 IO PMC_MIO_37:49 IO_TYPE MIO}"/>
