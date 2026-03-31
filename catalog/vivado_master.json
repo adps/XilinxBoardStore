@@ -7036,6 +7036,63 @@
           "metadata_file": "xitem.json"
         },
         "company": "alpha-data.com"
+      },
+      {
+        "name": "iG60M_ZU4302_4E008G_E032G_IAA",
+        "display": "iG60M_ZU4302_4E008G_E032G_IAA",
+        "latest_revision": "1.2",
+        "commit_id": "720f591be439d3bd4f0ca3c5c13766fbd77abed2",
+        "revisions": [
+          {
+            "revision": "1.2",
+            "commit_id": "720f591be439d3bd4f0ca3c5c13766fbd77abed2",
+            "date": "31-03-2026:12:46:31",
+            "history": "Added board iG60M_ZU4302_4E008G_E032G_IAA v1.2"
+          }
+        ],
+        "config": {
+          "root": "boards/iWave/iG60M-ZU4302-4E008G-E032G-IAA/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "iwave-global.com"
+      },
+      {
+        "name": "iG60M_ZU4801_4E008G_E032G_IAA",
+        "display": "iG60M_ZU4801_4E008G_E032G_IAA",
+        "latest_revision": "1.0",
+        "commit_id": "720f591be439d3bd4f0ca3c5c13766fbd77abed2",
+        "revisions": [
+          {
+            "revision": "1.0",
+            "commit_id": "720f591be439d3bd4f0ca3c5c13766fbd77abed2",
+            "date": "31-03-2026:12:46:31",
+            "history": "Added board iG60M_ZU4801_4E008G_E032G_IAA v1.0"
+          }
+        ],
+        "config": {
+          "root": "boards/iWave/iG60M-ZU4801-4E008G-E032G-IAA/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "iwave-global.com"
+      },
+      {
+        "name": "iG60M_ZU4702_4E008G_E032G_IAA",
+        "display": "iG60M_ZU4702_4E008G_E032G_IAA",
+        "latest_revision": "1.1",
+        "commit_id": "720f591be439d3bd4f0ca3c5c13766fbd77abed2",
+        "revisions": [
+          {
+            "revision": "1.1",
+            "commit_id": "720f591be439d3bd4f0ca3c5c13766fbd77abed2",
+            "date": "31-03-2026:12:46:31",
+            "history": "Added board iG60M_ZU4702_4E008G_E032G_IAA v1.1"
+          }
+        ],
+        "config": {
+          "root": "boards/iWave/iG60M_ZU4702_4E008G_E032G_IAA/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "iwave-global.com"
       }
     ],
     "categories": [
