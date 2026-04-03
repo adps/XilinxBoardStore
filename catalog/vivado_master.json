@@ -7093,6 +7093,25 @@
           "metadata_file": "xitem.json"
         },
         "company": "iwave-global.com"
+      },
+      {
+        "name": "iW-G57M-1102-4L004G-E016G-BIB",
+        "display": "iW-G57M-1102-4L004G-E016G-BIB",
+        "latest_revision": "R2.1",
+        "commit_id": "8022f0e3e6999e93be03e123559113b737c3a306",
+        "revisions": [
+          {
+            "revision": "R2.1",
+            "commit_id": "8022f0e3e6999e93be03e123559113b737c3a306",
+            "date": "03-04-2026:09:18:36",
+            "history": "Added board iW-G57M-1102-4L004G-E016G-BIB vR2.1"
+          }
+        ],
+        "config": {
+          "root": "boards/iWave/iW-G57M-1102-4L004G-E016G-BIB/2.1",
+          "metadata_file": "xitem.json"
+        },
+        "company": "iwavesystems.com"
       }
     ],
     "categories": [
