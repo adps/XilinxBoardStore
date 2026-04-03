@@ -6808,6 +6808,291 @@
           "metadata_file": "xitem.json"
         },
         "company": "digilentinc.com"
+      },
+      {
+        "name": "iW_G42M_ZU29_4E008G_E032G_LIE",
+        "display": "iW_G42M_ZU29_4E008G_E032G_LIE",
+        "latest_revision": "3.1",
+        "commit_id": "6cf0a3b099d51331652413bbccfb66690cf1a93b",
+        "revisions": [
+          {
+            "revision": "3.1",
+            "commit_id": "6cf0a3b099d51331652413bbccfb66690cf1a93b",
+            "date": "30-05-2025:05:21:39",
+            "history": "Added board iW_G42M_ZU29_4E008G_E032G_LIE v3.1"
+          }
+        ],
+        "config": {
+          "root": "boards/iWave/iW-G42M-ZU29-4E008G-E032G-LIE/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "iwave-global.com"
+      },
+      {
+        "name": "iW_G42M_ZU49_4E008G_E032G_LIE",
+        "display": "iW_G42M_ZU49_4E008G_E032G_LIE",
+        "latest_revision": "3.0",
+        "commit_id": "6cf0a3b099d51331652413bbccfb66690cf1a93b",
+        "revisions": [
+          {
+            "revision": "3.0",
+            "commit_id": "6cf0a3b099d51331652413bbccfb66690cf1a93b",
+            "date": "30-05-2025:05:21:39",
+            "history": "Added board iW_G42M_ZU49_4E008G_E032G_LIE v3.0"
+          }
+        ],
+        "config": {
+          "root": "boards/iWave/iW-G42M-ZU49-4E008G-E032G-LIE/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "iwave-global.com"
+      },
+      {
+        "name": "iW-G47M-K19P-4E008G-Q128M-LIF",
+        "display": "iW-G47M-K19P-4E008G-Q128M-LIF",
+        "latest_revision": "3.1",
+        "commit_id": "d7656597fcd7bf1d93ed54f617e311c20a01c9a7",
+        "revisions": [
+          {
+            "revision": "3.1",
+            "commit_id": "d7656597fcd7bf1d93ed54f617e311c20a01c9a7",
+            "date": "30-05-2025:16:54:32",
+            "history": "Added board iW-G47M-K19P-4E008G-Q128M-LIF v3.1"
+          }
+        ],
+        "config": {
+          "root": "boards/iWave/iW-G47M-K19P-4E008G-Q128M-LIF/1.0/3.1",
+          "metadata_file": "xitem.json"
+        },
+        "company": "iwavesystems.com"
+      },
+      {
+        "name": "iG65M-9EG02-4E004G-E032G-IAA",
+        "display": "iG65M-9EG02-4E004G-E032G-IAA",
+        "latest_revision": "1.0",
+        "commit_id": "1395e10680873d14aec52793a000cb71011e1a4b",
+        "revisions": [
+          {
+            "revision": "1.0",
+            "commit_id": "1395e10680873d14aec52793a000cb71011e1a4b",
+            "date": "12-11-2025:10:56:35",
+            "history": "Added board iG65M-9EG02-4E004G-E032G-IAA v1.0"
+          }
+        ],
+        "config": {
+          "root": "boards/iWave/ig65m-09eg02-4e004g-e032g-laa/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "iwave-global.com"
+      },
+      {
+        "name": "iG65M-15EG02-4E004G-E032G-IAA",
+        "display": "iG65M-15EG02-4E004G-E032G-IAA",
+        "latest_revision": "1.0",
+        "commit_id": "1395e10680873d14aec52793a000cb71011e1a4b",
+        "revisions": [
+          {
+            "revision": "1.0",
+            "commit_id": "1395e10680873d14aec52793a000cb71011e1a4b",
+            "date": "12-11-2025:10:56:35",
+            "history": "Added board iG65M-15EG02-4E004G-E032G-IAA v1.0"
+          }
+        ],
+        "config": {
+          "root": "boards/iWave/ig65m-15eg02-4e004g-e032g-laa/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "iwave-global.com"
+      },
+      {
+        "name": "iW-G57M-2302-4L004G-E016G-BEB",
+        "display": "iW-G57M-2302-4L004G-E016G-BEB",
+        "latest_revision": "R2.0",
+        "commit_id": "a9624bbbb0e17c16687fa4adca9809aacf442e01",
+        "revisions": [
+          {
+            "revision": "R2.0",
+            "commit_id": "a9624bbbb0e17c16687fa4adca9809aacf442e01",
+            "date": "11-12-2025:08:18:28",
+            "history": "Added board iW-G57M-2302-4L004G-E016G-BEB vR2.0"
+          }
+        ],
+        "config": {
+          "root": "boards/iWave/iW-G57M-2302-4L004G-E016G-BEB/2.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "iwavesystems.com"
+      },
+      {
+        "name": "v1161_vc1902",
+        "display": "V1161 Programmable 100G Ethernet XMC ACAP Card with VC1902",
+        "latest_revision": "1.1",
+        "commit_id": "b9c54b8ec6747d67b05c53cbfe3724f51d169100",
+        "revisions": [
+          {
+            "revision": "1.1",
+            "commit_id": "b9c54b8ec6747d67b05c53cbfe3724f51d169100",
+            "date": "02-02-2026:08:44:32",
+            "history": "Added board V1161 Programmable 100G Ethernet XMC ACAP Card with VC1902 v1.1"
+          }
+        ],
+        "config": {
+          "root": "boards/NewWaveDesign/v1161_vc1902/1.1",
+          "metadata_file": "xitem.json"
+        },
+        "company": "NewWaveDesign.com"
+      },
+      {
+        "name": "v1161_vm1802",
+        "display": "V1161 Programmable 100G Ethernet XMC ACAP Card with VM1802",
+        "latest_revision": "1.1",
+        "commit_id": "b9c54b8ec6747d67b05c53cbfe3724f51d169100",
+        "revisions": [
+          {
+            "revision": "1.1",
+            "commit_id": "b9c54b8ec6747d67b05c53cbfe3724f51d169100",
+            "date": "02-02-2026:08:44:32",
+            "history": "Added board V1161 Programmable 100G Ethernet XMC ACAP Card with VM1802 v1.1"
+          }
+        ],
+        "config": {
+          "root": "boards/NewWaveDesign/v1161_vm1802/1.1",
+          "metadata_file": "xitem.json"
+        },
+        "company": "NewWaveDesign.com"
+      },
+      {
+        "name": "v1163_vc1902",
+        "display": "V1163 Programmable 12-Port Rugged XMC ACoC Card with VC1902",
+        "latest_revision": "1.1",
+        "commit_id": "b9c54b8ec6747d67b05c53cbfe3724f51d169100",
+        "revisions": [
+          {
+            "revision": "1.1",
+            "commit_id": "b9c54b8ec6747d67b05c53cbfe3724f51d169100",
+            "date": "02-02-2026:08:44:32",
+            "history": "Added board V1163 Programmable 12-Port Rugged XMC ACoC Card with VC1902 v1.1"
+          }
+        ],
+        "config": {
+          "root": "boards/NewWaveDesign/v1163_vc1902/1.1",
+          "metadata_file": "xitem.json"
+        },
+        "company": "NewWaveDesign.com"
+      },
+      {
+        "name": "v1163_vm1802",
+        "display": "V1163 Programmable 12-Port Rugged XMC ACoC Card with VM1802",
+        "latest_revision": "1.1",
+        "commit_id": "b9c54b8ec6747d67b05c53cbfe3724f51d169100",
+        "revisions": [
+          {
+            "revision": "1.1",
+            "commit_id": "b9c54b8ec6747d67b05c53cbfe3724f51d169100",
+            "date": "02-02-2026:08:44:32",
+            "history": "Added board V1163 Programmable 12-Port Rugged XMC ACoC Card with VM1802 v1.1"
+          }
+        ],
+        "config": {
+          "root": "boards/NewWaveDesign/v1163_vm1802/1.1",
+          "metadata_file": "xitem.json"
+        },
+        "company": "NewWaveDesign.com"
+      },
+      {
+        "name": "v6065_vp1702",
+        "display": "V6065 3U VPX Versal Premium ASoC Card with VP1702",
+        "latest_revision": "1.0",
+        "commit_id": "b9c54b8ec6747d67b05c53cbfe3724f51d169100",
+        "revisions": [
+          {
+            "revision": "1.0",
+            "commit_id": "b9c54b8ec6747d67b05c53cbfe3724f51d169100",
+            "date": "02-02-2026:08:44:32",
+            "history": "Added board V6065 3U VPX Versal Premium ASoC Card with VP1702 v1.0"
+          }
+        ],
+        "config": {
+          "root": "boards/NewWaveDesign/v6065_vp1702/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "NewWaveDesign.com"
+      },
+      {
+        "name": "admpb125_vp2502_2ms",
+        "display": "ADM-PB125/VP2502",
+        "latest_revision": "1.0",
+        "commit_id": "8f8efe13a529bd0b277a9ffab90aa9b3fe2c1c2a",
+        "revisions": [
+          {
+            "revision": "1.0",
+            "commit_id": "8f8efe13a529bd0b277a9ffab90aa9b3fe2c1c2a",
+            "date": "26-02-2026:07:15:55",
+            "history": "Added board ADM-PB125/VP2502 v1.0"
+          }
+        ],
+        "config": {
+          "root": "boards/AlphaData/admpb125_vp2502_2ms/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "alpha-data.com"
+      },
+      {
+        "name": "iG60M_ZU4302_4E008G_E032G_IAA",
+        "display": "iG60M_ZU4302_4E008G_E032G_IAA",
+        "latest_revision": "1.2",
+        "commit_id": "720f591be439d3bd4f0ca3c5c13766fbd77abed2",
+        "revisions": [
+          {
+            "revision": "1.2",
+            "commit_id": "720f591be439d3bd4f0ca3c5c13766fbd77abed2",
+            "date": "31-03-2026:12:46:31",
+            "history": "Added board iG60M_ZU4302_4E008G_E032G_IAA v1.2"
+          }
+        ],
+        "config": {
+          "root": "boards/iWave/iG60M-ZU4302-4E008G-E032G-IAA/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "iwave-global.com"
+      },
+      {
+        "name": "iG60M_ZU4801_4E008G_E032G_IAA",
+        "display": "iG60M_ZU4801_4E008G_E032G_IAA",
+        "latest_revision": "1.0",
+        "commit_id": "720f591be439d3bd4f0ca3c5c13766fbd77abed2",
+        "revisions": [
+          {
+            "revision": "1.0",
+            "commit_id": "720f591be439d3bd4f0ca3c5c13766fbd77abed2",
+            "date": "31-03-2026:12:46:31",
+            "history": "Added board iG60M_ZU4801_4E008G_E032G_IAA v1.0"
+          }
+        ],
+        "config": {
+          "root": "boards/iWave/iG60M-ZU4801-4E008G-E032G-IAA/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "iwave-global.com"
+      },
+      {
+        "name": "iG60M_ZU4702_4E008G_E032G_IAA",
+        "display": "iG60M_ZU4702_4E008G_E032G_IAA",
+        "latest_revision": "1.1",
+        "commit_id": "720f591be439d3bd4f0ca3c5c13766fbd77abed2",
+        "revisions": [
+          {
+            "revision": "1.1",
+            "commit_id": "720f591be439d3bd4f0ca3c5c13766fbd77abed2",
+            "date": "31-03-2026:12:46:31",
+            "history": "Added board iG60M_ZU4702_4E008G_E032G_IAA v1.1"
+          }
+        ],
+        "config": {
+          "root": "boards/iWave/iG60M_ZU4702_4E008G_E032G_IAA/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "iwave-global.com"
       }
     ],
     "categories": [
