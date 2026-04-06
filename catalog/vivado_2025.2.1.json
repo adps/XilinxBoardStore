@@ -9612,6 +9612,25 @@
           "metadata_file": "xitem.json"
         },
         "company": "numato.com"
+      },
+      {
+        "name": "vrk160",
+        "display": "Versal VRK160 ES1 Evaluation Platform",
+        "latest_revision": "1.2",
+        "commit_id": "825195b5e9489d469909cee9ecf0375fbd34d970",
+        "revisions": [
+          {
+            "revision": "1.2",
+            "commit_id": "825195b5e9489d469909cee9ecf0375fbd34d970",
+            "date": "06-04-2026:05:34:29",
+            "history": "Added board Versal VRK160 ES1 Evaluation Platform v1.2"
+          }
+        ],
+        "config": {
+          "root": "boards/Xilinx/vrk160/1.2",
+          "metadata_file": "xitem.json"
+        },
+        "company": "xilinx.com"
       }
     ],
     "categories": [
