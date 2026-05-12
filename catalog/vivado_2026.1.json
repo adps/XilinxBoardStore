@@ -8653,25 +8653,6 @@
         "company": "xilinx.com"
       },
       {
-        "name": "vek386",
-        "display": "Versal VEK386 Evaluation Platform",
-        "latest_revision": "1.0",
-        "commit_id": "602e93cb978d461af61fac09776aaa1b193cf3d8",
-        "revisions": [
-          {
-            "revision": "1.0",
-            "commit_id": "602e93cb978d461af61fac09776aaa1b193cf3d8",
-            "date": "29-04-2026:17:46:42",
-            "history": "Added board Versal VEK386 Evaluation Platform v1.0"
-          }
-        ],
-        "config": {
-          "root": "boards/Xilinx/vek386/1.0",
-          "metadata_file": "xitem.json"
-        },
-        "company": "xilinx.com"
-      },
-      {
         "name": "vermeo_t1_mpsoc",
         "display": "Zynq Ultrascale+ MPSoC T1 Development Board",
         "latest_revision": "1.0",
