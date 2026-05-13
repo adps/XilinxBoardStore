@@ -1,0 +1,69 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# propagate_ci_to_new_branches.yml
+# AMD/Xilinx Board Store — Auto-propagate CI files to new release branches
+#
+# When a new branch is created (e.g. 2026.1, 2026.2), this workflow
+# automatically copies the .github/ folder from master onto that branch so
+# that the board_pr_validation workflow is immediately active for PRs
+# targeting the new branch.
+#
+# This means the CI never needs to be manually cherry-picked when AMD creates
+# a new release branch.
+#
+# REQUIREMENTS
+# ─────────────
+# The workflow needs write access to push back to the repo.
+# Go to Settings → Actions → General → Workflow permissions → set to
+# "Read and write permissions".
+# ─────────────────────────────────────────────────────────────────────────────
+
+name: Propagate CI to New Branch
+
+on:
+  create:   # fires when any branch or tag is created
+
+permissions:
+  contents: write
+
+jobs:
+  propagate:
+    name: Copy .github/ from master to new branch
+    runs-on: ubuntu-latest
+
+    # Only run for branch creation events, not tag creation
+    if: github.ref_type == 'branch'
+
+    steps:
+      - name: Checkout full repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Copy .github/ from master and push to new branch
+        run: |
+          NEW_BRANCH="${{ github.ref_name }}"
+          echo "New branch detected: $NEW_BRANCH"
+
+          # Switch to the new branch
+          git checkout "$NEW_BRANCH"
+
+          # Overlay the .github/ folder from master
+          git checkout origin/master -- .github/
+
+          # Only commit if there are actual changes
+          if git diff --staged --quiet; then
+            echo ".github/ already up to date on $NEW_BRANCH — nothing to do."
+          else
+            git commit -m "ci: auto-propagate board validator CI from master
+
+Automatically copied .github/ from master so that board_pr_validation
+runs on PRs targeting this branch."
+            git push origin "$NEW_BRANCH"
+            echo "CI files pushed to $NEW_BRANCH"
+          fi
