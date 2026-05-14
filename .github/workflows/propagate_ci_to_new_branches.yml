@@ -60,10 +60,7 @@ jobs:
           if git diff --staged --quiet; then
             echo ".github/ already up to date on $NEW_BRANCH — nothing to do."
           else
-            git commit -m "ci: auto-propagate board validator CI from master
-
-Automatically copied .github/ from master so that board_pr_validation
-runs on PRs targeting this branch."
+            git commit -m "ci: auto-propagate board validator CI from master"
             git push origin "$NEW_BRANCH"
             echo "CI files pushed to $NEW_BRANCH"
           fi
