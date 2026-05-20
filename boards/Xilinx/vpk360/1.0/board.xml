@@ -1423,12 +1423,12 @@
 					</port_maps>
 				</interface>
 				
-				<interface mode="slave" name="lpddr5_clk4" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="lpddr5_clk4" preset_proc="sysclk0_preset">
+				<interface mode="slave" name="lpddr5_clk4" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="lpddr5_clk4">
 					<parameters>
 						<parameter name="frequency" value="320000000" />
 					</parameters>
 					<preferred_ips>
-						<preferred_ip vendor="xilinx.com" library="ip" name="axi_noc2" order="0" />
+						<preferred_ip vendor="xilinx.com" library="ip" name="clkx5_wiz" order="0" />
 						<!-- <preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" /> -->
 						<!-- <preferred_ip vendor="xilinx.com" library="ip" name="clkx5_wiz" order="1" /> -->
 					</preferred_ips>
@@ -1535,13 +1535,13 @@
 				<parameters>
 					<parameter name="frequency" value="320000000"/>
 				</parameters>
-			<component_modes>
+<!-- 			<component_modes>
 				<component_mode name="lpddr5_clk0_1" display_name="lpddr5_clk0_1">
 					<interfaces>
 						<interface name="lpddr5_clk0_1" />
 					</interfaces>
 				</component_mode>
-			</component_modes>
+			</component_modes> -->
 		</component>	
 		
 		<component name="lpddr5_clk2_3" display_name="Lpddr5 Clock 23" type="chip" sub_type="system_clock" major_group="Clock Sources" part_name="SIT95211" vendor="SiTime" spec_url="www.sitime.com">
@@ -1549,13 +1549,13 @@
 				<parameters>
 					<parameter name="frequency" value="320000000"/>
 				</parameters>
-			<component_modes>
+<!-- 			<component_modes>
 				<component_mode name="lpddr5_clk2_3" display_name="lpddr5_clk2_3">
 					<interfaces>
 						<interface name="lpddr5_clk2_3" />
 					</interfaces>
 				</component_mode>
-			</component_modes>
+			</component_modes> -->
 		</component>
 		
 		<component name="lpddr5_clk4" display_name="Lpddr5 Clock 4" type="chip" sub_type="system_clock" major_group="Clock Sources" part_name="SIT95211" vendor="SiTime" spec_url="www.sitime.com">
@@ -1563,16 +1563,16 @@
 				<parameters>
 					<parameter name="frequency" value="320000000"/>
 				</parameters>
-			<component_modes>
+<!-- 			<component_modes>
 				<component_mode name="lpddr5_clk4" display_name="lpddr5_clk4">
 					<interfaces>
 						<interface name="lpddr5_clk4" />
 					</interfaces>
 				</component_mode>
-			</component_modes>
+			</component_modes> -->
 		</component>	
 
-		<component name="lpddr5_Controller_c0" display_name="Lpddr5_Controller_C0_Bank_700_701" type="chip" sub_type="ddr" major_group="External Memory" part_name="MT62F1G32D2DS-023 WT:C" vendor="Micron" spec_url="https://www.micron.com/">
+		<component name="lpddr5_Controller_c0" display_name="Lpddr5_Controller_C0_Bank_700_701" type="chip" sub_type="ddr" major_group="External Memory" part_name="MT62F1G32D2DS-020 WT:D" vendor="Micron" spec_url="https://www.micron.com/">
 			<description>1Gb x 32 (1Gb16 x 1 Die x 2Ch x 1R) lpddr5 memory</description>
 			<parameters>
 				<parameter name="ddr_type" value="lpddr5" />
@@ -1582,7 +1582,7 @@
 				<component_mode name="lpddr5_Controller_c0" display_name="lpddr5_Controller_c0">
 					<interfaces>
 						<interface name="Lpddr5_Controller_C0_Bank_700_701" />
-						<!-- <interface name="lpddr5_clk0_1" optional="true"/> -->
+						<interface name="lpddr5_clk0_1" optional="true"/>
 					</interfaces>
 				</component_mode>
 				<component_mode name="lpddr5_Controller_c0_int" display_name="lpddr5_Controller_c0_int">
@@ -1593,7 +1593,7 @@
 			</component_modes>
 		</component>
 		
-		<component name="lpddr5_Controller_c1" display_name="Lpddr5_Controller_C1_Bank_704_705" type="chip" sub_type="ddr" major_group="External Memory" part_name="MT62F1G32D2DS-023 WT:C" vendor="Micron" spec_url="https://www.micron.com/">
+		<component name="lpddr5_Controller_c1" display_name="Lpddr5_Controller_C1_Bank_704_705" type="chip" sub_type="ddr" major_group="External Memory" part_name="MT62F1G32D2DS-020 WT:D" vendor="Micron" spec_url="https://www.micron.com/">
 			<description>1Gb x 32 (1Gb16 x 1 Die x 2Ch x 1R) lpddr5 memory</description>
 			<parameters>
 				<parameter name="ddr_type" value="lpddr5" />
@@ -1603,7 +1603,7 @@
 				<component_mode name="lpddr5_Controller_c1" display_name="lpddr5_Controller_c1">
 					<interfaces>
 						<interface name="Lpddr5_Controller_C1_Bank_704_705" />
-						<!-- <interface name="lpddr5_clk0_1" optional="true" /> -->
+						<interface name="lpddr5_clk0_1" optional="true" />
 					</interfaces>
 				</component_mode>
 				<component_mode name="lpddr5_Controller_c1_int" display_name="lpddr5_Controller_c1_int">
@@ -1614,7 +1614,7 @@
 			</component_modes>
 		</component>
 		
-		<component name="lpddr5_Controller_c2" display_name="Lpddr5_Controller_C2_Bank_712_713" type="chip" sub_type="ddr" major_group="External Memory" part_name="MT62F1G32D2DS-023 WT:C" vendor="Micron" spec_url="https://www.micron.com/">
+		<component name="lpddr5_Controller_c2" display_name="Lpddr5_Controller_C2_Bank_712_713" type="chip" sub_type="ddr" major_group="External Memory" part_name="MT62F1G32D2DS-020 WT:D" vendor="Micron" spec_url="https://www.micron.com/">
 			<description>1Gb x 32 (1Gb16 x 1 Die x 2Ch x 1R) lpddr5 memory</description>
 			<parameters>
 				<parameter name="ddr_type" value="lpddr5" />
@@ -1635,7 +1635,7 @@
 			</component_modes>
 		</component>
 		
-		<component name="lpddr5_Controller_c3" display_name="Lpddr5_Controller_C3_Bank_716_717" type="chip" sub_type="ddr" major_group="External Memory" part_name="MT62F1G32D2DS-023 WT:C" vendor="Micron" spec_url="https://www.micron.com/">
+		<component name="lpddr5_Controller_c3" display_name="Lpddr5_Controller_C3_Bank_716_717" type="chip" sub_type="ddr" major_group="External Memory" part_name="MT62F1G32D2DS-020 WT:D" vendor="Micron" spec_url="https://www.micron.com/">
 			<description>1Gb x 32 (1Gb16 x 1 Die x 2Ch x 1R) lpddr5 memory</description>
 			<parameters>
 				<parameter name="ddr_type" value="lpddr5" />
@@ -1657,7 +1657,7 @@
 			</component_modes>
 		</component>
 
-		<component name="lpddr5_Controller_c4" display_name="Lpddr5_Controller_C4_Bank_718_719" type="chip" sub_type="ddr" major_group="External Memory" part_name="MT62F1G32D2DS-023 WT:C" vendor="Micron" spec_url="https://www.micron.com/">
+		<component name="lpddr5_Controller_c4" display_name="Lpddr5_Controller_C4_Bank_718_719" type="chip" sub_type="ddr" major_group="External Memory" part_name="MT62F1G32D2DS-020 WT:D" vendor="Micron" spec_url="https://www.micron.com/">
 			<description>1Gb x 32 (1Gb16 x 1 Die x 2Ch x 1R) lpddr5 memory</description>
 			<parameters>
 				<parameter name="ddr_type" value="lpddr5" />
@@ -1667,7 +1667,7 @@
 				<component_mode name="lpddr5_Controller_c4" display_name="lpddr5_Controller_c4">
 					<interfaces>
 						<interface name="Lpddr5_Controller_C4_Bank_718_719" />
-						<!-- <interface name="lpddr5_clk4" optional="true" /> -->
+						<interface name="lpddr5_clk4" optional="true" />
 					</interfaces>
 				</component_mode>
 				<component_mode name="lpddr5_Controller_c4_int" display_name="lpddr5_Controller_c4_int">

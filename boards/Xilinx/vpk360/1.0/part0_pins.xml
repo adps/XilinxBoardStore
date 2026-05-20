@@ -393,11 +393,11 @@
 		
 		<pin index="321" name="lpddr5_c4_ch0_reset_n" loc="BU52" />
 		
-		<!--lpddr5_C34_CLK -->
+		<!--lpddr5_C23_CLK -->
 		<pin index="322" name="lpddr5_clk23_p" iostandard="LVDS12" loc="BU36" />
 		<pin index="323" name="lpddr5_clk23_n" iostandard="LVDS12" loc="BV37" />
 		
-		<!--lpddr5_C2_CLK -->
+		<!--lpddr5_C4_CLK -->
 		<pin index="324" name="lpddr5_clk4_p" iostandard="LVDS12" loc="BL46" />
 		<pin index="325" name="lpddr5_clk4_n" iostandard="LVDS12" loc="BK47" />
 		
