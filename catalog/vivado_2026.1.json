@@ -9093,11 +9093,11 @@
         "name": "vpk360",
         "display": "Versal VPK360 Evaluation Platform",
         "latest_revision": "1.0",
-        "commit_id": "602e93cb978d461af61fac09776aaa1b193cf3d8",
+        "commit_id": "fa6aefd84dee51fb00a9e147d4f2566b2004cbad",
         "revisions": [
           {
             "revision": "1.0",
-            "commit_id": "602e93cb978d461af61fac09776aaa1b193cf3d8",
+            "commit_id": "fa6aefd84dee51fb00a9e147d4f2566b2004cbad",
             "date": "29-04-2026:17:46:42",
             "history": "Added board Versal VPK360 Evaluation Platform v1.0"
           }
