@@ -44,6 +44,7 @@ on:
 # Minimal permissions — read code, write PR comments
 permissions:
   contents: read
+  issues: write
   pull-requests: write
 
 jobs:
