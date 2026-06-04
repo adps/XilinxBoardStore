@@ -18,7 +18,7 @@
 		<revision id="0">2.7</revision>
 	</compatible_board_revisions>
 
-	<file_version>1.0</file_version>
+	<file_version>2.7</file_version>
 
 	<description>Zynq UltraScale+ MPSoC 5EV-1-E SBC, 2GB PS DDR4, 1GB FPGA DDR4, HDMI IN, HDMI OUT, VCU, WIFI-BT, 8GB eMMC Flash</description>
 
