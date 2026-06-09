@@ -8854,6 +8854,25 @@
           "metadata_file": "xitem.json"
         },
         "company": "alpha-data.com"
+      },
+      {
+        "name": "iW-G36S-5EV1-4E002G-E008G-BEI",
+        "display": "iW-G36S-5EV1-4E002G-E008G-BEI",
+        "latest_revision": "2.7",
+        "commit_id": "197794d0850e67efca547f8da1ee00caefe1c366",
+        "revisions": [
+          {
+            "revision": "2.7",
+            "commit_id": "197794d0850e67efca547f8da1ee00caefe1c366",
+            "date": "09-06-2026:09:46:47",
+            "history": "Added board iW-G36S-5EV1-4E002G-E008G-BEI v2.7"
+          }
+        ],
+        "config": {
+          "root": "boards/iWave/iW-G36S-5EV1-4E002G-E008G-BEI/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "iwave-global.com"
       }
     ],
     "categories": [
