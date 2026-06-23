@@ -1,0 +1,34 @@
+{
+  "config": {
+    "items": [
+      {
+        "infra": {
+          "name": "v6068_vp1702",
+          "display": "V6068 3U VPX Versal Premium ASoC Card with FMC+ Site",
+          "revision": "1.0",
+          "description": "V6068 3U VPX Versal Premium ASoC Card with FMC+ Site",
+          "company": "NewWaveDesign.com",
+          "company_display": "NewWaveDesign",
+          "author": "wojohnson",
+          "contributors": [
+            {
+              "group": "NewWaveDesign",
+              "url": "www.NewWaveDesign.com/"
+            }
+          ],
+          "category": "Single Part",
+          "website": "https://newwavedesign.com/products/vpx/v6068-3u-vpx-versal-premium-asoc-fpga-optical-i-o-module-with-fmc-site/",
+          "logo": "v6068.jpg",
+          "search-keywords": [
+            "v6068_vp1702",
+            "NewWaveDesign.com",
+            "board",
+            "Single Part"
+          ]
+        }
+      }
+    ]
+  },
+  "_major": 1,
+  "_minor": 0
+}
