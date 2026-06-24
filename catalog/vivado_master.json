@@ -7131,6 +7131,25 @@
           "metadata_file": "xitem.json"
         },
         "company": "iwave-global.com"
+      },
+      {
+        "name": "v6068_vp1702",
+        "display": "V6068 3U VPX Versal Premium ASoC Card with FMC+ Site",
+        "latest_revision": "1.0",
+        "commit_id": "b7179d48054c081c4fe19dca0c3f856787438625",
+        "revisions": [
+          {
+            "revision": "1.0",
+            "commit_id": "b7179d48054c081c4fe19dca0c3f856787438625",
+            "date": "24-06-2026:06:52:29",
+            "history": "Added board V6068 3U VPX Versal Premium ASoC Card with FMC+ Site v1.0"
+          }
+        ],
+        "config": {
+          "root": "boards/NewWaveDesign/v6068_vp1702/1.0",
+          "metadata_file": "xitem.json"
+        },
+        "company": "NewWaveDesign.com"
       }
     ],
     "categories": [
