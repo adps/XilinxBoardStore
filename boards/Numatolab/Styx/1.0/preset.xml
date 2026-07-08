@@ -29,6 +29,13 @@
     </ip>
   </ip_preset>
   
-
+    <ip_preset preset_proc_name="sys_clock_preset">
+        <ip vendor="xilinx.com" library="ip" name="clk_wiz" version="*">
+            <user_parameters>
+                <user_parameter name="CONFIG.PRIM_IN_FREQ" value="100.000"/>
+                <user_parameter name="CONFIG.PRIM_SOURCE" value="Single_ended_clock_capable_pin"/>
+            </user_parameters>
+        </ip>
+    </ip_preset>
 
 </ip_presets>
