@@ -14288,6 +14288,44 @@
           "metadata_file": "xitem.json"
         },
         "company": "alpha-data.com"
+      },
+      {
+        "name": "admpa100_2ms",
+        "display": "ADM-PA100/2MS",
+        "latest_revision": "1.3",
+        "commit_id": "503175a7a38f0290464c4a2a4396c4bd443c6b06",
+        "revisions": [
+          {
+            "revision": "1.3",
+            "commit_id": "503175a7a38f0290464c4a2a4396c4bd443c6b06",
+            "date": "28-07-2026:14:49:04",
+            "history": "Added board ADM-PA100/2MS v1.3"
+          }
+        ],
+        "config": {
+          "root": "boards/AlphaData/admpa100_2ms/1.3",
+          "metadata_file": "xitem.json"
+        },
+        "company": "alpha-data.com"
+      },
+      {
+        "name": "admpa101_2ms",
+        "display": "ADM-PA101/2MS",
+        "latest_revision": "1.3",
+        "commit_id": "503175a7a38f0290464c4a2a4396c4bd443c6b06",
+        "revisions": [
+          {
+            "revision": "1.3",
+            "commit_id": "503175a7a38f0290464c4a2a4396c4bd443c6b06",
+            "date": "28-07-2026:14:49:04",
+            "history": "Added board ADM-PA101/2MS v1.3"
+          }
+        ],
+        "config": {
+          "root": "boards/AlphaData/admpa101_2ms/1.3",
+          "metadata_file": "xitem.json"
+        },
+        "company": "alpha-data.com"
       }
     ],
     "categories": [
