@@ -8873,6 +8873,44 @@
           "metadata_file": "xitem.json"
         },
         "company": "iwave-global.com"
+      },
+      {
+        "name": "admpa100_2ms",
+        "display": "ADM-PA100/2MS",
+        "latest_revision": "1.3",
+        "commit_id": "9e08e4782a64f48a04232adb4ddcad4ec216c350",
+        "revisions": [
+          {
+            "revision": "1.3",
+            "commit_id": "9e08e4782a64f48a04232adb4ddcad4ec216c350",
+            "date": "28-07-2026:15:23:58",
+            "history": "Added board ADM-PA100/2MS v1.3"
+          }
+        ],
+        "config": {
+          "root": "boards/AlphaData/admpa100_2ms/1.3",
+          "metadata_file": "xitem.json"
+        },
+        "company": "alpha-data.com"
+      },
+      {
+        "name": "admpa101_2ms",
+        "display": "ADM-PA101/2MS",
+        "latest_revision": "1.3",
+        "commit_id": "9e08e4782a64f48a04232adb4ddcad4ec216c350",
+        "revisions": [
+          {
+            "revision": "1.3",
+            "commit_id": "9e08e4782a64f48a04232adb4ddcad4ec216c350",
+            "date": "28-07-2026:15:23:58",
+            "history": "Added board ADM-PA101/2MS v1.3"
+          }
+        ],
+        "config": {
+          "root": "boards/AlphaData/admpa101_2ms/1.3",
+          "metadata_file": "xitem.json"
+        },
+        "company": "alpha-data.com"
       }
     ],
     "categories": [
